@@ -434,11 +434,14 @@ img {
 
 .item-page, .blog {
 	.pull-left img {
-		margin: 0 15px 15px 0;
+		margin: @images-margin-float-left;
 	}
 	.pull-right img {
-		margin: 0 0 15px 15px;
+		margin: @images-margin-float-right;
 	}
+    img {
+       margin: @images-margin-content; 
+    }
 
 	img[align="left"],
 	img[style*="float: left"],
