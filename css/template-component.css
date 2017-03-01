@@ -1,0 +1,84 @@
+#body .actions .pull-left {
+float:right !important;
+}
+
+
+#body #ark .pull-right {
+  float:none !important;  
+}
+
+#easyfrontendseo_lightbox_button_0 {
+display: none;
+}
+
+#ark .container{
+    width: 100%;max-width: 100%;padding: 0}
+#ark #component .container .content{width: 100%;max-width: 100%;padding: 0}
+#ark {  background: #E9E9E9}
+#ark  #ark-explorer{background: #fff;box-shadow: 0 0 5px #d1d1d1;border: none}
+#ark  #ark-explorer .file a,#ark  #ark-explorer .folder a{color: #999;background: none}
+#ark  #ark-explorer .folder .selected [data-action="check"]{color: green}
+#ark #jform_editinsert{margin-right: 10px;background-color: #58b957;border-color: #46a746;color: #fff}
+#ark #jform_editinsert:hover{background-color: #46a746;border-color: #3c8e3b;color: #fff}
+#ark #jform_editclose{margin-right: 10px;border-color: #d6352e}
+#ark #jform_editclose:hover{background-color: #d6352e;border-color: #bc2b25;color: #f1f1f1}
+#ark #jform_editclose:hover .uk-icon-close:before{color: #fff}
+#ark .col-left.col-md-2.col-sm-2.var-transition{padding-top: 0}
+#ark .icon-play3{display: none !important}.cke_button_icon.cke_button__close_icon{background-image: url('/templates/stiptemplate/images/editor/save.png') !important}
+
+#ark #ark-toolbar #ark-search .btn[data-action-value=toggle] {
+ color:#4f4f4f;   
+}
+
+.btn.btn-danger.btn-large {
+        display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-right: 10px;border-color: #d6352e;
+    background:#d6352e;
+    position: fixed;
+    top:0;
+    left:0;
+    color:#FFF;
+}
+
+.btn.btn-danger.btn-large:hover {
+ text-decoration: none;   
+}
+
+.alert.alert-message {
+ max-width: 650px;
+    margin: 0 auto;
+    border: 1px solid #faebcc;
+    padding: 10px;
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    text-align: center;
+}
+
+.close {
+     font-size: 29px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+
+    padding: 2px 0 0 0;
+    color:red;
+}
