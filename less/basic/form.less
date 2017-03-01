@@ -1,0 +1,245 @@
+/*_______ FORM STYLES ______________________________*/
+
+/* basic field-layout */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="number"],
+textarea
+{
+	border-color:#9DA2AD #CBCDCF #CBCDCF;
+	border-image:none;
+	border-radius:2px;
+	border-right:1px solid #CBCDCF;
+	border-style:solid;
+	border-width:1px;
+	width:100%;
+	min-height:47px;
+	padding:6px 12px;
+	font-size:19px;
+	line-height:1.42857143;
+	color:#555;
+}
+input[type="text"].input-lg {
+	height:46px;
+	padding:10px 16px;
+	font-size:18px;
+	line-height:1.3333333;
+	min-width:100%;
+}
+input:read-only {
+	background:#eee;
+}
+select.inputbox {
+	width:100%;
+	max-width:320px;
+}
+textarea.inputbox {
+	border-color:#9DA2AD #CBCDCF #CBCDCF;
+	border-image:none;
+	border-radius:2px;
+	border-right:1px solid #CBCDCF;
+	border-style:solid;
+	border-width:1px;
+	display:block;
+	padding:6px 12px;
+	font-size:14px;
+	color:#555;
+	max-width:100%;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+	border-color:#9DA2AD #CBCDCF #CBCDCF;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+
+
+#userForm {
+.fout, .rsform-error { 
+       
+ 
+
+&::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #BF4040 !important;
+}
+&:-moz-placeholder, textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #BF4040 !important;
+   opacity:  1;
+}
+&::-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #BF4040 !important;
+   opacity:  1;
+}
+&:-ms-input-placeholder, textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #BF4040 !important;
+}
+    
+}
+}
+
+/* special fields */
+.input-prepend input {
+	border-radius:0 2px 2px 0;
+}
+.input-append {
+	input {
+		width:54%;
+		float:left;
+		border-radius:2px 0 0 2px;
+	}
+	.media-preview {
+		float:left;
+		background-color:#fff;
+		height:47px;
+		padding:12px 5px;
+		border:1px solid #aaa;
+		border-radius:2px 0 0 2px;
+		border-right:0px;
+	}
+    a.btn {
+     height: 47px;
+line-height: 47px;
+padding: 0 10px;   
+    }
+    .btn.hasTooltip {
+        padding: 4px 10px;
+    .icon-remove::before {
+    color:#C62C23;
+    
+    }
+    }
+	button, a {
+		height:34px;
+		border-radius:0px;
+		border:1px solid #bbb;
+		border-left:0px;
+		background-color:#fff;
+		color:#000;
+
+		&:last-child, &:last-child {
+			border-radius:0 2px 2px 0;
+		}
+	}
+}
+.input-append button:hover {
+	background:#eee;
+}
+.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+	border-radius:2px 0 0 2px;
+}
+.controls .btn-group.btn-group-yesno>.btn {
+	min-width:84px;
+	padding:6px;
+}
+
+/* Selectboxes */
+.chzn-container-single {
+	min-width:200px;
+	max-width:320px;
+	display:block;
+
+	.chzn-single {
+		height:26px;
+	}
+}
+.chzn-container-multi .chzn-choices li.search-field input[type="text"] {
+	height:26px;
+}
+
+/* calander field */
+.calendar {
+	table {
+		width:100%;
+	}
+
+	.button {
+		display:table-cell;
+	}
+}
+
+/* fieldset and forms */
+form#module-form h1.page_title {
+	font-size:26px;
+}
+fieldset.radio {
+	display:block;
+
+	input[type="radio"] {
+		display:none;
+	}
+	label.btn {
+		&:first-child {
+			border-radius:2px 0 0 2px;
+		}
+		&:last-child {
+			border-radius:0 2px 2px 0;
+		}
+	}
+}
+legend {
+	padding-bottom:8px;
+}
+
+/* Boostrap 2 form classes */
+.form-horizontal {
+	.form-group {
+		margin-right:0px;
+		margin-left:0px;
+	}
+	.control-label, .form-group label {
+		float:none;
+		width:auto;
+		display:block;
+		text-align:left;
+	}
+	.controls {
+		margin:0px;
+	}
+}
+
+.tip-wrap {
+	padding:10px;
+	background-color:rgba(0, 0, 0, 0.2);
+	border-radius:4px;
+}
+
+
+/*login-form module*/
+
+#login-form {
+ max-width:500px; 
+    .userdata label {
+     color:#555555;
+     font-weight: 300;    
+    }
+    #form-login-username, #form-login-password {
+     margin-bottom: 10px;   
+    }
+    ul.unstyled {
+        margin:0;
+        padding:0;
+     margin-top:20px;
+    
+        li {
+        list-style-type: none;
+            
+        }
+    }
+}
+

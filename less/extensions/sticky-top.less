@@ -1,0 +1,99 @@
+/*________ This file is to style the stickytop */
+
+.stickymenu {
+ display: none ;
+    position: fixed;
+    top:-150px;
+    z-index: 2000;
+    background:#fff;
+    width:100%;
+webkit-transition: top 3s, bottom 3s;
+    .container {
+     padding:0;
+        
+        .menusticky {
+         
+        }
+    }
+    .modulecontent {
+     padding:0;   
+    }
+    
+    
+}
+
+@media (min-width: 980px) {
+  .smallheader .stickymenu {
+display:block;
+    top:0;
+    
+    
+    
+    .logosticky img {
+     max-height:60px;   
+    }
+    
+    ul.nav.menu {
+        display: block;
+        margin:0 auto;
+    li {
+        a {
+         text-align: center;
+            &:before {
+             
+            }
+            
+        }
+        
+    }
+        ul.nav-child {
+            width:auto;
+        
+            
+            > li{
+                   border-top:1px solid #fff; 
+         width:100%;
+                
+                &.deeper.parent>a:after {
+                  content:">";   
+                 
+                }
+                > a {
+                width:auto;
+                min-width:255px;
+        text-align: left;
+    }
+                ul {
+                    margin-top:-65px;
+                    padding-top:0;
+                    
+                    li a {
+                   min-width:340px;  
+                }
+                }
+                
+            }
+    }
+    }
+    
+}
+
+
+
+.stickymenu 
+{
+    ul.nav.menu  ul.nav-child ul {
+     padding-top:30px;
+     position: absolute;
+     left:-9999px ;
+     width:350px;
+     
+     li {
+        border-top:1px solid #fff; 
+         width:100%;
+     }
+     
+ }
+}
+}
+

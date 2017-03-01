@@ -1,0 +1,637 @@
+/* Structure version file 1.0  last update 03-02-2016 om 16:44 */
+
+/* INDEX VARIABLES */
+/* This file is not ment for changes */
+
+/*
+1.0 Basics
+2.0 Basic Text
+ - 2.1 Editor 
+ - 2.2 Heading Styles
+3.0 Basic div
+4.0 Module 
+5.0 Buttons
+6.0 Menu 
+7.0 Header 
+8.0 Basic 
+ - 8.1 Images
+ - 8.2 Pages, blogs
+ - 8.3 Distance
+ - 8.4 Smart search
+ - 8.5 Clear 
+10.0 Additional
+11.0 Media screen
+*/
+
+
+/*______________ 1.0 Basic website Styles ______________*/
+html {
+	overflow-y: scroll;
+}
+
+
+*,
+*:focus,
+a:focus {
+	outline:0;
+}
+body {
+	margin:0;
+	padding:0;
+	font-family:@base-font;
+	font-size:@font-size;
+	line-height:@line-height;
+    font-weight: @font-weight;
+}
+
+
+/* fix ARK youtube */
+.youtube_embed iframe {
+    max-width: 100% !important;
+    max-height:auto;
+}
+
+/*______________ 2.0 Basic Text Styles ______________*/
+p {
+	margin:@p-margin;
+    
+}
+a {
+	&:focus {
+		outline:none;
+	}
+}
+img {
+	max-width:100%;
+}
+
+.anchor-link
+{display: block; position: relative; visibility: hidden;top:-60px;}
+
+/*______________ 2.1 Editor Styles  */
+.intro {
+	font-size:16px;
+}
+.highlite {
+	color:red;
+}
+
+
+/*______________ 2.2 Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: @header-tag-color;
+	margin: 0px 0px 5px 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    color: @header-tag-color;
+    font-size: @header-tag-size;
+    line-height: @header-tag-height;
+    font-weight: @header-tag-weight;
+    margin: @header-tag-margin;
+}
+
+h2 {
+    font-size: @header2-tag-size;
+    color: @header2-tag-color;
+    line-height: @header2-tag-height;
+    font-weight: @header2-tag-weight;
+     margin: @header2-tag-margin;
+}
+
+h3 {
+    font-size: @header3-tag-size;
+    color: @header3-tag-color;
+    line-height: @header3-tag-height;
+    font-weight: @header3-tag-weight;
+     margin: @header3-tag-margin;
+}
+
+h4 {
+    font-size:@header4-tag-size;
+    color: @header4-tag-color;
+    line-height: @header4-tag-height;
+    font-weight: @header4-tag-weight;
+     margin: @header4-tag-margin;
+}
+
+h5 {
+    font-size:@header5-tag-size;
+	color: @header5-tag-color;
+    line-height: @header5-tag-height;
+    font-weight: @header5-tag-weight;
+     margin: @header5-tag-margin;
+}
+h6 {
+    font-size:@header6-tag-size;
+	color: @header6-tag-color;
+    line-height: @header6-tag-height;
+    font-weight: @header6-tag-weight;
+     margin: @header6-tag-margin;
+}
+
+/*______________ 3.0 Basic div styles ______________*/
+
+ video, iframe {
+ max-width: 100%;   
+}
+
+.copyright .custom {
+ float:right;   
+}
+
+/*______________ 4.0 Module styles ______________*/
+.module .modulecontent {
+	padding-bottom:20px;
+}
+.mod-languages {
+ float:right;   
+    
+    .lang-inline li {
+     margin:0;
+        a {
+         padding-right:5px;
+           
+        
+        }
+    }
+    
+    .lang-inline li:first-of-type {
+        a:after {
+            content:"|"; 
+            margin-left:3px;
+        }
+        
+    }
+    
+}
+
+.teltop {
+ float:right;  
+    span {
+     margin: 0 5px 0 3px;;   
+    }
+    
+}
+
+/*______________ 5.0 BUTTON STYLES ______________*/
+.btn,
+#Submit{
+
+}
+.btn-toolbar {
+	margin-bottom:15px;
+}
+.nav-tabs {
+	margin-bottom:15px;
+}
+.jmodedit {
+	background:none !important;
+    border:none !important;
+
+	.icon-edit{
+		color:#505050;
+		font-size:30px;
+
+		&:hover {
+			color:#0098CE;
+		}
+	}
+}
+.content .icons {
+	.dropdown-toggle {
+		display:none;
+	}
+	.dropdown-menu {
+		display:block !important;
+	}
+	.dropdown-menu a:hover {
+		background:none;
+		color:#0098CE;
+	}
+}
+
+.readmore-link {
+ 	padding: 14px 0; 
+    display: block;
+}
+
+/*______________ 6.0 MENU STYLING ______________*/
+
+#body .navbar.navbar-default.navbar-fixed-top .caret{
+        position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+
+#menu, .stickymenu {
+   ul li .caret {
+    display: none ;
+  }
+
+   ul.nav-child li.deeper.parent .caret {
+    display:block;
+  }
+}
+
+
+  .left {
+
+    padding:0;
+    .active.deeper.parent .caret {
+      display: none !important;
+    }
+    @media @md {
+
+      display: none !important;
+    }
+  }
+
+
+
+/* Topmenu */
+.top-menu {
+    float:right;
+    
+    .nav.menu {
+     float:right;
+        
+        li a {
+            padding: 0;
+            
+        }
+         li a:before {
+             content:"|";
+             margin-right:4px;
+         }
+        
+        li:first-of-type a:before {
+           content:none; 
+        }
+        
+    }
+}
+
+
+/*Footermenu */
+
+.copyright ul {
+    float:right;
+
+li {
+ float:left;  
+    
+    a {
+       padding:4px 4px; 
+    }
+}    
+ li  a:before {
+       content:"|"; 
+      margin-right:8px;
+     
+    }
+
+li:first-of-type a:before {
+           content:none; 
+        }
+}
+
+
+
+
+/* Usermenu */
+
+/*show user sub-menu on hover*/
+
+
+#usermenu ul ul {
+ display: none;   
+    position: absolute;
+    top: 95%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 260px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #F8F8F8;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+ 
+    
+    li { 
+        position: relative;
+    width:100%;
+    a {
+    width:100%;
+    border-bottom: 1px solid #e7e7e7;
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    color: #333;
+    white-space: nowrap;
+    }
+        
+    }
+    
+    
+}
+
+#usermenu ul li:hover > ul {
+ display: block ;   
+
+}
+
+#usermenu ul ul ul{
+  display: none ;      
+}
+
+#usermenu ul  li ul li:hover ul {
+ display: block ;
+    left:100%;
+    top:0;
+}
+
+
+
+#usermenu ul ul li:hover ul {
+ 
+}
+
+
+
+
+/* Menu Vertical */
+
+ul.menuverticaal {
+	li {
+		margin: 5px 0 5px 0;
+
+		&:hover a {
+			background-color: transparent;
+		}
+		a {
+			padding: 0;
+			font-size: 14px;
+			color: @menu-vertical-link;
+		}
+		ul li {
+			display: table-row;
+
+			&::before {
+				content:"-";
+				display: table-cell;
+				padding-right: 10px;
+			}
+		}
+		b.caret {
+			display: none;
+		}
+	}
+    
+   
+    
+}
+
+
+/* Arrow Back */
+
+.arrow-back {
+ max-width: @max-containerwidth;
+    margin:0 auto;
+    a {
+      float:left;
+        font-size: 40px;
+    }
+}
+
+
+/*______________ 7.0 Header styles ______________*/
+
+
+
+
+/*______________ 8.0 START BASIC JOOMLA STIP STYLINGS ______________*/
+
+/*______________ 8.1 Images ____*/
+img {
+  max-width:100% !important;  
+}
+
+
+.item-page, .blog {
+	.pull-left img {
+		margin: 0 15px 15px 0;
+	}
+	.pull-right img {
+		margin: 0 0 15px 15px;
+	}
+
+	img[align="left"],
+	img[style*="float: left"],
+	img[style*="float:left"] {
+		margin: @images-margin-float-left;
+		border-radius: @images-content-border-radius;
+	}
+	img[align="right"],
+	img[style*="float: right"],
+	img[style*="float:right"] {
+		margin: @images-margin-float-right;
+		border-radius: @images-content-border-radius;
+	}
+}
+
+.pull-center {
+ text-align: center;   
+}
+
+/*______________ 8.2 Pages, blogs ____*/
+
+.item-image {
+ max-width:100%;
+}
+
+/* Error pagina */
+.error-pagina {
+ .left, .right, .top, .bottom, .secion, #footer, #header {
+  display: none;   
+ }
+    .content {
+     width:100%;   
+    }
+    
+    h1 {
+        text-align: center;
+    }
+}
+
+/*______________ 8.3 distance styles ____*/
+#bottom {
+	margin-top:30px;
+}
+.bottom-contact {
+ overflow:hidden;  
+    padding: 0 7.5px;
+}
+
+.container .top {
+ overflow:hidden;   
+}
+
+/*______________ 8.4 Smart search ____*/
+
+/* Search icons */
+.top-menu .searchbox {
+ float:right;
+    margin-left:6px;
+}
+
+#menu {
+    
+    &.menu-search ul {
+     float:left;   
+    }
+   .searchbox {
+ float:left;
+    margin-left:6px;
+} 
+}
+
+.searchbox.search-content {
+ width:@max-containerwidth;
+    margin:0 auto;
+    a {
+        margin-top:7px;
+        float:right;
+        font-size: 26px;
+        &:hover {
+         text-decoration: none;   
+        }
+    }
+}
+
+
+#finder-search input {
+	padding:12px;
+	width:50%;
+	max-width:300px;
+}
+#search-results {
+	margin-top:20px;
+}
+
+span.highlight {
+	color:#CA0000;
+	background:none;
+}
+
+.search-results.list-striped {
+ padding-left:0;
+    margin-left:0;
+}
+
+
+.search-results.list-striped li {
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.search-results.list-striped li:nth-child(odd) {
+ background: #EFEFEF;   
+}
+
+.result-title a:after {
+    content: "";
+    padding-left:10px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-feature-settings: normal;
+    font-language-override: normal;
+    font-kerning: auto;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-size: inherit;
+    text-rendering: auto;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*______________ 8.5 Clear styles ____*/
+
+.clear {
+	clear:both;
+	display:block;
+}
+.clr {
+	clear:both;
+}
+
+/*______________ 10.0 ADDITIONAL STYLING ______________*/
+
+.paralax {
+    .row {
+    margin:0 !important; 
+        padding:0 !important;
+    }
+    .modulecontent {
+        margin:0 !important; 
+        padding:0 !important;
+    }
+}
+
+
+
+/*______________ 11.0 MEDIA SCREEN CSS ______________*/
+
+
+.container {
+ max-width: @max-containerwidth;  
+}
+
+
+@media (max-width: 1200px) {
+  .container {
+ max-width: @max-containerwidth-1200;  
+}
+}
+@media (max-width: 1024px) {
+  .container {
+ max-width: @max-containerwidth-1024;  
+}
+}
+@media (max-width: 980px) {
+ .container {
+ max-width: @max-containerwidth-980;  
+} 
+}
+@media (max-width: 768px) {
+ .container {
+ max-width: @max-containerwidth-768;  
+}
+}
+
+
+/*______________ 11.0 ARK WIDGET CSS ______________*/
+
+
+ul.thumbnails li {
+ list-style: none;
+    list-style-type: none;
+}

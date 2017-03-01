@@ -1,0 +1,511 @@
+/**
+ * @version 1.1 last edit 10-02-2016.
+ * @author
+ * @package:Stip-template responsive
+ * @copyright:Copyright (C) 2005 - 20013 Stip Grafisch Ontwerp. All rights reserved.
+ * @license:Stip Grafisch Ontwerp - All css code is free to use on your site
+ * @contact:joris@stip.nl
+**/
+
+/* These styles are only active on edit an article */
+
+
+
+body.layout-edit,
+body.com_advancedmodules,
+body.view-edit{
+    margin-top:0;
+      background:#E9E9E9;  
+    
+    .arrow-back,
+    .searchbox.search-content,
+	.module,
+	#subheader,
+	.page-header,
+	.bottom,
+	#footer,
+    .section-menu-2,
+    .menu-2-section,
+    .top, 
+    .responsive-menu{
+		display: none;
+	}
+    
+.white-top {
+ display: none;   
+}
+    
+    .navbar-fixed-top {
+     display: none;   
+    }
+    
+    .edit.item-page {
+     background:none;   
+    }
+    
+    .well {
+     border-radius: 0;   
+    }
+    
+ #top {
+  display:none;   
+ }
+    
+    #component {
+     padding-top:30px;   
+    }
+    
+    .content {
+     padding-top:40px;  
+        box-shadow: 0 0 5px #D1D1D1;
+        padding-bottom:30px;
+        background:#FFF;
+        width:1400px;
+        max-width: 100% !important;
+    }
+
+    
+    
+    
+
+
+	.btn {
+		padding: 6px 12px;
+		font-size: 14px;
+        &:after {
+         content: none !important;   
+        }
+        
+        .icon-droppics::before {
+           content: "\f030"; 
+        }
+        
+        .icon-hikashopproduct:before {
+            content: "\f013"; 
+        }
+       
+	}
+	form#adminForm {
+		.page-header {
+			display: block;
+			margin-top: 0;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="url"],
+		input[type="number"],
+		textarea
+		{
+			min-height: 27px;
+			max-width: 320px;
+			font-size: 14px;
+		}
+        .input-small {
+         height:47px;   
+        }
+        
+        #jform_images_image_intro, #jform_images_image_fulltext {
+            max-width:65px;   
+        }
+
+		input[type="text"].input-lg {
+			font-size: 18px;
+		}
+		.nav-tabs {
+			margin-bottom:15px;
+		}
+		.tab-pane#editor {
+			.col-lg-8 {
+				padding-left:0px;
+			}
+			.col-lg-4 {
+				padding-right:0px;
+			}
+		}
+        
+        .btn.hasTooltip {
+            background-color: #fff;
+                border-color: #9da2ad #cbcdcf #cbcdcf;;
+                color: #DE5148;
+                    &:hover {
+                        background-color: @btn-danger-hover;
+                        border-color: @btn-danger-border-hover;
+                        color: @btn-danger-text;  
+                        .icon-remove:before {
+                            color:#fff;
+                        }
+                    }  
+        }
+        
+        .btn-toolbar {
+            .btn-default {
+               background:none;
+                border-color: @btn-danger-border;
+                color: #4f4f4f;
+                    &:hover {
+                        background-color: @btn-danger-hover;
+                        border-color: @btn-danger-border-hover;
+                        color: @btn-danger-text;  
+                        .fa-times-circle:before {
+                         color:#fff;   
+                        }
+                    }
+                
+        
+             
+                }
+    
+        
+        
+        }
+        .modal_jform_contenthistory {
+           background:none;
+            border-color: @btn-info-border;
+            color: #4f4f4f;
+                &:hover {
+                    background-color: @btn-info-hover;
+                    border-color: @btn-info-border-hover;
+                    color: @btn-info-text;     
+                }
+        }
+        
+        ul.nav.nav-tabs       {
+            margin-top:50px;
+        li {
+                a {
+                    background:#ddd;
+            display: block !important;
+                    border-radius: 0;
+                    color:#4f4f4f;
+        }
+        &.active a {
+            background:#FFF;
+        }
+        }
+            
+        
+        }
+        
+	}
+	#editor-xtd-buttons {
+		margin-top:15px;
+
+		.btn {
+			margin-bottom:15px;
+		}
+	}
+	.modal {
+		position:relative;
+	}
+    .hasTooltip {
+     display: inline !important;   
+    }
+    .hasPopover {
+     display: block !important;   
+    }
+    
+    
+    .moduletable {
+     display: none;   
+    }
+    
+}
+
+ .bnt-new-article {
+         margin-bottom:25px;   
+        }
+@media (max-width:992px) {
+ .navbar-fixed-top {
+  top:46px;
+     z-index: 999;
+ }
+    .fullcontainer {
+     padding-top:46px;   
+    }
+    
+}
+
+
+@media (max-width:768px) {
+	form#adminForm .tab-pane#editor {
+		.col-lg-8 {
+			padding-left:0px;
+			padding-right:0px;
+		}
+		.col-lg-4 {
+			padding-left:0px;
+			padding-right:0px;
+		}
+	}
+}
+
+
+
+.edit .btn-group {
+ float:left;
+max-width:200px;
+    margin-right:15px;
+}
+
+.edit.item-page {
+ padding:0;
+    margin:0;
+     height:auto;
+    overflow: hidden;
+    border:none;
+}
+
+
+.edit .btn-group button {
+background:none;
+                border-color: @btn-danger-border;
+                color: #4f4f4f;
+                    &:hover {
+                        background-color: @btn-danger-hover;
+                        border-color: @btn-danger-border-hover;
+                        color: @btn-danger-text;  
+                    }
+    
+    
+    .fa, .icon-archive {
+      margin-right:5px;  
+          &:hover {
+           color:#fff;   
+          }
+     
+    }
+    
+}
+
+.edit .btn-group:first-of-type button {
+background:none;
+	border-color: @btn-default-border;
+	color: #4f4f4f;
+        &:hover {
+            background-color: @btn-default-hover;
+            border-color: @btn-default-border-hover;
+            color: @btn-default-text;
+    }   
+}
+
+.edit .btn-group:last-of-type button {
+background:none;
+	border-color: @btn-info-border;
+	color: #4f4f4f;
+        &:hover {
+            background-color: @btn-info-hover;
+            border-color: @btn-info-border-hover;
+            color: @btn-info-text;
+    }  
+}
+
+
+.view-form.layout-edit {
+    .edit .btn-group:nth-child(2) button {
+     background:none;
+	border-color: @btn-success-border;
+	color: #4f4f4f;
+        &:hover {
+            background-color: @btn-success-hover;
+            border-color: @btn-success-border-hover;
+            color: @btn-success-text;
+    }   
+    }
+}
+
+.com_advancedmodules.view-edit {
+    .btn-group {
+button {
+        background:none;
+        color:#4f4f4f;
+       background:none;
+	border-color: @btn-success-border;
+	color: #4f4f4f;
+        &:hover {
+            background-color: @btn-success-hover;
+            border-color: @btn-success-border-hover;
+            color: @btn-success-text;
+    } 
+    
+        
+    }
+        &:nth-child(3) button {
+            border-color: @btn-danger-border;
+                color: #4f4f4f;
+                    &:hover {
+                        background-color: @btn-danger-hover;
+                        border-color: @btn-danger-border-hover;
+                        color: @btn-danger-text;  
+                    }
+        }
+        
+}
+}
+
+/* module editing frontend buttond */
+
+
+body.user-login
+{
+.content .icons .dropdown-menu {
+display: none !important;
+    top: 0;
+    right:0;
+    display: block;
+    margin: 0;
+}
+
+ .icons .btn-group.pull-right {
+  position: static;
+ }
+
+
+
+ .content:hover .item-page .icons .dropdown-menu {
+ display:block !important;
+}   
+
+     .blog .item:hover .icons .dropdown-menu {
+ display:block !important;
+}   
+
+    
+
+
+.btn-group .dropdown-menu {
+border:none;
+    background: none;
+    box-shadow: none;
+>li>a {
+           background: #41bb99 !important;
+    box-shadow:  0 5px 10px rgba(43,135,218,.15);
+    padding:0 10px;
+    line-height: 36px;
+    font-size: 20px;
+    height:36px;
+    border:#ddd;
+    color:#FFF;   
+    border-radius: 0;
+    text-decoration: none;
+    .icon-edit {padding-right:5px;}
+    &:hover {color:#FFF;   }
+}
+}
+
+a.btn.jmodedit {
+      background: #41bb99 !important;
+    box-shadow:  0 5px 10px rgba(43,135,218,.15);
+    padding:0 0 5px 10px;
+    line-height: 36px;
+    font-size: 20px;   
+    border-radius: 0;
+    .icon-edit {
+   
+           color:#FFF !important; 
+        
+    }
+}
+
+a.btn.jmodedit:after{
+ content:"";
+    margin-left:6px;
+
+}
+
+/* menu editing frontend buttond */
+a.btn.jfedit-menu:before{
+ content:"Bewerk menu";
+    background: rgba(255,255,255,0.6);
+    border:#ddd;
+    color:#4f4f4f;
+
+ font-size:20px !important;
+
+}
+
+.page_title .label.label-default {
+ display: none;   
+}
+/*show user sub-menu on hover*/
+#usermenu ul li:hover>ul {
+ display: block !important;   
+}
+
+}
+
+
+/* ARK Media design */
+.com_arkmedia {
+ 
+    #component {
+        .container {
+         width:100%;
+            max-width:100%;
+            padding:0;
+            .content {
+                width:100%;
+                max-width:100%; 
+                 padding:0;
+            }
+        }
+    }
+    
+    #ark {
+     background:#E9E9E9;   
+        
+        #ark-explorer {
+             background: #fff;
+    box-shadow: 0 0 5px #D1D1D1;
+            border:none;
+            .file a,
+            .folder a {
+                color:#999 ;
+                background:none;
+            }
+        }
+    }
+    #ark #ark-explorer .folder .selected [data-action="check"] {
+     color:green;   
+    }
+    
+  #jform_editinsert {
+      margin-right:10px;
+          background-color: @btn-success;
+    border-color: @btn-success-border;
+    color: @btn-success-text;
+        &:hover {
+            background-color: @btn-success-hover;
+            border-color: @btn-success-border-hover;
+            color: @btn-success-text;
+    }
+  }
+    
+#jform_editclose {
+    margin-right:10px;
+    border-color: @btn-danger-border;
+    
+        &:hover {
+            background-color: @btn-danger-hover;
+            border-color: @btn-danger-border-hover;
+            color: @btn-danger-text;
+        }
+        &:hover .uk-icon-close:before {
+            color:#fff;
+        
+    }
+    
+    
+}
+    .col-left.col-md-2.col-sm-2.var-transition {
+     padding-top:0;   
+    }
+    .icon-play3 {
+     display: none !important;   
+    }
+}
+.cke_button_icon.cke_button__close_icon {
+ background-image:url('/templates/stiptemplate/images/editor/save.png')!important;
+    
+}
+ 

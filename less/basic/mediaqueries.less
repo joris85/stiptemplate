@@ -1,0 +1,31 @@
+/* Media queries */
+/* do not change this file */
+/*
+
+/*______________ Media queries variables ___________*/
+/* Media Variabelen */
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+
+@xs:          	~"only screen and (max-width: @{xs-min})";
+@minxs:         ~"only screen and (min-width: @{xs-min})";
+@xs-strict:   	~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@sm:         	~"only screen and (max-width: @{sm-min})";
+@minsm:         ~"only screen and (min-width: @{sm-min})";
+@sm-strict:  	~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@md:        	~"only screen and (max-width: @{md-min})";
+@minmd:        	~"only screen and (min-width: @{md-min})";
+@md-strict:	~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@lg:          	~"only screen and (max-width: @{lg-min})";
+@minlg:         ~"only screen and (min-width: @{lg-min})";
+@portrait: ~"(orientation : portrait)";
+@landscape: ~"(orientation : landscape)";
+
+
