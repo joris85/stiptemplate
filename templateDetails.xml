@@ -24,32 +24,32 @@
 		<folder>libraries</folder>
 	</files>
 	<positions>
-        <position>sticky-top</position>
-        <position>menu-mobiel</position>
-        <position>search</position>
-        <position>breadcrumbs</position>
-        <position>top-logo</position>
-         <position>top-menu</position>
-        <position>top-slogan</position>
-        <position>header</position>
-        <position>header-image</position>
-        <position>header-slider</position>
-        <position>header-video</position>
-        <position>full-screen-intro</position>
-        <position>top1</position>
+		<position>sticky-top</position>
+		<position>menu-mobiel</position>
+		<position>search</position>
+		<position>breadcrumbs</position>
+		<position>top-logo</position>
+		<position>top-menu</position>
+		<position>top-slogan</position>
+		<position>header</position>
+		<position>header-image</position>
+		<position>header-slider</position>
+		<position>header-video</position>
+		<position>full-screen-intro</position>
+		<position>top1</position>
 		<position>top2</position>
 		<position>top3</position>
-        <position>menu</position>
-        <position>menu-fullwidth</position>
-        <position>menu-2</position>
+		<position>menu</position>
+		<position>menu-fullwidth</position>
+		<position>menu-2</position>
 		<position>menu-logo</position>
 		<position>menu-user</position>
 		<position>footer1</position>
 		<position>footer2</position>
 		<position>footer3</position>
 		<position>footer4</position>
-        <position>topcontent</position>
-        <position>left</position>
+		<position>topcontent</position>
+		<position>left</position>
 		<position>right</position>
 		<position>subcontent</position>
 		<position>bottom-contact</position>
@@ -57,1872 +57,1872 @@
 		<position>bottom2</position>
 		<position>bottom3</position>
 		<position>bottom4</position>
-        <position>copyright</position>
+		<position>copyright</position>
 	</positions>
 	<languages folder="language">
 		<language tag="nl-NL">nl-NL/nl-NL.tpl_stiptemplate.ini</language>
 		<language tag="nl-NL">nl-NL/nl-NL.tpl_stiptemplate.sys.ini</language>
-        <language tag="en-GB">en-GB/en-GB.tpl_stiptemplate.ini</language>
-        <language tag="en-GB">en-GB/en-GB.tpl_stiptemplate.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_stiptemplate.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_stiptemplate.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
 				<field
-					name="less_theme"
-					type="list"
-					default="zakelijk"
-					label="Thema"
-					description="Selecteer het thema voor de tempalte">
-				        <option value="standaard">Standaard</option>
-                        <option value="custom">Custom</option>
+						name="less_theme"
+						type="list"
+						default="zakelijk"
+						label="Thema"
+						description="Selecteer het thema voor de tempalte">
+					<option value="standaard">Standaard</option>
+					<option value="custom">Custom</option>
 				</field>
-			<field
-					name="xml-variables"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					default="1"
-					label="Gebruik XML parameters"
-					description="Gebruik de parameters uit het XML bestand ipv de paramters van LESS">
-						<option value="1">JYES</option>
-						<option value="0">JNO</option>
+				<field
+						name="xml-variables"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="1"
+						label="Gebruik XML parameters"
+						description="Gebruik de parameters uit het XML bestand ipv de paramters van LESS">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
 				</field>
 
 				<field
-					name="less_header-image"
-					type="media"
-					default=""
-					label="Header afbeelding"
-					description="Selecteer de afbeelding voor de header" />
+						name="less_header-image"
+						type="media"
+						default=""
+						label="Header afbeelding"
+						description="Selecteer de afbeelding voor de header" />
 				<field
-					name="fixed-menubar"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					default="1"
-					label="Fixed menu"
-					description="Maak het menu fixed">
-						<option value="1">JYES</option>
-						<option value="0">JNO</option>
+						name="fixed-menubar"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="1"
+						label="Fixed menu"
+						description="Maak het menu fixed">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
 				</field>
 				<field
-					name="backtotop"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					default="1"
-					label="Omhoogknop"
-					description="Weergeef een omhoog knop">
-						<option value="1">JYES</option>
-						<option value="0">JNO</option>
+						name="backtotop"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="1"
+						label="Omhoogknop"
+						description="Weergeef een omhoog knop">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
 				</field>
-                <field
-					name="backpage"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					default="1"
-					label="Terugknop"
-					description="Weergeef een terug knop">
-						<option value="1">Top</option>
-                        <option value="2">Bottom</option>
-						<option value="0">JNO</option>
-				</field>
-             
 				<field
-					name="usermenu-access"
-					type="usergroup"
-					default="8"
-					label="Gebruikersmenu toegang"
-					multiple="true"
-					description="Selecteer welke gebruikersgroep(en) toegang mogen hebben tot het gebruikersmenu"
+						name="backpage"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="1"
+						label="Terugknop"
+						description="Weergeef een terug knop">
+					<option value="1">Top</option>
+					<option value="2">Bottom</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+						name="usermenu-access"
+						type="usergroup"
+						default="8"
+						label="Gebruikersmenu toegang"
+						multiple="true"
+						description="Selecteer welke gebruikersgroep(en) toegang mogen hebben tot het gebruikersmenu"
 				/>
 			</fieldset>
-            <!-- Paragraph -->
-            <fieldset name="Paragraph">
-                
-                <field type="spacer" name="spacer-settings" label="&lt;b&gt; Website settings &lt;/b&gt;" />
-                 
-                <field
-				name="less_base-font"
-				type="text"
-				default="'Open Sans', sans-serif"
-				label="Font family"
-				description="Font Family" />
-                
-                <field
-				name="less_p-margin"
-				type="text"
-				default="0"
-				label="Paragraph margin"
-				description="Paragraph margin" />
-                  
-                     
-                  <field
-				name="less_font-size"
-				type="text"
-				default="18px"
-				label="Paragraph size"
-				description="Paragraph size" />
-                  <field
-				name="less_line-height"
-				type="text"
-				default="28px"
-				label="Paragraph height"
-				description="Paragraph height" />
-                  <field
-				name="less_font-color"
-				type="text"
-				default="#323232"
-				label="Paragraph color"
-				description="Paragraph color" />
-                  <field
-				name="less_font-weight"
-				type="text"
-				default="300"
-				label="Paragraph weight"
-				description="Paragraph weight" />
-                
-                    <field type="spacer" name="spacer-link" label="&lt;b&gt; Link settings &lt;/b&gt;" />
-                
-                 <field
-				name="less_link"
-				type="text"
-				default="#008fbe"
-				label="Paragraph link"
-				description="Paragraph link" />
-                
-                
-                 <field
-				name="less_link-hover"
-				type="text"
-				default="#008fbe"
-				label="Paragraph link hover"
-				description="Paragraph link hover" />
-                
-             </fieldset>
+			<!-- Paragraph -->
+			<fieldset name="Paragraph">
+
+				<field type="spacer" name="spacer-settings" label="&lt;b&gt; Website settings &lt;/b&gt;" />
+
+				<field
+						name="less_base-font"
+						type="text"
+						default="'Open Sans', sans-serif"
+						label="Font family"
+						description="Font Family" />
+
+				<field
+						name="less_p-margin"
+						type="text"
+						default="0"
+						label="Paragraph margin"
+						description="Paragraph margin" />
+
+
+				<field
+						name="less_font-size"
+						type="text"
+						default="18px"
+						label="Paragraph size"
+						description="Paragraph size" />
+				<field
+						name="less_line-height"
+						type="text"
+						default="28px"
+						label="Paragraph height"
+						description="Paragraph height" />
+				<field
+						name="less_font-color"
+						type="text"
+						default="#323232"
+						label="Paragraph color"
+						description="Paragraph color" />
+				<field
+						name="less_font-weight"
+						type="text"
+						default="300"
+						label="Paragraph weight"
+						description="Paragraph weight" />
+
+				<field type="spacer" name="spacer-link" label="&lt;b&gt; Link settings &lt;/b&gt;" />
+
+				<field
+						name="less_link"
+						type="text"
+						default="#008fbe"
+						label="Paragraph link"
+						description="Paragraph link" />
+
+
+				<field
+						name="less_link-hover"
+						type="text"
+						default="#008fbe"
+						label="Paragraph link hover"
+						description="Paragraph link hover" />
+
+			</fieldset>
 
 			<fieldset name="header">
-            <field type="spacer" name="spacer-h1" label="&lt;b&gt;H1&lt;/b&gt;" />
-            <field
-				name="less_header-tag-color"
-				type="color"
-				default="#323232"
-				label="color"
-				description="header-tag-color" />
-                <field
-				name="less_header-tag-size"
-				type="text"
-				default="40px"
-				label="size"
-				description="header-tag-size" />
-                	<field
-				name="less_header-tag-height"
-				type="text"
-				default="50px"
-				label="height"
-				description="header-tag-height" />
-			<field
-				name="less_header-tag-weight"
-				type="text"
-				default="300"
-				label="font weight"
-				description="header-tag-weight" />
-            <field
-				name="less_header-tag-margin"
-				type="text"
-				default="10px 0 15px 0"
-				label="margin"
-				description="header-tag-margin" />
-            <field type="spacer" name="spacer-h2" label="&lt;b&gt;H2&lt;/b&gt;" />
-            <field
-				name="less_header2-tag-color"
-				type="color"
-				default="#323232"
-				label="color"
-				description="header2-tag-color" />
-                <field
-				name="less_header2-tag-size"
-				type="text"
-				default="34px"
-				label="size"
-				description="header2-tag-size" />
-                <field
-				name="less_header2-tag-height"
-				type="text"
-				default="52px"
-				label="height"
-				description="header2-tag-height" />
-			<field
-				name="less_header2-tag-weight"
-				type="text"
-				default="300"
-				label="font weight"
-				description="header2-tag-weight" />
-            <field
-				name="less_header2-tag-margin"
-				type="text"
-				default="10px 0 15px 0"
-				label="margin"
-				description="header2-tag-margin" />
-            <field type="spacer" name="spacer-h3" label="&lt;b&gt;H3&lt;/b&gt;" />
-            <field
-				name="less_header3-tag-color"
-				type="color"
-				default="#323232"
-				label="color"
-				description="header3-tag-color" />
-                   <field
-				name="less_header3-tag-size"
-				type="text"
-				default="28px"
-				label="size"
-				description="header3-tag-size" />
-			<field
-				name="less_header3-tag-height"
-				type="text"
-				default="38px"
-				label="height"
-				description="header3-tag-height" />
-                	<field
-				name="less_header3-tag-weight"
-				type="text"
-				default="300"
-				label="font weight"
-				description="header3-tag-weight" />
-         
-            <field
-				name="less_header3-tag-margin"
-				type="text"
-				default="10px 0 15px 0"
-				label="margin"
-				description="header3-tag-margin" />
-            <field type="spacer" name="spacer-h4" label="&lt;b&gt;H4&lt;/b&gt;" />
-            <field
-				name="less_header4-tag-color"
-				type="color"
-				default="#323232"
-				label="color"
-				description="header4-tag-color" />
-          
-                   <field
-				name="less_header4-tag-size"
-				type="text"
-				default="24px"
-				label="size"
-				description="header4-tag-size" />
-            
-            <field
-				name="less_header4-tag-height"
-				type="text"
-				default="42px"
-				label="height"
-				description="header4-tag-height" />
-                 
-            <field
-				name="less_header4-tag-weight"
-				type="text"
-				default="300"
-				label="font weight"
-				description="header4-tag-weight" />
-         
-            <field
-				name="less_header4-tag-margin"
-				type="text"
-				default="10px 0 15px 0"
-				label="margin"
-				description="header4-tag-margin" />
-                
-			<field type="spacer" name="spacer-h5" label="&lt;b&gt;H5&lt;/b&gt;" />
-                
-            <field
-				name="less_header5-tag-color"
-				type="color"
-				default="#4d4848"
-				label="color"
-				description="header5-tag-color" />
-            <field
-				name="less_header5-tag-weight"
-				type="text"
-				default="300"
-				label="font weight"
-				description="header5-tag-weight" />
-            <field
-				name="less_header5-tag-height"
-				type="text"
-				default="20px"
-				label="height"
-				description="header5-tag-height" />
-            <field
-				name="less_header5-tag-size"
-				type="text"
-				default="20px"
-				label="size"
-				description="header5-tag-size" />
-            <field
-				name="less_header5-tag-margin"
-				type="text"
-				default="10px 0 15px 0"
-				label="margin"
-				description="header5-tag-margin" />
-            <field type="spacer" name="spacer-h6" label="&lt;b&gt;H6&lt;/b&gt;" />
-            <field
-				name="less_header6-tag-size"
-				type="text"
-				default="20px"
-				label="size"
-				description="header6-tag-size" />
-            <field
-				name="less_header6-tag-height"
-				type="text"
-				default="20px"
-				label="height"
-				description="header6-tag-height" />
-            <field
-				name="less_header6-tag-color"
-				type="color"
-				default="#4d4848"
-				label="color"
-				description="header6-tag-color" />
-            <field
-				name="less_header6-tag-weight"
-				type="text"
-				default="300"
-				label="font weight"
-				description="header6-tag-weight" />
-            <field
-				name="less_header6-tag-margin"
-				type="text"
-				default="10px"
-				label="margin"
-				description="header6-tag-margin" />
+				<field type="spacer" name="spacer-h1" label="&lt;b&gt;H1&lt;/b&gt;" />
+				<field
+						name="less_header-tag-color"
+						type="color"
+						default="#323232"
+						label="color"
+						description="header-tag-color" />
+				<field
+						name="less_header-tag-size"
+						type="text"
+						default="40px"
+						label="size"
+						description="header-tag-size" />
+				<field
+						name="less_header-tag-height"
+						type="text"
+						default="50px"
+						label="height"
+						description="header-tag-height" />
+				<field
+						name="less_header-tag-weight"
+						type="text"
+						default="300"
+						label="font weight"
+						description="header-tag-weight" />
+				<field
+						name="less_header-tag-margin"
+						type="text"
+						default="10px 0 15px 0"
+						label="margin"
+						description="header-tag-margin" />
+				<field type="spacer" name="spacer-h2" label="&lt;b&gt;H2&lt;/b&gt;" />
+				<field
+						name="less_header2-tag-color"
+						type="color"
+						default="#323232"
+						label="color"
+						description="header2-tag-color" />
+				<field
+						name="less_header2-tag-size"
+						type="text"
+						default="34px"
+						label="size"
+						description="header2-tag-size" />
+				<field
+						name="less_header2-tag-height"
+						type="text"
+						default="52px"
+						label="height"
+						description="header2-tag-height" />
+				<field
+						name="less_header2-tag-weight"
+						type="text"
+						default="300"
+						label="font weight"
+						description="header2-tag-weight" />
+				<field
+						name="less_header2-tag-margin"
+						type="text"
+						default="10px 0 15px 0"
+						label="margin"
+						description="header2-tag-margin" />
+				<field type="spacer" name="spacer-h3" label="&lt;b&gt;H3&lt;/b&gt;" />
+				<field
+						name="less_header3-tag-color"
+						type="color"
+						default="#323232"
+						label="color"
+						description="header3-tag-color" />
+				<field
+						name="less_header3-tag-size"
+						type="text"
+						default="28px"
+						label="size"
+						description="header3-tag-size" />
+				<field
+						name="less_header3-tag-height"
+						type="text"
+						default="38px"
+						label="height"
+						description="header3-tag-height" />
+				<field
+						name="less_header3-tag-weight"
+						type="text"
+						default="300"
+						label="font weight"
+						description="header3-tag-weight" />
+
+				<field
+						name="less_header3-tag-margin"
+						type="text"
+						default="10px 0 15px 0"
+						label="margin"
+						description="header3-tag-margin" />
+				<field type="spacer" name="spacer-h4" label="&lt;b&gt;H4&lt;/b&gt;" />
+				<field
+						name="less_header4-tag-color"
+						type="color"
+						default="#323232"
+						label="color"
+						description="header4-tag-color" />
+
+				<field
+						name="less_header4-tag-size"
+						type="text"
+						default="24px"
+						label="size"
+						description="header4-tag-size" />
+
+				<field
+						name="less_header4-tag-height"
+						type="text"
+						default="42px"
+						label="height"
+						description="header4-tag-height" />
+
+				<field
+						name="less_header4-tag-weight"
+						type="text"
+						default="300"
+						label="font weight"
+						description="header4-tag-weight" />
+
+				<field
+						name="less_header4-tag-margin"
+						type="text"
+						default="10px 0 15px 0"
+						label="margin"
+						description="header4-tag-margin" />
+
+				<field type="spacer" name="spacer-h5" label="&lt;b&gt;H5&lt;/b&gt;" />
+
+				<field
+						name="less_header5-tag-color"
+						type="color"
+						default="#4d4848"
+						label="color"
+						description="header5-tag-color" />
+				<field
+						name="less_header5-tag-weight"
+						type="text"
+						default="300"
+						label="font weight"
+						description="header5-tag-weight" />
+				<field
+						name="less_header5-tag-height"
+						type="text"
+						default="20px"
+						label="height"
+						description="header5-tag-height" />
+				<field
+						name="less_header5-tag-size"
+						type="text"
+						default="20px"
+						label="size"
+						description="header5-tag-size" />
+				<field
+						name="less_header5-tag-margin"
+						type="text"
+						default="10px 0 15px 0"
+						label="margin"
+						description="header5-tag-margin" />
+				<field type="spacer" name="spacer-h6" label="&lt;b&gt;H6&lt;/b&gt;" />
+				<field
+						name="less_header6-tag-size"
+						type="text"
+						default="20px"
+						label="size"
+						description="header6-tag-size" />
+				<field
+						name="less_header6-tag-height"
+						type="text"
+						default="20px"
+						label="height"
+						description="header6-tag-height" />
+				<field
+						name="less_header6-tag-color"
+						type="color"
+						default="#4d4848"
+						label="color"
+						description="header6-tag-color" />
+				<field
+						name="less_header6-tag-weight"
+						type="text"
+						default="300"
+						label="font weight"
+						description="header6-tag-weight" />
+				<field
+						name="less_header6-tag-margin"
+						type="text"
+						default="10px"
+						label="margin"
+						description="header6-tag-margin" />
 			</fieldset>
-            <fieldset name="module">
-            <field type="spacer" name="spacer_button_intro" label="Deze stijlen kun je gebruiken door module-primary of module-secondary of module-tertiary aan het module class achtervoegsel toe te voegen" />
-                     <field
-				name="less_module-default-size"
-				type="text"
-				default="28px"
-				label="Default moduletitle size"
-				description="Default size" />
-            <field type="spacer" name="spacer-1st" label="&lt;b&gt;Primary module&lt;/b&gt;" />
-           
-                
-                
-                <field
-				name="less_module-primary-size"
-				type="text"
-				default="inherit"
-				label="Primary size"
-				description="Primary size" />
-                
-            <field
-				name="less_module-primary"
-				type="color"
-				default="#ffffff"
-				label="Primary background"
-				description="module-primary" />
-			<field
-				name="less_module-primary-title"
-				type="color"
-				default="#f1f1f1"
-				label="Primary Title"
-				description="module-primary-title" />
-			<field
-				name="less_module-primary-text"
-				type="color"
-				default="#333333"
-				label="Primary Text"
-				description="module-primary-text" />
-			<field type="spacer" name="spacer-2nd" label="&lt;b&gt;2nd module styles&lt;/b&gt;" />
-              <field
-				name="less_module-secondary-size"
-				type="text"
-				default="inherit"
-				label="Secondary size"
-				description="Secondary size" />
-                
-                <field
-				name="less_module-secondary"
-				type="color"
-				default="#f1f1f1"
-				label="Secondary background"
-				description="module-secondary" />
-			<field
-				name="less_module-secondary-title"
-				type="color"
-				default="#ffffff"
-				label="Secondary Title"
-				description="module-secondary-title" />
-			<field
-				name="less_module-secondary-text"
-				type="color"
-				default="#f1f1f1"
-				label="Secondary Text"
-				description="module-secondary-text" />
-            <field type="spacer" name="spacer-3rd" label="&lt;b&gt;3rd module styles&lt;/b&gt;" />
-             <field
-				name="less_module-tertiary-size"
-				type="text"
-				default="inherit"
-				label="Tertiary size"
-				description="Tertiary sizey" />
-                
-                <field
-				name="less_module-tertiary"
-				type="color"
-				default="#f1f1f1"
-				label="Tertiary background"
-				description="module-third" />
-			<field
-				name="less_module-tertiary-title"
-				type="color"
-				default="#ffffff"
-				label="Tertiary Title"
-				description="module-tertiary-title" />
-			<field
-				name="less_module-tertiary-text"
-				type="color"
-				default="#f1f1f1"
-				label="Tertiary Text"
-				description="module-tertiary-text" />
-                    <field type="spacer" name="spacer-4th" label="&lt;b&gt;4th module styles&lt;/b&gt;" />
-             <field
-				name="less_module-quaternary-size"
-				type="text"
-				default="inherit"
-				label="Quaternary size"
-				description="Quaternary size" />
-                
-            <field
-				name="less_module-quaternary"
-				type="color"
-				default="#f1f1f1"
-				label="quaternary background"
-				description="module-third" />
-			<field
-				name="less_module-quaternary-title"
-				type="color"
-				default="#ffffff"
-				label="Tertiary Title"
-				description="module-quaternary-title" />
-			<field
-				name="less_module-quaternary-text"
-				type="color"
-				default="#f1f1f1"
-				label="quaternary Text"
-				description="module-third-text" />
+			<fieldset name="module">
+				<field type="spacer" name="spacer_button_intro" label="Deze stijlen kun je gebruiken door module-primary of module-secondary of module-tertiary aan het module class achtervoegsel toe te voegen" />
+				<field
+						name="less_module-default-size"
+						type="text"
+						default="28px"
+						label="Default moduletitle size"
+						description="Default size" />
+				<field type="spacer" name="spacer-1st" label="&lt;b&gt;Primary module&lt;/b&gt;" />
+
+
+
+				<field
+						name="less_module-primary-size"
+						type="text"
+						default="inherit"
+						label="Primary size"
+						description="Primary size" />
+
+				<field
+						name="less_module-primary"
+						type="color"
+						default="#ffffff"
+						label="Primary background"
+						description="module-primary" />
+				<field
+						name="less_module-primary-title"
+						type="color"
+						default="#f1f1f1"
+						label="Primary Title"
+						description="module-primary-title" />
+				<field
+						name="less_module-primary-text"
+						type="color"
+						default="#333333"
+						label="Primary Text"
+						description="module-primary-text" />
+				<field type="spacer" name="spacer-2nd" label="&lt;b&gt;2nd module styles&lt;/b&gt;" />
+				<field
+						name="less_module-secondary-size"
+						type="text"
+						default="inherit"
+						label="Secondary size"
+						description="Secondary size" />
+
+				<field
+						name="less_module-secondary"
+						type="color"
+						default="#f1f1f1"
+						label="Secondary background"
+						description="module-secondary" />
+				<field
+						name="less_module-secondary-title"
+						type="color"
+						default="#ffffff"
+						label="Secondary Title"
+						description="module-secondary-title" />
+				<field
+						name="less_module-secondary-text"
+						type="color"
+						default="#f1f1f1"
+						label="Secondary Text"
+						description="module-secondary-text" />
+				<field type="spacer" name="spacer-3rd" label="&lt;b&gt;3rd module styles&lt;/b&gt;" />
+				<field
+						name="less_module-tertiary-size"
+						type="text"
+						default="inherit"
+						label="Tertiary size"
+						description="Tertiary sizey" />
+
+				<field
+						name="less_module-tertiary"
+						type="color"
+						default="#f1f1f1"
+						label="Tertiary background"
+						description="module-third" />
+				<field
+						name="less_module-tertiary-title"
+						type="color"
+						default="#ffffff"
+						label="Tertiary Title"
+						description="module-tertiary-title" />
+				<field
+						name="less_module-tertiary-text"
+						type="color"
+						default="#f1f1f1"
+						label="Tertiary Text"
+						description="module-tertiary-text" />
+				<field type="spacer" name="spacer-4th" label="&lt;b&gt;4th module styles&lt;/b&gt;" />
+				<field
+						name="less_module-quaternary-size"
+						type="text"
+						default="inherit"
+						label="Quaternary size"
+						description="Quaternary size" />
+
+				<field
+						name="less_module-quaternary"
+						type="color"
+						default="#f1f1f1"
+						label="quaternary background"
+						description="module-third" />
+				<field
+						name="less_module-quaternary-title"
+						type="color"
+						default="#ffffff"
+						label="Tertiary Title"
+						description="module-quaternary-title" />
+				<field
+						name="less_module-quaternary-text"
+						type="color"
+						default="#f1f1f1"
+						label="quaternary Text"
+						description="module-third-text" />
 			</fieldset>
-            <fieldset name="Button">
-            <field type="spacer" name="spacer-1" label="&lt;b&gt;button stijlen&lt;/b&gt;" />
-            <field
-				name="less_btn-border-radius"
-				type="text"
-				default="none"
-				label="Border radius"
-				description="btn-border-radius" />
-			<field
-				name="less_btn-border-top-width"
-				type="text"
-				default="1px"
-				label="Button border-top width"
-				description="btn-border-top-width" />
-			<field
-				name="less_btn-border-right-width"
-				type="text"
-				default="1px"
-				label="Button border-right width"
-				description="btn-border-right-width" />
-			<field
-				name="less_btn-border-bottom-width"
-				type="text"
-				default="1px"
-				label="button border-bottom width"
-				description="btn-border-bottom-width" />
-			<field
-				name="less_btn-border-left-width"
-				type="text"
-				default="1px"
-				label="button border-left width"
-				description="btn-border-left-width" />
-			<field
-				name="less_btn-padding"
-				type="text"
-				default="5px 15px"
-				label="Button padding"
-				description="btn-padding" />
-            <field
-				name="less_btn-size"
-				type="text"
-				default="18px"
-				label="Button size"
-				description="btn-size" />
-			<field
-				name="less_border-style"
-				type="text"
-				default="solid"
-				label="Border Style"
-				description="border-style" />
-                /**/<field type="spacer" name="spacer-default" label="&lt;b&gt;button default&lt;/b&gt;" />
-                 <field
-				name="less_btn-default"
-				type="color"
-				default="#58b957"
-				label="btn-default"
-				description="btn-default" />
-			<field
-				name="less_btn-default-text"
-				type="color"
-				default="#f1f1f1"
-				label="btn-default-text"
-				description="btn-default-text" />
-			<field
-				name="less_btn-default-hover"
-				type="text"
-				default="darken(@btn-default, 7%);"
-				label="btn-default-hover"
-				description="btn-default-hover" />
-			<field
-				name="less_btn-default-border"
-				type="text"
-				default="darken(@btn-default, 7%);"
-				label="btn-default-border"
-				description="btn-default-border" />
-			<field
-				name="less_btn-default-border-hover"
-				type="text"
-				default="darken(@btn-default-border, 7%)"
-				label="btn-default-border-hover"
-				description="btn-default-border-hover" />
-                
-                
-                
-/**/<field type="spacer" name="spacer-2" label="&lt;b&gt;button primary&lt;/b&gt;" />
-            <field
-				name="less_btn-primary"
-				type="color"
-				default="#58b957"
-				label="btn-primary"
-				description="btn-primary" />
-			<field
-				name="less_btn-primary-text"
-				type="color"
-				default="#f1f1f1"
-				label="btn-primary-text"
-				description="btn-primary-text" />
-			<field
-				name="less_btn-primary-hover"
-				type="text"
-				default="darken(@btn-primary, 7%);"
-				label="btn-primary-hover"
-				description="btn-primary-hover" />
-			<field
-				name="less_btn-primary-border"
-				type="text"
-				default="darken(@btn-primary, 7%);"
-				label="btn-primary-border"
-				description="btn-primary-border" />
-			<field
-				name="less_btn-primary-border-hover"
-				type="text"
-				default="darken(@btn-primary-border, 7%)"
-				label="btn-primary-border-hover"
-				description="btn-primary-border-hover" />
-/**/<field type="spacer" name="spacer-3" label="&lt;b&gt;button info&lt;/b&gt;" />
-                <field
-				name="less_btn-info"
-				type="color"
-				default="#4488ce"
-				label="btn-info"
-				description="btn-info" />
-			<field
-				name="less_btn-info-text"
-				type="color"
-				default="#fff"
-				label="btn-info-text"
-				description="btn-info-text" />
-			<field
-				name="less_btn-info-hover"
-				type="text"
-				default="darken(@btn-info, 7%);"
-				label="btn-info-hover"
-				description="btn-info-hover" />
-			<field
-				name="less_btn-info-border"
-				type="text"
-				default="darken(@btn-info, 7%);"
-				label="btn-info-border"
-				description="btn-info-border" />
-			<field
-				name="less_btn-info-border-hover"
-				type="text"
-				default="darken(@btn-info-border, 7%)"
-				label="btn-info-border-hover"
-				description="btn-info-border-hover" />
-/**/
-<field type="spacer" name="spacer-4" label="&lt;b&gt;button succes&lt;/b&gt;" />
-			<field
-				name="less_btn-success"
-				type="color"
-				default="#58b957"
-				label="btn-success"
-				description="btn-success" />
-			<field
-				name="less_btn-success-text"
-				type="color"
-				default="#fff"
-				label="btn-success-text"
-				description="btn-success-text" />
-			<field
-				name="less_btn-success-hover"
-				type="text"
-				default="darken(@btn-success, 7%);"
-				label="btn-success-hover"
-				description="btn-success-hover" />
-			<field
-				name="less_btn-success-border"
-				type="text"
-				default="darken(@btn-success, 7%);"
-				label="btn-succes-border"
-				description="btn-succes-border" />
-			<field
-				name="less_btn-success-border-hover"
-				type="text"
-				default="darken(@btn-success-border, 7%)"
-				label="btn-success-border-hover"
-				description="btn-success-border-hover" />
-            <field type="spacer" name="spacer-5" label="&lt;b&gt;button warning&lt;/b&gt;" />
-			<field
-				name="less_btn-warning"
-				type="color"
-				default="#F2AE43"
-				label="btn-warning"
-				description="btn-warning" />
-			<field
-				name="less_btn-warning-text"
-				type="color"
-				default="#fff"
-				label="btn-warning-text"
-				description="btn-warning-text" />
-			<field
-				name="less_btn-warning-hover"
-				type="text"
-				default="darken(@btn-warning, 7%);"
-				label="btn-warning-hover"
-				description="btn-warning-hover" />
-			<field
-				name="less_btn-warning-border"
-				type="text"
-				default="darken(@btn-warning, 7%);"
-				label="btn-warning-border"
-				description="btn-warning-border" />
-			<field
-				name="less_btn-warning-border-hover"
-				type="text"
-				default="darken(@btn-warning-border, 7%)"
-				label="btn-warning-border-hover"
-				description="btn-warning-border-hover" />
-            <field type="spacer" name="spacer-6" label="&lt;b&gt;button warning&lt;/b&gt;" />
-			<field
-				name="less_btn-danger"
-				type="color"
-				default="#dc524c"
-				label="btn-danger"
-				description="btn-danger" />
-			<field
-				name="less_btn-danger-text"
-				type="color"
-				default="#f1f1f1"
-				label="btn-danger-text"
-				description="btn-danger-text" />
-			<field
-				name="less_btn-danger-hover"
-				type="text"
-				default="darken(@btn-danger, 7%);"
-				label="btn-danger-hover"
-				description="btn-danger-hover" />
-			<field
-				name="less_btn-danger-border"
-				type="text"
-				default="darken(@btn-danger, 7%);"
-				label="btn-danger-border"
-				description="btn-danger-border" />
-			<field
-				name="less_btn-danger-border-hover"
-				type="text"
-				default="darken(@btn-danger-border, 7%)"
-				label="btn-danger-border-hover"
-				description="btn-danger-border-hover" />
-            <field type="spacer" name="spacer-7" label="&lt;b&gt;Button small&lt;/b&gt;" />
-			<field
-				name="less_btn-border-radius-sm"
-				type="text"
-				default="0"
-				label="btn-border-radius-sm"
-				description="btn-border-radius-sm" />
-			<field
-				name="less_btn-border-top-width-sm"
-				type="text"
-				default="1px"
-				label="btn-border-top-width-sm"
-				description="btn-border-top-width-sm" />
-			<field
-				name="less_btn-border-right-width-sm"
-				type="text"
-				default="1px"
-				label="btn-border-right-width-sm"
-				description="btn-border-right-width-sm" />
-			<field
-				name="less_btn-border-bottom-width-sm"
-				type="text"
-				default="1px"
-				label="btn-border-bottom-width-sm"
-				description="btn-border-bottom-width-sm" />
-			<field
-				name="less_btn-border-left-width-sm"
-				type="text"
-				default="1px"
-				label="btn-border-left-width-sm"
-				description="btn-border-left-width-sm" />
-			<field
-				name="less_btn-padding-sm"
-				type="text"
-				default="4px 15px 4px 15px"
-				label="btn-padding-sm"
-				description="btn-padding-sm" />
-			<field
-				name="less_btn-size-sm"
-				type="text"
-				default="10px"
-				label="btn-size-sm"
-				description="btn-size-sm" />
-                
-                 <field type="spacer" name="spacer-large" label="&lt;b&gt;Button large &lt;/b&gt;" />
-			<field
-				name="less_btn-border-radius-lg"
-				type="text"
-				default="0"
-				label="btn-border-radius-lg"
-				description="btn-border-radius-lg" />
-			<field
-				name="less_btn-border-top-width-lg"
-				type="text"
-				default="1px"
-				label="btn-border-top-width-lg"
-				description="btn-border-top-width-lg" />
-			<field
-				name="less_btn-border-right-width-lg"
-				type="text"
-				default="1px"
-				label="btn-border-right-width-lg"
-				description="btn-border-right-width-lg" />
-			<field
-				name="less_btn-border-bottom-width-lg"
-				type="text"
-				default="1px"
-				label="btn-border-bottom-width-lg"
-				description="btn-border-bottom-width-lg" />
-			<field
-				name="less_btn-border-left-width-lg"
-				type="text"
-				default="1px"
-				label="btn-border-left-width-lg"
-				description="btn-border-left-width-lg" />
-			<field
-				name="less_btn-padding-lg"
-				type="text"
-				default="12px 30px 12px 30px"
-				label="btn-padding-lg"
-				description="btn-padding-lg" />
-			<field
-				name="less_btn-size-lg"
-				type="text"
-				default="10px"
-				label="btn-size-lg"
-				description="btn-size-lg" />
-                
-                
+			<fieldset name="Button">
+				<field type="spacer" name="spacer-1" label="&lt;b&gt;button stijlen&lt;/b&gt;" />
+				<field
+						name="less_btn-border-radius"
+						type="text"
+						default="none"
+						label="Border radius"
+						description="btn-border-radius" />
+				<field
+						name="less_btn-border-top-width"
+						type="text"
+						default="1px"
+						label="Button border-top width"
+						description="btn-border-top-width" />
+				<field
+						name="less_btn-border-right-width"
+						type="text"
+						default="1px"
+						label="Button border-right width"
+						description="btn-border-right-width" />
+				<field
+						name="less_btn-border-bottom-width"
+						type="text"
+						default="1px"
+						label="button border-bottom width"
+						description="btn-border-bottom-width" />
+				<field
+						name="less_btn-border-left-width"
+						type="text"
+						default="1px"
+						label="button border-left width"
+						description="btn-border-left-width" />
+				<field
+						name="less_btn-padding"
+						type="text"
+						default="5px 15px"
+						label="Button padding"
+						description="btn-padding" />
+				<field
+						name="less_btn-size"
+						type="text"
+						default="18px"
+						label="Button size"
+						description="btn-size" />
+				<field
+						name="less_border-style"
+						type="text"
+						default="solid"
+						label="Border Style"
+						description="border-style" />
+				/**/<field type="spacer" name="spacer-default" label="&lt;b&gt;button default&lt;/b&gt;" />
+				<field
+						name="less_btn-default"
+						type="color"
+						default="#58b957"
+						label="btn-default"
+						description="btn-default" />
+				<field
+						name="less_btn-default-text"
+						type="color"
+						default="#f1f1f1"
+						label="btn-default-text"
+						description="btn-default-text" />
+				<field
+						name="less_btn-default-hover"
+						type="text"
+						default="darken(@btn-default, 7%);"
+						label="btn-default-hover"
+						description="btn-default-hover" />
+				<field
+						name="less_btn-default-border"
+						type="text"
+						default="darken(@btn-default, 7%);"
+						label="btn-default-border"
+						description="btn-default-border" />
+				<field
+						name="less_btn-default-border-hover"
+						type="text"
+						default="darken(@btn-default-border, 7%)"
+						label="btn-default-border-hover"
+						description="btn-default-border-hover" />
+
+
+
+				/**/<field type="spacer" name="spacer-2" label="&lt;b&gt;button primary&lt;/b&gt;" />
+				<field
+						name="less_btn-primary"
+						type="color"
+						default="#58b957"
+						label="btn-primary"
+						description="btn-primary" />
+				<field
+						name="less_btn-primary-text"
+						type="color"
+						default="#f1f1f1"
+						label="btn-primary-text"
+						description="btn-primary-text" />
+				<field
+						name="less_btn-primary-hover"
+						type="text"
+						default="darken(@btn-primary, 7%);"
+						label="btn-primary-hover"
+						description="btn-primary-hover" />
+				<field
+						name="less_btn-primary-border"
+						type="text"
+						default="darken(@btn-primary, 7%);"
+						label="btn-primary-border"
+						description="btn-primary-border" />
+				<field
+						name="less_btn-primary-border-hover"
+						type="text"
+						default="darken(@btn-primary-border, 7%)"
+						label="btn-primary-border-hover"
+						description="btn-primary-border-hover" />
+				/**/<field type="spacer" name="spacer-3" label="&lt;b&gt;button info&lt;/b&gt;" />
+				<field
+						name="less_btn-info"
+						type="color"
+						default="#4488ce"
+						label="btn-info"
+						description="btn-info" />
+				<field
+						name="less_btn-info-text"
+						type="color"
+						default="#fff"
+						label="btn-info-text"
+						description="btn-info-text" />
+				<field
+						name="less_btn-info-hover"
+						type="text"
+						default="darken(@btn-info, 7%);"
+						label="btn-info-hover"
+						description="btn-info-hover" />
+				<field
+						name="less_btn-info-border"
+						type="text"
+						default="darken(@btn-info, 7%);"
+						label="btn-info-border"
+						description="btn-info-border" />
+				<field
+						name="less_btn-info-border-hover"
+						type="text"
+						default="darken(@btn-info-border, 7%)"
+						label="btn-info-border-hover"
+						description="btn-info-border-hover" />
+				/**/
+				<field type="spacer" name="spacer-4" label="&lt;b&gt;button succes&lt;/b&gt;" />
+				<field
+						name="less_btn-success"
+						type="color"
+						default="#58b957"
+						label="btn-success"
+						description="btn-success" />
+				<field
+						name="less_btn-success-text"
+						type="color"
+						default="#fff"
+						label="btn-success-text"
+						description="btn-success-text" />
+				<field
+						name="less_btn-success-hover"
+						type="text"
+						default="darken(@btn-success, 7%);"
+						label="btn-success-hover"
+						description="btn-success-hover" />
+				<field
+						name="less_btn-success-border"
+						type="text"
+						default="darken(@btn-success, 7%);"
+						label="btn-succes-border"
+						description="btn-succes-border" />
+				<field
+						name="less_btn-success-border-hover"
+						type="text"
+						default="darken(@btn-success-border, 7%)"
+						label="btn-success-border-hover"
+						description="btn-success-border-hover" />
+				<field type="spacer" name="spacer-5" label="&lt;b&gt;button warning&lt;/b&gt;" />
+				<field
+						name="less_btn-warning"
+						type="color"
+						default="#F2AE43"
+						label="btn-warning"
+						description="btn-warning" />
+				<field
+						name="less_btn-warning-text"
+						type="color"
+						default="#fff"
+						label="btn-warning-text"
+						description="btn-warning-text" />
+				<field
+						name="less_btn-warning-hover"
+						type="text"
+						default="darken(@btn-warning, 7%);"
+						label="btn-warning-hover"
+						description="btn-warning-hover" />
+				<field
+						name="less_btn-warning-border"
+						type="text"
+						default="darken(@btn-warning, 7%);"
+						label="btn-warning-border"
+						description="btn-warning-border" />
+				<field
+						name="less_btn-warning-border-hover"
+						type="text"
+						default="darken(@btn-warning-border, 7%)"
+						label="btn-warning-border-hover"
+						description="btn-warning-border-hover" />
+				<field type="spacer" name="spacer-6" label="&lt;b&gt;button warning&lt;/b&gt;" />
+				<field
+						name="less_btn-danger"
+						type="color"
+						default="#dc524c"
+						label="btn-danger"
+						description="btn-danger" />
+				<field
+						name="less_btn-danger-text"
+						type="color"
+						default="#f1f1f1"
+						label="btn-danger-text"
+						description="btn-danger-text" />
+				<field
+						name="less_btn-danger-hover"
+						type="text"
+						default="darken(@btn-danger, 7%);"
+						label="btn-danger-hover"
+						description="btn-danger-hover" />
+				<field
+						name="less_btn-danger-border"
+						type="text"
+						default="darken(@btn-danger, 7%);"
+						label="btn-danger-border"
+						description="btn-danger-border" />
+				<field
+						name="less_btn-danger-border-hover"
+						type="text"
+						default="darken(@btn-danger-border, 7%)"
+						label="btn-danger-border-hover"
+						description="btn-danger-border-hover" />
+				<field type="spacer" name="spacer-7" label="&lt;b&gt;Button small&lt;/b&gt;" />
+				<field
+						name="less_btn-border-radius-sm"
+						type="text"
+						default="0"
+						label="btn-border-radius-sm"
+						description="btn-border-radius-sm" />
+				<field
+						name="less_btn-border-top-width-sm"
+						type="text"
+						default="1px"
+						label="btn-border-top-width-sm"
+						description="btn-border-top-width-sm" />
+				<field
+						name="less_btn-border-right-width-sm"
+						type="text"
+						default="1px"
+						label="btn-border-right-width-sm"
+						description="btn-border-right-width-sm" />
+				<field
+						name="less_btn-border-bottom-width-sm"
+						type="text"
+						default="1px"
+						label="btn-border-bottom-width-sm"
+						description="btn-border-bottom-width-sm" />
+				<field
+						name="less_btn-border-left-width-sm"
+						type="text"
+						default="1px"
+						label="btn-border-left-width-sm"
+						description="btn-border-left-width-sm" />
+				<field
+						name="less_btn-padding-sm"
+						type="text"
+						default="4px 15px 4px 15px"
+						label="btn-padding-sm"
+						description="btn-padding-sm" />
+				<field
+						name="less_btn-size-sm"
+						type="text"
+						default="10px"
+						label="btn-size-sm"
+						description="btn-size-sm" />
+
+				<field type="spacer" name="spacer-large" label="&lt;b&gt;Button large &lt;/b&gt;" />
+				<field
+						name="less_btn-border-radius-lg"
+						type="text"
+						default="0"
+						label="btn-border-radius-lg"
+						description="btn-border-radius-lg" />
+				<field
+						name="less_btn-border-top-width-lg"
+						type="text"
+						default="1px"
+						label="btn-border-top-width-lg"
+						description="btn-border-top-width-lg" />
+				<field
+						name="less_btn-border-right-width-lg"
+						type="text"
+						default="1px"
+						label="btn-border-right-width-lg"
+						description="btn-border-right-width-lg" />
+				<field
+						name="less_btn-border-bottom-width-lg"
+						type="text"
+						default="1px"
+						label="btn-border-bottom-width-lg"
+						description="btn-border-bottom-width-lg" />
+				<field
+						name="less_btn-border-left-width-lg"
+						type="text"
+						default="1px"
+						label="btn-border-left-width-lg"
+						description="btn-border-left-width-lg" />
+				<field
+						name="less_btn-padding-lg"
+						type="text"
+						default="12px 30px 12px 30px"
+						label="btn-padding-lg"
+						description="btn-padding-lg" />
+				<field
+						name="less_btn-size-lg"
+						type="text"
+						default="10px"
+						label="btn-size-lg"
+						description="btn-size-lg" />
+
+
 
 			</fieldset>
-            
-             <fieldset name="Blog">
-                 
-                  /**/<field type="spacer" name="spacer-blog" label="&lt;b&gt; Blog &lt;/b&gt;" />
-                  <field
-				name="less_blog-item-title-color"
-				type="color"
-				default="#008fbe"
-				label="Blog item title color"
-				description="Blog item create color" />
-                 
-                     <field
-				name="less_blog-item-create-color"
-				type="color"
-				default="#a8a5a5"
-				label="Blog item auteur kleur"
-				description="Blog item auteur kleur" />
-                 
-                 /**/<field type="spacer" name="spacer-pagination" label="&lt;b&gt;Pagination &lt;/b&gt;" />
-                 
-                      <field
-				name="less_pagination-background"
-				type="color"
-				default="#f2e8df"
-				label="paginatie achtergrond"
-				description="paginatie achtergrond" />
-                 
-                        <field
-				name="less_pagination-active-background"
-				type="color"
-				default="#f2d7bf"
-				label="paginatie actief achtergrond"
-				description="paginatie actief achtergrond" />
-                 
-                    <field
-				name="less_pagination-text-color"
-				type="color"
-				default="#4d6473"
-				label="paginatie text color"
-				description="paginatie text color" />
-  /**/<field type="spacer" name="spacer-breadcrumbs" label="&lt;b&gt;Breadcrumbs &lt;/b&gt;" />
-                    <field
-				name="less_breadcrumbs-text"
-				type="color"
-				default="#a68a72"
-				label="Breadcrumbs color"
-				description="Breadcrumbs color" />
-  
-                 
-            </fieldset>
-            
-            
-            <fieldset name="menu">
-                /**/<field type="spacer" name="spacer-menu" label="&lt;b&gt;Sections menu&lt;/b&gt;" />
-                 <field
-				name="less_menu-1-background-container"
-				type="color"
-				default="none"
-				label="Menu 1 achtergrond kleur"
-				description="Menu 1 achtergrond kleur" />
-                   <field
-				name="less_menu-2-background-container"
-				type="color"
-				default="none"
-				label="Menu 2 achtergrond kleur"
-				description="Menu 1 achtergrond kleur" />
-                
-/**/<field type="spacer" name="spacer-8" label="&lt;b&gt;Primary Menu&lt;/b&gt;" />
-            <field
-				name="less_menu-primary-link"
-				type="color"
-				default="none"
-				label="menu primary link"
-				description="menu-primary-link" />
-			<field
-				name="less_menu-primary-link-active"
-				type="color"
-				default=""
-				label="menu-primary-link-active"
-				description="menu-primary-link-active" />
-			<field
-				name="less_menu-primary-background"
-				type="color"
-				default="none"
-				label="menu-primary-background"
-				description="menu-primary-background" />        
-                <field
-				name="less_menu-primary-link-hover"
-				type="color"
-				default=""
-				label="menu-primary-link-hover"
-				description="menu-primary-link-hover" />
-			<field
-				name="less_menu-primary-background-active"
-				type="color"
-				default=""
-				label="menu-primary-background-active"
-				description="menu-primary-background-active" />
-			<field
-				name="less_menu-primary-background-hover"
-				type="color"
-				default=""
-				label="menu-primary-background-hover"
-				description="menu-primary-background-hover" />
-                
-                  <field
-					name="less_menu-primary-margin-li"
-					type="text"
-					default="0"
-					label="Margin List ellement"
-					description="De margint that is added to the li ellement of an ul"
-				/>
-                
-                  <field
-					name="less_menu-primary-margin-a"
-					type="text"
-					default="0"
-					label="Margin anchor ellement"
-					description="De margint that is added to a ellement of the menu"
-				/>
-                
-                  <field
-					name="less_menu-primary-text-transform"
-					type="text"
-					default="none"
-					label="Text transform"
-					description="De transform of the text ellement"
-				/>
-                
-                
-                
-                
-/**/<field type="spacer" name="spacer-9" label="&lt;b&gt;Sub Menu&lt;/b&gt;" />
-            <field
-				name="less_menu-submenu-background"
-				type="color"
-				default=""
-				label="menu-submenu-background"
-				description="menu-submenu-background" />
-            <field
-				name="less_menu-secondary-link"
-				type="color"
-				default=""
-				label="menu-secondary-link"
-				description="menu-secondary-link" />
-			<field
-				name="less_menu-secondary-link-active"
-				type="color"
-				default=""
-				label="menu-secondary-link-active"
-				description="menu-secondary-link-active" />           
-           <field
-				name="less_menu-secondary-background"
-				type="color"
-				default="none"
-				label="menu-secondary-background"
-				description="menu-secondary-background" />
-                <field
-				name="less_menu-secondary-link-hover"
-				type="color"
-				default=""
-				label="menu-secondary-link-hover"
-				description="menu-secondary-link-hover" />
-			<field
-				name="less_menu-secondary-background-active"
-				type="color"
-				default=""
-				label="menu-secondary-background-active"
-				description="menu-secondary-background-active" />
-                
-                <field
-				name="less_menu-secondary-background-hover"
-				type="color"
-				default=""
-				label="menu-secondary-background-hover"
-				description="menu-secondary-background-hover" />
-			<field
-				name="less_menu-secondary-link-decoration-hover"
-				type="text"
-				default=""
-				label="menu-secondary-link-decoration-hover"
-				description="menu-secondary-link-decoration-hover" />
-/**/<field type="spacer" name="spacer-10" label="&lt;b&gt;Caret Stijlen&lt;/b&gt;" />
-            <field
-				name="less_menu-secondary-parent-size"
-				type="text"
-				default="14px"
-				label="menu-secondary-parent-size"
-				description="menu-secondary-parent-size" />
-			<field
-				name="less_menu-secondary-parent-caret"
-				type="color"
-				default=""
-				label="menu-secondary-parent-caret"
-				description="menu-secondary-parent-caret" />
-/**/<field type="spacer" name="spacer-vertical" label="&lt;b&gt;Vertical menu stijlen&lt;/b&gt;" />
-            <field
-				name="less_menu-vertical-link-hover"
-				type="color"
-				default=""
-				label="menu-vertical-link-hover"
-				description="menu-vertical-link-hover" />
-            <field
-				name="less_menu-vertical-link-active"
-				type="color"
-				default=""
-				label="menu-vertical-link-active"
-				description="menu-vertical-link-active" />
-            <field
-				name="less_menu-vertical-link"
-				type="color"
-				default=""
-				label="menu-vertical-link"
-				description="menu-vertical-link" />
 
-             <field
-				name="less_menu-vertical-font-size"
-				type="text"
-				default="14px"
-				label="Font size vertical menu"
-				description="Font size vertical menu" />
-                    <field
-				name="less_menu-vertical-transform"
-				type="text"
-				default="none"
-				label="Font transform"
-				description="Font transform" />
-                      <field
-				name="less_menu-vertical-padding"
-				type="text"
-				default="4px 10px 4px 10px"
-				label="Font padding"
-				description="Font padding" />
-                
-                     <field
-				name="less_menu-vertical-background"
-				type="color"
-				default="none"
-				label="Font background"
-				description="Font background" />
-                
-                   <field
-				name="less_menu-vertical-background-active"
-				type="color"
-				default="#f1f1f1"
-				label="Font active background"
-				description="Font active background" />
-                
-                                   <field
-				name="less_menu-vertical-background-hover"
-				type="color"
-				default="#f1f1f1"
-				label="Font background hover"
-				description="Font background hover" />
-            /**/<field type="spacer" name="spacer-fixed" label="&lt;b&gt;Fixed menu stijlen&lt;/b&gt;" />
-<field
-				name="less_fixedimgheigh"
-				type="text"
-				default="40px"
-				label="Fixed menu img height"
-				description="Fixed menu img height" />
-                
-                
-              </fieldset>
-            
-            
-            	<fieldset name="Zoeken">
-                       <field
-					name="searchintop"
-					type="radio"
-                    class="btn-group btn-group-yesno"
-					default="0"
-					label="Toon zoeken in de topmenu"
-					description="Toon zoeken in de topmen">
-						<option value="1">JYES</option>
-						<option value="0">JNO</option>
+			<fieldset name="Blog">
+
+				/**/<field type="spacer" name="spacer-blog" label="&lt;b&gt; Blog &lt;/b&gt;" />
+				<field
+						name="less_blog-item-title-color"
+						type="color"
+						default="#008fbe"
+						label="Blog item title color"
+						description="Blog item create color" />
+
+				<field
+						name="less_blog-item-create-color"
+						type="color"
+						default="#a8a5a5"
+						label="Blog item auteur kleur"
+						description="Blog item auteur kleur" />
+
+				/**/<field type="spacer" name="spacer-pagination" label="&lt;b&gt;Pagination &lt;/b&gt;" />
+
+				<field
+						name="less_pagination-background"
+						type="color"
+						default="#f2e8df"
+						label="paginatie achtergrond"
+						description="paginatie achtergrond" />
+
+				<field
+						name="less_pagination-active-background"
+						type="color"
+						default="#f2d7bf"
+						label="paginatie actief achtergrond"
+						description="paginatie actief achtergrond" />
+
+				<field
+						name="less_pagination-text-color"
+						type="color"
+						default="#4d6473"
+						label="paginatie text color"
+						description="paginatie text color" />
+				/**/<field type="spacer" name="spacer-breadcrumbs" label="&lt;b&gt;Breadcrumbs &lt;/b&gt;" />
+				<field
+						name="less_breadcrumbs-text"
+						type="color"
+						default="#a68a72"
+						label="Breadcrumbs color"
+						description="Breadcrumbs color" />
+
+
+			</fieldset>
+
+
+			<fieldset name="menu">
+				/**/<field type="spacer" name="spacer-menu" label="&lt;b&gt;Sections menu&lt;/b&gt;" />
+				<field
+						name="less_menu-1-background-container"
+						type="color"
+						default="none"
+						label="Menu 1 achtergrond kleur"
+						description="Menu 1 achtergrond kleur" />
+				<field
+						name="less_menu-2-background-container"
+						type="color"
+						default="none"
+						label="Menu 2 achtergrond kleur"
+						description="Menu 1 achtergrond kleur" />
+
+				/**/<field type="spacer" name="spacer-8" label="&lt;b&gt;Primary Menu&lt;/b&gt;" />
+				<field
+						name="less_menu-primary-link"
+						type="color"
+						default="none"
+						label="menu primary link"
+						description="menu-primary-link" />
+				<field
+						name="less_menu-primary-link-active"
+						type="color"
+						default=""
+						label="menu-primary-link-active"
+						description="menu-primary-link-active" />
+				<field
+						name="less_menu-primary-background"
+						type="color"
+						default="none"
+						label="menu-primary-background"
+						description="menu-primary-background" />
+				<field
+						name="less_menu-primary-link-hover"
+						type="color"
+						default=""
+						label="menu-primary-link-hover"
+						description="menu-primary-link-hover" />
+				<field
+						name="less_menu-primary-background-active"
+						type="color"
+						default=""
+						label="menu-primary-background-active"
+						description="menu-primary-background-active" />
+				<field
+						name="less_menu-primary-background-hover"
+						type="color"
+						default=""
+						label="menu-primary-background-hover"
+						description="menu-primary-background-hover" />
+
+				<field
+						name="less_menu-primary-margin-li"
+						type="text"
+						default="0"
+						label="Margin List ellement"
+						description="De margint that is added to the li ellement of an ul"
+				/>
+
+				<field
+						name="less_menu-primary-margin-a"
+						type="text"
+						default="0"
+						label="Margin anchor ellement"
+						description="De margint that is added to a ellement of the menu"
+				/>
+
+				<field
+						name="less_menu-primary-text-transform"
+						type="text"
+						default="none"
+						label="Text transform"
+						description="De transform of the text ellement"
+				/>
+
+
+
+
+				/**/<field type="spacer" name="spacer-9" label="&lt;b&gt;Sub Menu&lt;/b&gt;" />
+				<field
+						name="less_menu-submenu-background"
+						type="color"
+						default=""
+						label="menu-submenu-background"
+						description="menu-submenu-background" />
+				<field
+						name="less_menu-secondary-link"
+						type="color"
+						default=""
+						label="menu-secondary-link"
+						description="menu-secondary-link" />
+				<field
+						name="less_menu-secondary-link-active"
+						type="color"
+						default=""
+						label="menu-secondary-link-active"
+						description="menu-secondary-link-active" />
+				<field
+						name="less_menu-secondary-background"
+						type="color"
+						default="none"
+						label="menu-secondary-background"
+						description="menu-secondary-background" />
+				<field
+						name="less_menu-secondary-link-hover"
+						type="color"
+						default=""
+						label="menu-secondary-link-hover"
+						description="menu-secondary-link-hover" />
+				<field
+						name="less_menu-secondary-background-active"
+						type="color"
+						default=""
+						label="menu-secondary-background-active"
+						description="menu-secondary-background-active" />
+
+				<field
+						name="less_menu-secondary-background-hover"
+						type="color"
+						default=""
+						label="menu-secondary-background-hover"
+						description="menu-secondary-background-hover" />
+				<field
+						name="less_menu-secondary-link-decoration-hover"
+						type="text"
+						default=""
+						label="menu-secondary-link-decoration-hover"
+						description="menu-secondary-link-decoration-hover" />
+				/**/<field type="spacer" name="spacer-10" label="&lt;b&gt;Caret Stijlen&lt;/b&gt;" />
+				<field
+						name="less_menu-secondary-parent-size"
+						type="text"
+						default="14px"
+						label="menu-secondary-parent-size"
+						description="menu-secondary-parent-size" />
+				<field
+						name="less_menu-secondary-parent-caret"
+						type="color"
+						default=""
+						label="menu-secondary-parent-caret"
+						description="menu-secondary-parent-caret" />
+				/**/<field type="spacer" name="spacer-vertical" label="&lt;b&gt;Vertical menu stijlen&lt;/b&gt;" />
+				<field
+						name="less_menu-vertical-link-hover"
+						type="color"
+						default=""
+						label="menu-vertical-link-hover"
+						description="menu-vertical-link-hover" />
+				<field
+						name="less_menu-vertical-link-active"
+						type="color"
+						default=""
+						label="menu-vertical-link-active"
+						description="menu-vertical-link-active" />
+				<field
+						name="less_menu-vertical-link"
+						type="color"
+						default=""
+						label="menu-vertical-link"
+						description="menu-vertical-link" />
+
+				<field
+						name="less_menu-vertical-font-size"
+						type="text"
+						default="14px"
+						label="Font size vertical menu"
+						description="Font size vertical menu" />
+				<field
+						name="less_menu-vertical-transform"
+						type="text"
+						default="none"
+						label="Font transform"
+						description="Font transform" />
+				<field
+						name="less_menu-vertical-padding"
+						type="text"
+						default="4px 10px 4px 10px"
+						label="Font padding"
+						description="Font padding" />
+
+				<field
+						name="less_menu-vertical-background"
+						type="color"
+						default="none"
+						label="Font background"
+						description="Font background" />
+
+				<field
+						name="less_menu-vertical-background-active"
+						type="color"
+						default="#f1f1f1"
+						label="Font active background"
+						description="Font active background" />
+
+				<field
+						name="less_menu-vertical-background-hover"
+						type="color"
+						default="#f1f1f1"
+						label="Font background hover"
+						description="Font background hover" />
+				/**/<field type="spacer" name="spacer-fixed" label="&lt;b&gt;Fixed menu stijlen&lt;/b&gt;" />
+				<field
+						name="less_fixedimgheigh"
+						type="text"
+						default="40px"
+						label="Fixed menu img height"
+						description="Fixed menu img height" />
+
+
+			</fieldset>
+
+
+			<fieldset name="Zoeken">
+				<field
+						name="searchintop"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Toon zoeken in de topmenu"
+						description="Toon zoeken in de topmen">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
 				</field>
-                
-                 <field
-					name="searchinmenu"
-					type="radio"
-                    class="btn-group btn-group-yesno"
-					default="0"
-					label="Toon zoeken in standaard menu"
-					description="Toon zoeken in standaard menu">
-						<option value="1">JYES</option>
-						<option value="0">JNO</option>
+
+				<field
+						name="searchinmenu"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Toon zoeken in standaard menu"
+						description="Toon zoeken in standaard menu">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
 				</field>
-                
-                 <field
-					name="searchinsocial"
-					type="radio"
-                    class="btn-group btn-group-yesno"
-					default="0"
-					label="Toon zoeken in social icons"
-					description="Toon zoeken in standaard menu">
-						<option value="1">JYES</option>
-						<option value="0">JNO</option>
+
+				<field
+						name="searchinsocial"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Toon zoeken in social icons"
+						description="Toon zoeken in standaard menu">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
 				</field>
-                  <field
-					name="searchintopcontent"
-					type="radio"
-                    class="btn-group btn-group-yesno"
-					default="0"
-					label="Toon zoeken in topcontent"
-					description="Toon zoeken in topcontent">
-						<option value="1">JYES</option>
-						<option value="0">JNO</option>
+				<field
+						name="searchintopcontent"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Toon zoeken in topcontent"
+						description="Toon zoeken in topcontent">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
 				</field>
-				
-                    </fieldset>
-            
-            
-            
-            
-            
-            
+
+			</fieldset>
+
+
+
+
+
+
 			<fieldset name="social">
 				<field
-					name="facebook-meta"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					default="1"
-					label="Facebook Meta tags"
-					description="Gebruik Facebook Meta Tags, deze wordeng gebruikt bij het delen van een pagina. &lt;b&gt;Voor deze optie dient gZip compressie uitgeschakeld te zijn&lt;/b&gt;">
-						<option value="1">JYES</option>
-						<option value="0">JNO</option>
+						name="facebook-meta"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="1"
+						label="Facebook Meta tags"
+						description="Gebruik Facebook Meta Tags, deze wordeng gebruikt bij het delen van een pagina. &lt;b&gt;Voor deze optie dient gZip compressie uitgeschakeld te zijn&lt;/b&gt;">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
 				</field>
 				<field
-					name="facebook-image"
-					type="media"
-					default=""
-					label="Facebook afbeelding"
-					description="Selecteer de afbeelding die gebruik wordt bij het delen van een pagina op facebook"
+						name="facebook-image"
+						type="media"
+						default=""
+						label="Facebook afbeelding"
+						description="Selecteer de afbeelding die gebruik wordt bij het delen van een pagina op facebook"
 				/>
-                
-                  <field
-					name="showsocial"
-					type="radio"
-                    class="btn-group btn-group-yesno"
-					default="0"
-					label="toon social iconen"
-					description="Toon de social icons">
-						<option value="1">JYES</option>
-						<option value="0">JNO</option>
+
+				<field
+						name="showsocial"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="toon social iconen"
+						description="Toon de social icons">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
 				</field>
-                
+
 				<field
-					name="linkedin"
-					type="url"
-					default=""
-					label="Linkedin link"
-					description="Geeft de link op naar het linkedin profiel"
+						name="linkedin"
+						type="url"
+						default=""
+						label="Linkedin link"
+						description="Geeft de link op naar het linkedin profiel"
 				/>
 				<field
-					name="facebook"
-					type="url"
-					default=""
-					label="Facebook link"
-					description="Geeft de link op naar het facebook profiel"
+						name="facebook"
+						type="url"
+						default=""
+						label="Facebook link"
+						description="Geeft de link op naar het facebook profiel"
 				/>
 				<field
-					name="twitter"
-					type="url"
-					default=""
-					label="Twitter link"
-					description="Geeft de link op naar het twitter profiel"
+						name="twitter"
+						type="url"
+						default=""
+						label="Twitter link"
+						description="Geeft de link op naar het twitter profiel"
 				/>
 				<field
-					name="instagram"
-					type="url"
-					default=""
-					label="Instagram link"
-					description="Geeft de link op naar het instagram profiel"
+						name="instagram"
+						type="url"
+						default=""
+						label="Instagram link"
+						description="Geeft de link op naar het instagram profiel"
 				/>
-                     <field
-				name="less_socialicon-background"
-				type="color"
-				default="#A78A70"
-				label="Icon background color"
-				description="Icon background color" />
-                
-                    <field
-				name="less_socialicon-text"
-				type="color"
-				default="#FFF"
-				label="Icon color"
-				description="Icon color" />
-                
+				<field
+						name="less_socialicon-background"
+						type="color"
+						default="#A78A70"
+						label="Icon background color"
+						description="Icon background color" />
+
+				<field
+						name="less_socialicon-text"
+						type="color"
+						default="#FFF"
+						label="Icon color"
+						description="Icon color" />
+
 			</fieldset>
 
 			<fieldset name="advanced">
-                <field type="spacer" name="spacer-analytics" label="&lt;b&gt; Google Analytics &lt;/b&gt;" />
+				<field type="spacer" name="spacer-analytics" label="&lt;b&gt; Google Analytics &lt;/b&gt;" />
 				<field
-					name="google-analytics"
-					type="textarea"
-					default=""
-					rows="10"
-					label="Google Analytics"
-					description="Plak hier de gehele Google Analytics volg code in om deze te gebruiken in de template"
-                    filter="raw"
+						name="google-analytics"
+						type="textarea"
+						default=""
+						rows="10"
+						label="Google Analytics"
+						description="Plak hier de gehele Google Analytics volg code in om deze te gebruiken in de template"
+						filter="raw"
 				/>
-                <field type="spacer" name="spacer-tags" label="&lt;b&gt; Metatags &lt;/b&gt;" />
-                <field
-					name="meta-head"
-					type="text"
-					default="  "
-					rows="5"
-					label="Meta tag in Head"
-					description="Meta tag voor in de header"
-                    filter="raw"
+				<field type="spacer" name="spacer-tags" label="&lt;b&gt; Metatags &lt;/b&gt;" />
+				<field
+						name="meta-head"
+						type="text"
+						default="  "
+						rows="5"
+						label="Meta tag in Head"
+						description="Meta tag voor in de header"
+						filter="raw"
 				/>
-                <field
-					name="meta-body"
-					type="text"
-					default="  "
-					rows="5"
-					label="Meta tag onderaan de body"
-					description=""
-                    filter="raw"
+				<field
+						name="meta-body"
+						type="text"
+						default="  "
+						rows="5"
+						label="Meta tag onderaan de body"
+						description=""
+						filter="raw"
 				/>
-                <field type="spacer" name="spacer-link-tag" label="&lt;b&gt; Linktags - bv. inladen fontawesome  &lt;/b&gt;" />
-                <field
-					name="link-tag"
-					type="text"
-					default="  "
-					label="link tag"
-					description=""
-                    filter="raw"
+				<field type="spacer" name="spacer-link-tag" label="&lt;b&gt; Linktags - bv. inladen fontawesome  &lt;/b&gt;" />
+				<field
+						name="link-tag"
+						type="text"
+						default="  "
+						label="link tag"
+						description=""
+						filter="raw"
 				/>
-                <field
-					name="link-tag2"
-					type="text"
-					default="  "
-					label="link tag 2"
-					description=""
-                    filter="raw"
+				<field
+						name="link-tag2"
+						type="text"
+						default="  "
+						label="link tag 2"
+						description=""
+						filter="raw"
 				/>
 			</fieldset>
-                     
-                <fieldset name="Sections">
-                      <field
-					name="less_section-background"
-					type="text"
-					default="none"
-					label="section background"
-					description="Dit is de algemene achtergrond van sections"
-                    filter="raw"
+
+			<fieldset name="Sections">
+				<field
+						name="less_section-background"
+						type="text"
+						default="none"
+						label="section background"
+						description="Dit is de algemene achtergrond van sections"
+						filter="raw"
 				/>
-                    
-                     <field
-					name="less_section-padding"
-					type="text"
-					default="20px 0"
-					label="section padding"
-					description="Dit is de algemene padding van sections"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-margin"
-					type="text"
-					default="45px 0"
-					label="section margin"
-					description="Dit is de algemene margin van sections"
-                    filter="raw"
-				/>
-                    
-                       /**/<field type="spacer" name="spacer-section-1" label="&lt;b&gt;Section 1 &lt;/b&gt;" />
-                        <field
-					name="less_section-1-background"
-					type="text"
-					default="none"
-					label="section 1 background"
-					description="Dit is de achtergrond van section 1"
-                    filter="raw"
-				/>
-                    
-                     <field
-					name="less_section-1-p"
-					type="color"
-					default="inherit"
-					label="section 1 paragraph kleur"
-					description="Dit is de paragraph kleur van 1"
-                    filter="raw"
-				/>
-                    
-                       <field
-					name="less_section-1-padding"
-					type="text"
-					default="@section-padding"
-					label="section padding"
-					description="Dit is de algemene padding van sections"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-1-margin"
-					type="text"
-					default="@section-margin"
-					label="section margin"
-					description="Dit is de algemene margin van sections"
-                    filter="raw"
-				/>
-                   
-                     <field
-				    name="section-1-paralax"
-				    type="radio"
-				    class="btn-group "
-				    default="container"
-				    label="Volledige breedte"
-				    description="Image options, fullscreen overwrites Height">
-				    <option value="paralax">Ja</option>
-				    <option value="container">Nee</option>
-				</field>
-                    
-                    <field
-					name="less-1-anchor"
-					type="text"
-					default="anker1"
-					label="Ankernaam section 1"
-					description="Naam waar het menu-item naar verwijst."
-                    filter="raw"
-				/>
-                    
-                       /**/<field type="spacer" name="spacer-section-2" label="&lt;b&gt;Section 2 &lt;/b&gt;" />
-                    
-                            <field
-					name="less_section-2-background"
-					type="text"
-					default="#F2E8DE"
-					label="section 2 background"
-					description="Dit is de achtergrond van section 2"
-                    filter="raw"
-				/>
-                    
-                     <field
-					name="less_section-2-p"
-					type="color"
-					default="inherit"
-					label="section 1 paragraph kleur"
-					description="Dit is de paragraph kleur van 2"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-2-padding"
-					type="text"
-					default="@section-padding"
-					label="section padding"
-					description="Dit is de algemene padding van sections"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-2-margin"
-					type="text"
-					default="@section-margin"
-					label="section margin"
-					description="Dit is de algemene margin van sections"
-                    filter="raw"
-				/>
-                     <field
-				    name="section-2-paralax"
-				    type="radio"
-				    class="btn-group "
-				    default="container"
-				    label="Volledige breedte"
-				    description="Image options, fullscreen overwrites Height">
-				    <option value="paralax">Ja</option>
-				    <option value="container">Nee</option>
-				</field>
-                  
-                    
-                                        <field
-					name="less-2-anchor"
-					type="text"
-					default="anker2"
-					label="Ankernaam section 2"
-					description="Naam waar het menu-item naar verwijst."
-                    filter="raw"
-				/>
-                       /**/<field type="spacer" name="spacer-section-3" label="&lt;b&gt;Section 3 &lt;/b&gt;" />
-                    
-                            <field
-					name="less_section-3-background"
-					type="text"
-					default="none"
-					label="section 3 background "
-					description="Dit is de achtergrond van section 3"
-                    filter="raw"
-				/>
-                    
-                     <field
-					name="less_section-3-p"
-					type="color"
-					default="inherit"
-					label="section 3 paragraph kleur"
-					description="Dit is de paragraph kleur van 3"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-3-padding"
-					type="text"
-					default="@section-padding"
-					label="section padding"
-					description="Dit is de algemene padding van sections"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-3-margin"
-					type="text"
-					default="@section-margin"
-					label="section margin"
-					description="Dit is de algemene margin van sections"
-                    filter="raw"
-				/>
-                     <field
-				    name="section-3-paralax"
-				    type="radio"
-				    class="btn-group "
-				    default="container"
-				    label="Volledige breedte"
-				    description="Image options, fullscreen overwrites Height">
-				    <option value="paralax">Ja</option>
-				    <option value="container">Nee</option>
-				</field>
-                   
-                                        <field
-					name="less-3-anchor"
-					type="text"
-					default="anker3"
-					label="Ankernaam section 3"
-					description="Naam waar het menu-item naar verwijst."
-                    filter="raw"
-				/>
-                    
-                     /**/<field type="spacer" name="spacer-section-4" label="&lt;b&gt;Section 4 &lt;/b&gt;" />
-                            <field
-					name="less_less_section-4-background"
-					type="text"
-					default="#E6EDF2"
-					label="section 4 background"
-					description="Dit is de achtergrond van section 4"
-                    filter="raw"
-				/>
-                  
-                    
-                     <field
-					name="less_section-4-p"
-					type="color"
-					default="inherit"
-					label="section 4 paragraph kleur"
-					description="Dit is de paragraph kleur van 4"
-                    filter="raw"
-				/>
-                    
-                            <field
-					name="less_section-4-background"
-					type="text"
-					default="none"
-					label="section 5 background"
-					description="Dit is de achtergrond van section 5"
-                    filter="raw"
-				/>
-                    
-                       <field
-					name="less_section-4-padding"
-					type="text"
-					default="@section-padding"
-					label="section padding"
-					description="Dit is de algemene padding van sections"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-4-margin"
-					type="text"
-					default="@section-margin"
-					label="section margin"
-					description="Dit is de algemene margin van sections"
-                    filter="raw"
-				/>
-                                        
-				  <field
-				    name="section-4-paralax"
-				    type="radio"
-				    class="btn-group "
-				    default="container"
-				    label="Volledige breedte"
-				    description="Image options, fullscreen overwrites Height">
-				    <option value="paralax">Ja</option>
-				    <option value="container">Nee</option>
-				</field>
-                    
-                                        <field
-					name="less-14-anchor"
-					type="text"
-					default="anker4"
-					label="Ankernaam section 4"
-					description="Naam waar het menu-item naar verwijst."
-                    filter="raw"
-				/>
-                    
-                     /**/<field type="spacer" name="spacer-section-5" label="&lt;b&gt;Section 5 &lt;/b&gt;" />
-                      
-                        <field
-					name="less_section-5-background"
-					type="text"
-					default="#DAA4A2"
-					label="section 5 background"
-					description="Dit is de achtergrond van section 6"
-                    filter="raw"
-				/>
-                    
-                    <field
-					name="less_section-5-p"
-					type="color"
-					default="inherit"
-					label="section 5 paragraph kleur"
-					description="Dit is de paragraph kleur van 5"
-                    filter="raw"
-				/>
-                    
-                       <field
-					name="less_section-5-padding"
-					type="text"
-					default="@section-padding"
-					label="section padding"
-					description="Dit is de algemene padding van sections"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-5-margin"
-					type="text"
-					default="@section-margin"
-					label="section margin"
-					description="Dit is de algemene margin van sections"
-                    filter="raw"
-				/>
-                     <field
-				    name="section-5-paralax"
-				    type="radio"
-				    class="btn-group "
-				    default="container"
-				    label="Volledige breedte"
-				    description="Image options, fullscreen overwrites Height">
-				    <option value="paralax">Ja</option>
-				    <option value="container">Nee</option>
-				</field>
-                    
-                                        <field
-					name="less-5-anchor"
-					type="text"
-					default="anker5"
-					label="Ankernaam section 5"
-					description="Naam waar het menu-item naar verwijst."
-                    filter="raw"
-				/>
-                    
-                     /**/<field type="spacer" name="spacer-section-6" label="&lt;b&gt;Section 6 &lt;/b&gt;" />
-                            <field
-					name="less_section-6-background"
-					type="text"
-					default="#DAA4A2"
-					label="section 6 background"
-					description="Dit is de achtergrond van section 6"
-                    filter="raw"
-				/>
-                    
-                    
-                     <field
-					name="less_section-6-p"
-					type="color"
-					default="inherit"
-					label="section 6 paragraph kleur "
-					description="Dit is de paragraph kleur van 6"
-                    filter="raw"
-				/>
-                    
-                         <field
-					name="less_section-6-padding"
-					type="text"
-					default="@section-padding"
-					label="section padding"
-					description="Dit is de algemene padding van sections"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-6-margin"
-					type="text"
-					default="@section-margin"
-					label="section margin"
-					description="Dit is de algemene margin van sections"
-                    filter="raw"
-				/>
-                     <field
-				    name="section-6-paralax"
-				    type="radio"
-				    class="btn-group "
-				    default="container"
-				    label="Volledige breedte"
-				    description="Image options, fullscreen overwrites Height">
-				    <option value="paralax">Ja</option>
-				    <option value="container">Nee</option>
-				</field>
-                    
-                                        <field
-					name="less-6-anchor"
-					type="text"
-					default="anker6"
-					label="Ankernaam section 6"
-					description="Naam waar het menu-item naar verwijst."
-                    filter="raw"
-				/>
-                    /**/<field type="spacer" name="spacer-section-7" label="&lt;b&gt;Section 7 &lt;/b&gt;" />
-                    
-                            <field
-					name="less_section-7-background"
-					type="text"
-					default="#DEDEDE"
-					label="section 7 background "
-					description="Dit is de achtergrond van section 7"
-                    filter="raw"
-				/>
-                    
-                     <field
-					name="less_section-7-p"
-					type="color"
-					default="inherit"
-					label="section 7 background"
-					description="Dit is de paragraph kleur van 7"
-                    filter="raw"
-				/>
-                    
-                    
-                         <field
-					name="less_section-7-padding"
-					type="text"
-					default="@section-padding"
-					label="section padding"
-					description="Dit is de algemene padding van sections"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-7-margin"
-					type="text"
-					default="@section-margin"
-					label="section margin"
-					description="Dit is de algemene margin van sections"
-                    filter="raw"
-				/>
-                     <field
-				    name="section-7-paralax"
-				    type="radio"
-				    class="btn-group "
-				    default="container"
-				    label="Volledige breedte"
-				    description="Image options, fullscreen overwrites Height">
-				    <option value="paralax">Ja</option>
-				    <option value="container">Nee</option>
-				</field>
-                    
-                                        <field
-					name="less-7-anchor"
-					type="text"
-					default="anker7"
-					label="Ankernaam section 7"
-					description="Naam waar het menu-item naar verwijst."
-                    filter="raw"
-				/>
-                    /**/<field type="spacer" name="spacer-contact" label="&lt;b&gt;Contact &lt;/b&gt;" />
-                    
-                           <field
-					name="less_section-contact-background"
-					type="text"
-					default="inherit"
-					label="section 7 background"
-					description="Background van contact blok"
-                    filter="raw"
-				/>
-                     <field
-					name="less_section-contact-p"
-					type="color"
-					default="inherit"
-					label="section 7 background"
-					description="Dit is de paragraph kleur van 7"
-                    filter="raw"
-				/>
-                    
-                         <field
-					name="less_section-contact-padding"
-					type="text"
-					default="@section-padding"
-					label="section padding"
-					description="Dit is de algemene padding van sections"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-contact-margin"
-					type="text"
-					default="@section-margin"
-					label="section margin"
-					description="Dit is de algemene margin van sections"
-                    filter="raw"
-				/>
-                    <field
-				    name="section-contact-paralax"
-				    type="radio"
-				    class="btn-group "
-				    default="container"
-				    label="Volledige breedte"
-				    description="Image options, fullscreen overwrites Height">
-				    <option value="paralax">Ja</option>
-				    <option value="container">Nee</option>
-				</field>
-                     <field
-					name="less-contact-anchor"
-					type="text"
-					default="ankercontact"
-					label="Ankernaam section contact"
-					description="Naam waar het menu-item naar verwijst."
-                    filter="raw"
-				/>
-                    
-                    
-                    
-                    /**/<field type="spacer" name="spacer-footer" label="&lt;b&gt;Footer &lt;/b&gt;" />
-                    
-                    <field
-					name="less_bottom-footer-background"
-					type="text"
-					default="inherit"
-					label="Contact background"
-					description="Background van contact blok"
-                    filter="raw"
-				/>
-                    
-                    <field
-					name="less_bottom-footer-p"
-					type="text"
-					default="inherit"
-					label="bottom-footer-background"
-					description="Background van Footer"
-                    filter="raw"
-				/>
-                    
-                    
-                    
-                    
-                         <field
-					name="less_section-footer-padding"
-					type="text"
-					default="@section-padding"
-					label="section padding"
-					description="Dit is de algemene padding van sections"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-footer-margin"
-					type="text"
-					default="45px 0 0 0"
-					label="footer margin"
-					description="Dit is de  margin van footer"
-                    filter="raw"
-				/>
-                    
-                    
-                    
-                     <field
-				    name="section-footer-paralax"
-				    type="radio"
-				    class="btn-group "
-				    default="container"
-				    label="Volledige breedte"
-				    description="Image options, fullscreen overwrites Height">
-				    <option value="paralax">Ja</option>
-				    <option value="container">Nee</option>
-				</field>
-                     <field
-					name="less-footer-anchor"
-					type="text"
-					default="ankerfooter"
-					label="Ankernaam section footer"
-					description="Naam waar het menu-item naar verwijst."
-                    filter="raw"
-				/>
-                    
-                    
-                    
-                    /**/<field type="spacer" name="spacer-copyright" label="&lt;b&gt;Copyright &lt;/b&gt;" />
-                     <field
-					name="less_bottom-copyright-background"
-					type="text"
-					default="inherit"
-					label="Contact background"
-					description="Background van contact blok"
-                    filter="raw"
-				/>
-                    
-                    <field
-					name="less_bottom-copyright-p"
-					type="text"
-					default="inherit"
-					label="bottom-footer-background"
-					description="Background van Footer"
-                    filter="raw"
-				/>
-                    
-                         <field
-					name="less_section-copyright-padding"
-					type="text"
-					default="0"
-					label="section padding"
-					description="Dit is de algemene padding van sections"
-                    filter="raw"
-				/>
-                       <field
-					name="less_section-copyright-margin"
-					type="text"
-					default="0"
-					label="footer margin"
-					description="Dit is de  margin van footer"
-                    filter="raw"
-				/>
-                     <field
-					name="less_section-copyright-float"
-					type="text"
-					default="none"
-					label="Copyright floating div"
-					description="Float left right of none voor center."
-                    filter="raw"
-				/>
-                     <field
-					name="less_section-copyright-text-align"
-					type="text"
-					default="inherit"
-					label="Copyright text align"
-					description="left right of center, doe float op none voor centreren."
-                    filter="raw"
-				/>
-                    
-                    
-                    
-                    
-                
-            </fieldset>
-             <!-- Error pagina -->
-         <fieldset name="errorpagina">
-             
-             <field
-					name="error-image"
-					type="media"
-					default=""
-					label="Error logo"
-					description="Selecteer de afbeelding voor de error pagina" />
-                
-             	<field
-					name="error-title"
-					type="text"
-					default="Dat is jammer!"
-					rows="10"
-					label="Error Titel"
-					description="Geef een titel op van de melding"
+
+				<field
+						name="less_section-padding"
+						type="text"
+						default="20px 0"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
 				/>
 				<field
-					name="error-message"
-					type="textarea"
-					default="Misschien heeft u een tikfout gemaakt, of is deze pagina inmiddels verwijderd. Via de homepage kunt u toch nog vinden wat u zocht."
-					rows="10"
-					label="Error bericht"
-					description="Geef een melding op die wordt weergeven op de error pagina"
+						name="less_section-margin"
+						type="text"
+						default="45px 0"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
 				/>
-				
+
+				/**/<field type="spacer" name="spacer-section-1" label="&lt;b&gt;Section 1 &lt;/b&gt;" />
+				<field
+						name="less_section-1-background"
+						type="text"
+						default="none"
+						label="section 1 background"
+						description="Dit is de achtergrond van section 1"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-1-p"
+						type="color"
+						default="inherit"
+						label="section 1 paragraph kleur"
+						description="Dit is de paragraph kleur van 1"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-1-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-1-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+
+				<field
+						name="section-1-paralax"
+						type="radio"
+						class="btn-group "
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+
+				<field
+						name="less-1-anchor"
+						type="text"
+						default="anker1"
+						label="Ankernaam section 1"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+
+				/**/<field type="spacer" name="spacer-section-2" label="&lt;b&gt;Section 2 &lt;/b&gt;" />
+
+				<field
+						name="less_section-2-background"
+						type="text"
+						default="#F2E8DE"
+						label="section 2 background"
+						description="Dit is de achtergrond van section 2"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-2-p"
+						type="color"
+						default="inherit"
+						label="section 1 paragraph kleur"
+						description="Dit is de paragraph kleur van 2"
+						filter="raw"
+				/>
+				<field
+						name="less_section-2-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-2-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+				<field
+						name="section-2-paralax"
+						type="radio"
+						class="btn-group "
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+
+
+				<field
+						name="less-2-anchor"
+						type="text"
+						default="anker2"
+						label="Ankernaam section 2"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+				/**/<field type="spacer" name="spacer-section-3" label="&lt;b&gt;Section 3 &lt;/b&gt;" />
+
+				<field
+						name="less_section-3-background"
+						type="text"
+						default="none"
+						label="section 3 background "
+						description="Dit is de achtergrond van section 3"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-3-p"
+						type="color"
+						default="inherit"
+						label="section 3 paragraph kleur"
+						description="Dit is de paragraph kleur van 3"
+						filter="raw"
+				/>
+				<field
+						name="less_section-3-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-3-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+				<field
+						name="section-3-paralax"
+						type="radio"
+						class="btn-group "
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+
+				<field
+						name="less-3-anchor"
+						type="text"
+						default="anker3"
+						label="Ankernaam section 3"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+
+				/**/<field type="spacer" name="spacer-section-4" label="&lt;b&gt;Section 4 &lt;/b&gt;" />
+				<field
+						name="less_less_section-4-background"
+						type="text"
+						default="#E6EDF2"
+						label="section 4 background"
+						description="Dit is de achtergrond van section 4"
+						filter="raw"
+				/>
+
+
+				<field
+						name="less_section-4-p"
+						type="color"
+						default="inherit"
+						label="section 4 paragraph kleur"
+						description="Dit is de paragraph kleur van 4"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-4-background"
+						type="text"
+						default="none"
+						label="section 5 background"
+						description="Dit is de achtergrond van section 5"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-4-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-4-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+
+				<field
+						name="section-4-paralax"
+						type="radio"
+						class="btn-group "
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+
+				<field
+						name="less-14-anchor"
+						type="text"
+						default="anker4"
+						label="Ankernaam section 4"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+
+				/**/<field type="spacer" name="spacer-section-5" label="&lt;b&gt;Section 5 &lt;/b&gt;" />
+
+				<field
+						name="less_section-5-background"
+						type="text"
+						default="#DAA4A2"
+						label="section 5 background"
+						description="Dit is de achtergrond van section 6"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-5-p"
+						type="color"
+						default="inherit"
+						label="section 5 paragraph kleur"
+						description="Dit is de paragraph kleur van 5"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-5-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-5-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+				<field
+						name="section-5-paralax"
+						type="radio"
+						class="btn-group "
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+
+				<field
+						name="less-5-anchor"
+						type="text"
+						default="anker5"
+						label="Ankernaam section 5"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+
+				/**/<field type="spacer" name="spacer-section-6" label="&lt;b&gt;Section 6 &lt;/b&gt;" />
+				<field
+						name="less_section-6-background"
+						type="text"
+						default="#DAA4A2"
+						label="section 6 background"
+						description="Dit is de achtergrond van section 6"
+						filter="raw"
+				/>
+
+
+				<field
+						name="less_section-6-p"
+						type="color"
+						default="inherit"
+						label="section 6 paragraph kleur "
+						description="Dit is de paragraph kleur van 6"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-6-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-6-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+				<field
+						name="section-6-paralax"
+						type="radio"
+						class="btn-group "
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+
+				<field
+						name="less-6-anchor"
+						type="text"
+						default="anker6"
+						label="Ankernaam section 6"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+				/**/<field type="spacer" name="spacer-section-7" label="&lt;b&gt;Section 7 &lt;/b&gt;" />
+
+				<field
+						name="less_section-7-background"
+						type="text"
+						default="#DEDEDE"
+						label="section 7 background "
+						description="Dit is de achtergrond van section 7"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-7-p"
+						type="color"
+						default="inherit"
+						label="section 7 background"
+						description="Dit is de paragraph kleur van 7"
+						filter="raw"
+				/>
+
+
+				<field
+						name="less_section-7-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-7-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+				<field
+						name="section-7-paralax"
+						type="radio"
+						class="btn-group "
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+
+				<field
+						name="less-7-anchor"
+						type="text"
+						default="anker7"
+						label="Ankernaam section 7"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+				/**/<field type="spacer" name="spacer-contact" label="&lt;b&gt;Contact &lt;/b&gt;" />
+
+				<field
+						name="less_section-contact-background"
+						type="text"
+						default="inherit"
+						label="section 7 background"
+						description="Background van contact blok"
+						filter="raw"
+				/>
+				<field
+						name="less_section-contact-p"
+						type="color"
+						default="inherit"
+						label="section 7 background"
+						description="Dit is de paragraph kleur van 7"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-contact-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-contact-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+				<field
+						name="section-contact-paralax"
+						type="radio"
+						class="btn-group "
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+				<field
+						name="less-contact-anchor"
+						type="text"
+						default="ankercontact"
+						label="Ankernaam section contact"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+
+
+
+				/**/<field type="spacer" name="spacer-footer" label="&lt;b&gt;Footer &lt;/b&gt;" />
+
+				<field
+						name="less_bottom-footer-background"
+						type="text"
+						default="inherit"
+						label="Contact background"
+						description="Background van contact blok"
+						filter="raw"
+				/>
+
+				<field
+						name="less_bottom-footer-p"
+						type="text"
+						default="inherit"
+						label="bottom-footer-background"
+						description="Background van Footer"
+						filter="raw"
+				/>
+
+
+
+
+				<field
+						name="less_section-footer-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-footer-margin"
+						type="text"
+						default="45px 0 0 0"
+						label="footer margin"
+						description="Dit is de  margin van footer"
+						filter="raw"
+				/>
+
+
+
+				<field
+						name="section-footer-paralax"
+						type="radio"
+						class="btn-group "
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+				<field
+						name="less-footer-anchor"
+						type="text"
+						default="ankerfooter"
+						label="Ankernaam section footer"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+
+
+
+				/**/<field type="spacer" name="spacer-copyright" label="&lt;b&gt;Copyright &lt;/b&gt;" />
+				<field
+						name="less_bottom-copyright-background"
+						type="text"
+						default="inherit"
+						label="Contact background"
+						description="Background van contact blok"
+						filter="raw"
+				/>
+
+				<field
+						name="less_bottom-copyright-p"
+						type="text"
+						default="inherit"
+						label="bottom-footer-background"
+						description="Background van Footer"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-copyright-padding"
+						type="text"
+						default="0"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-copyright-margin"
+						type="text"
+						default="0"
+						label="footer margin"
+						description="Dit is de  margin van footer"
+						filter="raw"
+				/>
+				<field
+						name="less_section-copyright-float"
+						type="text"
+						default="none"
+						label="Copyright floating div"
+						description="Float left right of none voor center."
+						filter="raw"
+				/>
+				<field
+						name="less_section-copyright-text-align"
+						type="text"
+						default="inherit"
+						label="Copyright text align"
+						description="left right of center, doe float op none voor centreren."
+						filter="raw"
+				/>
+
+
+
+
+
+			</fieldset>
+			<!-- Error pagina -->
+			<fieldset name="errorpagina">
+
+				<field
+						name="error-image"
+						type="media"
+						default=""
+						label="Error logo"
+						description="Selecteer de afbeelding voor de error pagina" />
+
+				<field
+						name="error-title"
+						type="text"
+						default="Dat is jammer!"
+						rows="10"
+						label="Error Titel"
+						description="Geef een titel op van de melding"
+				/>
+				<field
+						name="error-message"
+						type="textarea"
+						default="Misschien heeft u een tikfout gemaakt, of is deze pagina inmiddels verwijderd. Via de homepage kunt u toch nog vinden wat u zocht."
+						rows="10"
+						label="Error bericht"
+						description="Geef een melding op die wordt weergeven op de error pagina"
+				/>
+
 			</fieldset>
 
 
 			<fieldset name="structure">
 				<field
-					name="less_max-containerwidth"
-					type="text"
-					default="980px"
-					label="Maximale container breedte"
-					description="Geef de maximale breedte voor element met de class &lt;i&gt;container&lt;/i&gt; op"
+						name="less_max-containerwidth"
+						type="text"
+						default="980px"
+						label="Maximale container breedte"
+						description="Geef de maximale breedte voor element met de class &lt;i&gt;container&lt;/i&gt; op"
 				/>
-                
-                	<field
+
+				<field
 						name="content-left-position"
 						type="radio"
 						class="btn-group "
@@ -1933,140 +1933,140 @@
 					<option value="container">rechts</option>
 				</field>
 
-                
+
 
 				<field type="spacer" name="spacer-both" label="&lt;b&gt;Active modules in linker- en rechterkolom&lt;/b&gt;" />
 
 				<field
-					name="col-left_both"
-					type="text"
-					default="col-md-3 col-md-pull-6 left-rightandleft"
-					label="Kolomgrootte links"
-					description="Geeft 1 of meerdere bootstrap kolomgroottes voor de linker kolom op"
+						name="col-left_both"
+						type="text"
+						default="col-md-3 col-md-pull-6 left-rightandleft"
+						label="Kolomgrootte links"
+						description="Geeft 1 of meerdere bootstrap kolomgroottes voor de linker kolom op"
 				/>
 				<field
-					name="col-content_both"
-					type="text"
-					default="col-md-6 col-md-push-3 content-rightandleft"
-					label="Kolomgrootte content"
-					description="Geeft 1 of meerdere bootstrap kolomgroottes voor de content op"
+						name="col-content_both"
+						type="text"
+						default="col-md-6 col-md-push-3 content-rightandleft"
+						label="Kolomgrootte content"
+						description="Geeft 1 of meerdere bootstrap kolomgroottes voor de content op"
 				/>
 				<field
-					name="col-right_both"
-					type="text"
-					default="col-md-3 right-rightandleft"
-					label="Kolomgrootte rechts"
-					description="Geeft 1 of meerdere bootstrap kolomgroottes voor de rechter kolom op"
+						name="col-right_both"
+						type="text"
+						default="col-md-3 right-rightandleft"
+						label="Kolomgrootte rechts"
+						description="Geeft 1 of meerdere bootstrap kolomgroottes voor de rechter kolom op"
 				/>
 
 				<field type="spacer" name="spacer-signle-left" label="&lt;b&gt;Eén active module in linkerkolom&lt;/b&gt;" />
 
 				<field
-					name="col-left_single"
-					type="text"
-					default="col-md-3 col-md-pull-9  left-left-active "
-					label="Kolomgrootte links"
-					description="Geeft 1 of meerdere bootstrap kolomgroottes voor de linker kolom op"
+						name="col-left_single"
+						type="text"
+						default="col-md-3 col-md-pull-9  left-left-active "
+						label="Kolomgrootte links"
+						description="Geeft 1 of meerdere bootstrap kolomgroottes voor de linker kolom op"
 				/>
-                
-                <field
-					name="col-content_left_single"
-					type="text"
-					default="col-md-9 col-md-push-3 content-left-active"
-					label="Kolomgrootte content"
-					description="Geeft 1 of meerdere bootstrap kolomgroottes voor de content op"
-				/>
-                
-                	<field type="spacer" name="spacer-signle-right" label="&lt;b&gt;Eén active module in rechterkolom&lt;/b&gt;" />
-                
-                
-				
+
 				<field
-					name="col-right_single"
-					type="text"
-					default="col-md-3 right-right-active"
-					label="Kolomgrootte rechts"
-					description="Geeft 1 of meerdere bootstrap kolomgroottes voor de rechter kolom op"
+						name="col-content_left_single"
+						type="text"
+						default="col-md-9 col-md-push-3 content-left-active"
+						label="Kolomgrootte content"
+						description="Geeft 1 of meerdere bootstrap kolomgroottes voor de content op"
 				/>
-                
-                  <field
-					name="col-content_right_single"
-					type="text"
-					default="col-md-9 content-right-active"
-					label="Kolomgrootte content"
-					description="Geeft 1 of meerdere bootstrap kolomgroottes voor de content op"
+
+				<field type="spacer" name="spacer-signle-right" label="&lt;b&gt;Eén active module in rechterkolom&lt;/b&gt;" />
+
+
+
+				<field
+						name="col-right_single"
+						type="text"
+						default="col-md-3 right-right-active"
+						label="Kolomgrootte rechts"
+						description="Geeft 1 of meerdere bootstrap kolomgroottes voor de rechter kolom op"
 				/>
-                
+
+				<field
+						name="col-content_right_single"
+						type="text"
+						default="col-md-9 content-right-active"
+						label="Kolomgrootte content"
+						description="Geeft 1 of meerdere bootstrap kolomgroottes voor de content op"
+				/>
+
 
 				<field type="spacer" name="spacer-alone" label="&lt;b&gt;Geen active modules in linker- of rechterkolom&lt;/b&gt;" />
 
 				<field
-					name="col-content_alone"
-					type="text"
-					default="col-md-12 content-only-active"
-					label="Kolomgrootte content"
-					description="Geeft 1 of meerdere bootstrap kolomgroottes voor de content op"
+						name="col-content_alone"
+						type="text"
+						default="col-md-12 content-only-active"
+						label="Kolomgrootte content"
+						description="Geeft 1 of meerdere bootstrap kolomgroottes voor de content op"
 				/>
 
-                <field type="spacer" name="spacer-img" label="&lt;b&gt;Images&lt;/b&gt;" />
+				<field type="spacer" name="spacer-img" label="&lt;b&gt;Images&lt;/b&gt;" />
 				<field
-					name="less_images-content-border-radius"
-					type="text"
-					default="0"
-					label="Image border radius"
-					description="Border radius van image bv.: 50 voor een ronde afbeelding"
-				/>
-                <field
-					name="less_images-margin-float-left"
-					type="text"
-					default="10px 10px 10px 0"
-					label="Margin bij float:left;"
-					description="Margin van image met float:left;"
+						name="less_images-content-border-radius"
+						type="text"
+						default="0"
+						label="Image border radius"
+						description="Border radius van image bv.: 50 voor een ronde afbeelding"
 				/>
 				<field
-					name="less_images-margin-float-right"
-					type="text"
-					default="10px 0 10px 10px"
-					label="Margin bij float:right;"
-					description=""
+						name="less_images-margin-float-left"
+						type="text"
+						default="10px 10px 10px 0"
+						label="Margin bij float:left;"
+						description="Margin van image met float:left;"
 				/>
-                <field
+				<field
+						name="less_images-margin-float-right"
+						type="text"
+						default="10px 0 10px 10px"
+						label="Margin bij float:right;"
+						description=""
+				/>
+				<field
 						name="less_images-margin-content"
 						type="text"
 						default="10px 0 10px 0"
 						label="Margin in content"
 						description=""
 				/>
-                
+
 				<field type="spacer" name="spacer-footer" label="&lt;b&gt;Footer&lt;/b&gt;" />
 
 				<field
-					name="footer1-col"
-					type="text"
-					default="col-md-3"
-					label="Kolomgrootte footer1"
-					description="Geef 1 of meerdere bootstrap kolomgroottes voor de positie &lt;i&gt;footer1&lt;/i&gt; op"
+						name="footer1-col"
+						type="text"
+						default="col-md-3"
+						label="Kolomgrootte footer1"
+						description="Geef 1 of meerdere bootstrap kolomgroottes voor de positie &lt;i&gt;footer1&lt;/i&gt; op"
 				/>
 				<field
-					name="footer2-col"
-					type="text"
-					default="col-md-3"
-					label="Kolomgrootte footer2"
-					description="Geef 1 of meerdere bootstrap kolomgroottes voor de positie &lt;i&gt;footer2&lt;/i&gt; op"
+						name="footer2-col"
+						type="text"
+						default="col-md-3"
+						label="Kolomgrootte footer2"
+						description="Geef 1 of meerdere bootstrap kolomgroottes voor de positie &lt;i&gt;footer2&lt;/i&gt; op"
 				/>
 				<field
-					name="footer3-col"
-					type="text"
-					default="col-md-3"
-					label="Kolomgrootte footer3"
-					description="Geef 1 of meerdere bootstrap kolomgroottes voor de positie &lt;i&gt;footer3&lt;/i&gt; op"
+						name="footer3-col"
+						type="text"
+						default="col-md-3"
+						label="Kolomgrootte footer3"
+						description="Geef 1 of meerdere bootstrap kolomgroottes voor de positie &lt;i&gt;footer3&lt;/i&gt; op"
 				/>
 				<field
-					name="footer4-col"
-					type="text"
-					default="col-md-3"
-					label="Kolomgrootte footer4"
-					description="Geef 1 of meerdere bootstrap kolomgroottes voor de positie &lt;i&gt;footer4&lt;/i&gt; op"
+						name="footer4-col"
+						type="text"
+						default="col-md-3"
+						label="Kolomgrootte footer4"
+						description="Geef 1 of meerdere bootstrap kolomgroottes voor de positie &lt;i&gt;footer4&lt;/i&gt; op"
 				/>
 			</fieldset>
 		</fields>
