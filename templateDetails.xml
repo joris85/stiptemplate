@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
-<extension version="3.1" type="template" client="site" method="upgrade">
+<extension version="2.1" type="template" client="site" method="upgrade">
 	<name>Stip Template</name>
 	<version>2.9</version>
 	<creationDate>2014</creationDate>
@@ -1927,10 +1927,10 @@
 						type="radio"
 						class="btn-group "
 						default="container"
-						label="Toon left links of rechts"
+						label="Laad left links of rechts"
 						description="Left links naast content tonen of rechts, indien rechts gebruikt wordt kun je werken met push en pull van bootstrap">
-					<option value="paralax">links</option>
-					<option value="container">rechts</option>
+					<option value="left">links</option>
+					<option value="right">rechts</option>
 				</field>
 
 

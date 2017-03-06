@@ -141,6 +141,31 @@ echo $article->get('pageclass_sfx'); ?>">
         <!-- End top -->
     <?php endif; ?>
 
+
+
+    <?php if ($this->countModules('menu-fullscreen')): ?>
+        <div class="menu-fullscreen-section">
+        <div id="menu" class="menu-style <?php if($this->params->get('searchinmenu') == '1') : ?>menu-search<?php endif; ?>">
+            <nav>
+                <jdoc:include type="modules" name="menu-fullscreen" style="none" />
+
+                <?php if($this->params->get('searchinmenu') == '1') : ?>
+                    <ul class="nav navbar-left">
+                        <li id="search"> <a href="#" onclick="return false" data-container="body" data-toggle="popover" data-placement="bottom"
+                                            data-title="Zoeken" data-content='<jdoc:include type="modules" name="searchbox" style="none" />' data-html="true"
+                                            data-trigger="click"> <i class="sicon sicon-search"></i> </a> </li>
+                    </ul>
+
+                <?php endif; ?>
+            </nav>
+        </div>
+        </div>
+    <?php endif; ?>
+
+
+
+
+
     <?php if ($this->countModules('header-image')): ?>
         <!-- Start Header Image -->
         <div id="header">
@@ -313,15 +338,18 @@ echo $article->get('pageclass_sfx'); ?>">
         <!-- END Blocks Top -->
     <?php endif; ?>
 
-    <!-- START COMPONENT -->
+  <!-- START COMPONENT -->
     <div id="component">
         <div class="container">
             <div class="row">
-                <?php if ($this->countModules('left')): ?>
-                    <div class="left <?php echo $left; ?>">
-                        <jdoc:include type="modules" name="left" style="xhtml" />
-                    </div>
+                <?php if($this->params->get('content-left-position') == 'left') : ?>
+                    <?php if ($this->countModules('left')): ?>
+                        <div class="left <?php echo $left; ?> show-left">
+                            <jdoc:include type="modules" name="left" style="xhtml" />
+                        </div>
+                    <?php endif; ?>
                 <?php endif; ?>
+
                 <div class="content <?php echo $content; ?>">
                     <div class="alerts-div">
                         <jdoc:include type="message" />
@@ -331,7 +359,13 @@ echo $article->get('pageclass_sfx'); ?>">
                     <jdoc:include type="component" />
                     <jdoc:include type="modules" name="subcontent" style="xhtml" />
                 </div>
-
+                <?php if($this->params->get('content-left-position' ) == 'right') : ?>
+                    <?php if ($this->countModules('left')): ?>
+                        <div class="left <?php echo $left; ?> show-right">
+                            <jdoc:include type="modules" name="left" style="xhtml" />
+                        </div>
+                    <?php endif; ?>
+                <?php endif; ?>
                 <?php if ($this->countModules('right')): ?>
                     <div class="right <?php echo $right; ?>">
                         <jdoc:include type="modules" name="right" style="basis" />
