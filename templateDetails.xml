@@ -2,7 +2,7 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="2.1" type="template" client="site" method="upgrade">
 	<name>Stip Template</name>
-	<version>2.9</version>
+	<version>3.0</version>
 	<creationDate>2014</creationDate>
 	<author>Stip webdesign</author>
 	<authorEmail>info@stip.nl</authorEmail>
@@ -909,6 +909,14 @@
 						description="Menu 1 achtergrond kleur" />
 
 				/**/<field type="spacer" name="spacer-8" label="&lt;b&gt;Primary Menu&lt;/b&gt;" />
+
+				<field
+						name="less_menu-primary-font-size"
+						type="text"
+						default="15px"
+						label="Font size menu"
+						description="font size of menu item"
+				/>
 				<field
 						name="less_menu-primary-link"
 						type="color"
@@ -953,6 +961,13 @@
 						label="Margin List ellement"
 						description="De margint that is added to the li ellement of an ul"
 				/>
+                <field
+						name="less_menu-primary-padding-a"
+						type="text"
+						default="8px 20px"
+						label="Padding List ellement"
+						description="De padding that is added to the a ellement of the menu"
+				/>
 
 				<field
 						name="less_menu-primary-margin-a"
@@ -974,6 +989,13 @@
 
 
 				/**/<field type="spacer" name="spacer-9" label="&lt;b&gt;Sub Menu&lt;/b&gt;" />
+				<field
+						name="less_menu-submenu-font-size"
+						type="text"
+						default="13px"
+						label="Font size menu"
+						description="font size of menu item"
+				/>
 				<field
 						name="less_menu-submenu-background"
 						type="color"

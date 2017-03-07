@@ -127,7 +127,9 @@ echo $article->get('pageclass_sfx'); ?>">
                     <?php endif; ?>
 
                 </div>
-                <?php if ($this->countModules('menu-fullwidth')): ?>
+             
+            </div>
+               <?php if ($this->countModules('menu-fullwidth')): ?>
                     <div class="menu-fullwidth">
                         <div class="container menu-con-fullwidth">
                             <div id="menu" class="menu-style">
@@ -136,7 +138,6 @@ echo $article->get('pageclass_sfx'); ?>">
                         </div>
                     </div>
                 <?php endif; ?>
-            </div>
         </div>
         <!-- End top -->
     <?php endif; ?>
