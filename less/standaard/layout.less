@@ -411,14 +411,19 @@ border-radius: 0;
 			left:0;
 			position: absolute;
 			background-color: transparant;
+              visibility: visible;
+          opacity: 1;
+          transition: opacity 0.2s linear;
 		}
 		& > ul {
 			position:absolute;
-			left:9999999px;
 			padding:10px 0 10px 0;
 			min-width:220px;
 			z-index:999;
 			background-color: @menu-submenu-background;
+            visibility: hidden;
+          opacity: 0;
+          transition: visibility 0s 0.2s, opacity 0.2s linear;
 		}
 		ul.nav-child li {
 			list-style:none;
@@ -642,9 +647,7 @@ transition: height 0.8s;
     
    
 }
-.smallheader #menu ul.nav li > ul {
-        left:999999px;
-}
+
 
 .smallheader #top {
  visibility: hidden;
