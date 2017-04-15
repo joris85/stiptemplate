@@ -1,3 +1,4 @@
+
 /*________ This file is to style the Hikashop webshop */
 
 /*
@@ -23,12 +24,15 @@
 
 /*______________ 1.0 Basic theme layout _____________*/
 
+
+
+
 .hikashop_product_stock {
     height:80px;
     table {
        float:right; 
-        margin-top:20px;
-        margin-right:30px;
+        margin-top:0px;
+        margin-right:0px;
         td {
          padding:3px;   
         }
@@ -58,6 +62,8 @@
     }
 }
 
+
+
 .hikashop_product_quantity_field {
     width: 46px !important;
     width: 100%;  
@@ -79,7 +85,7 @@
 }
     
     .hikashop_product_stock table {
-     float:left;   
+     float:right;   
     }
     
     #hikashop_product_price_main {
@@ -187,110 +193,281 @@
 }
 /*______________ 3.0 Product listing Div ________________*/
 
+
+
+
 /*______________ 4.0 Product listing Table  _________________*/
+
+.winkelwagen {
+ border: 1px solid #eee;
+    padding:20px;
+}
+
+.com_hikashop #component .container {
+
+ width: 1200px;   
+}
+
+th {
+ font-weight: normal;   
+}
+
+.hikashop_filter_module label {
+ font-weight: 400;   
+}
+
+.hikashop_filter_title {
+ display: none;   
+}
 
 /*______________ 5.0 Product listing extra  _________________*/
 
-/*______________ 6.0 Cart module  __________________*/
-
-.hikashop_cart_module {
+/* Cart View Whishlist */
+.layout-showcarts.task-showcarts.itemid-710, 
+.layout-showcarts.task-newcart.itemid-710 {
     
+    
+  #adminForm {
+   display: none;   
+  }
+      #hikashop_wishlist_listing_pagination {
+     display: none;   
+    }
+    
+  /*  .hikashop_cart_num_title, .hikashop_all_carts td:first-of-type {
+     display: none;   
+    }
+    */
+    
+    .hikashop_all_carts td:first-of-type a{
+        
+        &:before{
+            display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+         content: "\f040"; 
+    }
+}
+}
+
+#hikashop_cart_listing {
+ margin-top:10px;
+    .title {
+ font-weight: 300;   
+}
+}
+
+.hikashop_header_buttons td {
+ padding:6px;   
+    &:first-of-type {
+     display: none;   
+    }
+}
+.hikashop_product_stock {position: relative;}
+
+#hikashop_add_wishlist input {
+ border:none;
+    color:@greenfont;
+    background:none;
+}
+
+#hikashop_add_wishlist:before {
+  content: "\f005";
+    display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+    
+    position: absolute;
+    left:20px;
+    top:13px;
+    color:@greenfont;
+    z-index: 0;
     
 }
+
+/*Icons hikashop*/
+
+.icon-32-add_wishlist:before {
+    content: "\f067";
+}
+
+.icon-32-back:before {
+    content: "\f060";
+}
+
+/*   Icons 
+
+favorite star
+  content: "\f005";
+
+
+
+
+
+*/
+
+/*______________ 6.0 Cart module  __________________*/
+
+.hikashop_cart {
+thead {
+border-bottom: 1px solid #FFF;
+padding:3px;
+}
+    tbody {padding:10px 0;
+    tr {
+   td {
+      padding-top:10px;
+         padding-bottom:10px;
+       border-bottom: 1px solid #FFF;
+   } 
+    }
+        tr:last-of-type td{
+         border-bottom: 1px solid #4f4f4f;
+        }
+        
+    }
+    
+    tfoot tr:first-of-type td {
+     padding-top:10px;   
+    }
+     tfoot tr:last-of-type td {
+         
+     }
+    
+}
+
+.hikashop_cart_module_product_total_value, .hikashop_cart_module_product_price_value, .hikashop_cart_module_product_price_title,
+.hikashop_cart_module_product_quantity_title, .hikashop_cart_module_product_quantity_value, .hikashop_cart_module_coupon_value {
+ text-align: right;
+    padding-right:20px;
+    width: 150px;
+}
+
+#body .hikashop_cart_module_product_quantity_value input {
+    min-height:30px;
+    height:30px;
+}
+
+/* Minicart */
+
+
+    #hikashop_cart_module {
+    position: absolute;
+    right: 0;
+    top: 11px;}
+    .hikashop_small_cart_checkout_link {
+        background-image: url(/templates/stiptemplate/images/extensions/hikashop/cart.png);
+        background-repeat: no-repeat;
+     width:30px ;
+        height:40px;
+        display: block;
+  /*
+    
+    &:before {
+    position: absolute;
+    top: -8px;
+        left:-10px;
+    color:#fff;
+font-size: 45px !important;
+content: "\f07a";
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+        */
+   }   
+    
+.hikashop_small_cart_total_title {
+font-size: 15px;
+ color:#fff;
+padding:10px 0 0 0;
+    display: block;
+    text-align: center;
+}
+
 
 /*______________ 7.0 Checkout page __________________*/
 
-
-.hikashop_shipping_group {
-    margin-bottom:30px;
- label {
-     margin:0 0 0 4px !important;  
+#body.view-checkout {
+ .content {   
+  width:100%;
+     padding-bottom: 50px !important;
  }
-}
-
-
-.hikashop_checkout_coupon {
- margin-top:20px;
-    display: block;
-}
-
- #hikashop_checkout_coupon_input {
-     max-width: 200px;   
-    }
-
-.hikashop_checkout_payment_image {
- margin: 0 5px;   
-}
-
-.hikashop_checkout_payment_ccinfo {
-}
-
-
-
-.hikashop_payment_methods_table {
-    label {
-     margin:0 !important;   
-    }
+   .hikashop_cart_product_quantity_refresh {
+    margin-top: -7px;   
+   }
     
 }
 
-
-.hikashop_checkout_page {
- .button[type="submit"] {
-  .btn-primary;
-     float:right;
- }
+.hikashop_field_required {
+ display: none;
 }
-
-#hikashop_checkout_address_left_part {
-  float:left;
-    width: 50%;
-    
-}
-
-#hikashop_checkout_address_right_part {
-    float:left;
-    width: 50%; 
-}
-
-
-.hikashop_checkout_address {
- margin: 20px 0;
-    padding:20px;
-    background:#EEE;
-    overflow:hidden;
-    legend {
-     border:none;   
-    }
-    
-    .table td {
-     border:none;   
-    }
-}
-
-.hika_address_field {
- margin-top:20px;   
-}
-
-.hikashop_shipping_methods legend {
-    
-}
-
-
-
-
 /* Algemene stylen hikashop 3 */
 
-.btn.btn-success.hikacart {
+.filtermodule {
+   border: 1px solid #DDD;
+    background:#EEE;
+    padding:25px;  
+}
+
+.module.winkelwagen{
+ border: 1px solid #DDD;
+    background:#EEE;
+    padding:25px;
+    h3 {
+     text-align: center;
+        font-size: 30px;
+    }
+}
+.hikashop_cart_module .btn {
+    float: right;
+    border: none;
+    box-shadow: none;
+    background: #ED793F;
+    color: #fff !important;
+    padding: 10px !important;
+    margin-top: 20px; 
+}
+
+#component  .hikashop_product_quantity_field {
+ min-height: 40px;
+    height:40px;
+    width:50px;
+    max-width: 50px;
+    float:left;
+    margin-right: 5px;
+}
+
+.hikashop_product_quantity_field {
+ margin-right:5px;   
+}
+
+.btn.btn-success.hikacart, .hikashop_cart_input_button {
      background-color: #FFC800;
     border-color: #FFC800;
     color: #4f4f4f;
     font-weight: 300;
+    box-shadow: none;
     
     &:hover {
     background-color: #ebb902  ;
     border-color: #ebb902  ;    
     } 
+}
+
+.hikashop_cart_input_button {
+     width: 100%;
+    margin-top: 0;
+    border:none;
 }
 
 
@@ -342,10 +519,10 @@ text-rendering: auto;
 
 .hikashop_checkout_address_new_button {
     color:green;
-    padding:0;
-    border:none;
+    padding:6px;
+    border:1px solid green;
     background:none;
-    margin:0;
+    margin:6px 0;
  &:after {
   content: " +";   
  }
@@ -353,7 +530,7 @@ text-rendering: auto;
 
 .hikabtn_checkout_next {
 float:right;
-   margin-top:4px;
+
        border: none;
    box-shadow: none;
    background: #ED793F;
@@ -383,9 +560,54 @@ float:right;
     }
 }
 
+.hk-container {
+ padding:0;   
+}
 
-/*______________ 8.0 Basic Joomla _____________*/
+.hk-container .hkc-sm-6 {
+    padding:20px;
+ background:#F1F6FC;   
+}
 
+@media (min-width: 1200px) {
+.hk-container {
+    max-width: 100%;
+}
+}
+
+.hikashop_wizardbar {
+ margin-bottom: 0;   
+}
+.hika_edit {
+ padding-right: 30px;   
+}
+
+/*______________ 8.0 Popup stuff _____________*/
+.notifyjs-wrapper.notifyjs-hidable {
+background: none;
+
+.notifyjs-container {
+  
+}
+.notifyjs-arrow {
+ 
+}
+.notifyjs-metro-base.notifyjs-metro-info {
+   
+    padding:10px;
+    
+    .image {
+        margin:10px;
+    }
+    .text-wrapper {}
+    .title { font-family: "open sans", sans-serif;  font-size: 16px}
+    .text {
+      
+    font-family: "open sans", sans-serif; font-size: 16px
+    
+    }
+}
+}
 
 /*______________ 9.0 Top ______________________*/
 
