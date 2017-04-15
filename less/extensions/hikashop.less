@@ -70,8 +70,11 @@
     margin-right:4px;
     padding:4px !important;
 }
+.com_hikashop {
+label {font-weight: normal}
+}
 
-
+input.invalid {border:1px solid #D35046 !important;}
 
 /*______________ 2.0 Product page _______________*/
 .view-product {
@@ -220,6 +223,65 @@ th {
  display: none;   
 }
 
+/* the quantity field and shop cart button */
+
+/* the quantity field and shop cart button */
+
+body table td.hikashop_product_add_to_cart_row { 
+    padding-top:31px;
+    
+    table {float:left;}
+    .hikashop_product_quantity_field{margin-right:5px;}
+    .hikashop_product_quantity_change_div_default {margin:-2px 14px 0 0;line-height: 18px; float:left;
+        .hikashop_product_quantity_change_div_plus_default {margin-bottom: 6px;}
+    a {font-size:20px;}
+    }
+    .hikabtn {margin-top:-5px; span {
+        
+            display: block;
+            padding-top:5px;
+        }}
+    
+    
+}
+
+.hikabtn {
+        background-image: url(/templates/stiptemplate/images/extensions/hikashop/cart-black.png); 
+        background-size: contain; 
+        background-position: center;
+        background-repeat: no-repeat;
+        border:5px solid #FFC800;
+        padding:2px 25px;
+        margin-top:2px;
+        float:right;
+       
+     
+    }
+
+.hikashop_subcontainer.thumbnail {
+.hikabtn {
+        
+        float:left;
+        span {
+            margin-top: 6px;
+            display: block;
+            padding-top:5px;
+        }
+}
+}
+
+.hikashop_product_image_subdiv {display: block;margin:0 auto;}
+
+
+span.hikashop_product_name {
+ padding-top:32px;   
+    display: block;
+}
+
+#body .hikashop_product_price_row {
+    padding-top: 39px;
+     display: block;
+}
 /*______________ 5.0 Product listing extra  _________________*/
 
 /* Cart View Whishlist */
@@ -270,7 +332,6 @@ text-rendering: auto;
 
 #hikashop_add_wishlist input {
  border:none;
-    color:@greenfont;
     background:none;
 }
 
@@ -286,7 +347,6 @@ text-rendering: auto;
     position: absolute;
     left:20px;
     top:13px;
-    color:@greenfont;
     z-index: 0;
     
 }
@@ -314,9 +374,15 @@ favorite star
 
 /*______________ 6.0 Cart module  __________________*/
 
+.com_hikashop .section-01 {
+ background:#EBEBEB;
+ 
+    
+}
+
 .hikashop_cart {
 thead {
-border-bottom: 1px solid #FFF;
+border-bottom: 1px solid #B8B6BA;
 padding:3px;
 }
     tbody {padding:10px 0;
@@ -324,11 +390,11 @@ padding:3px;
    td {
       padding-top:10px;
          padding-bottom:10px;
-       border-bottom: 1px solid #FFF;
+       border-bottom: 1px solid #B8B6BA;
    } 
     }
         tr:last-of-type td{
-         border-bottom: 1px solid #4f4f4f;
+         border-bottom: 1px solid #B8B6BA;
         }
         
     }
@@ -356,39 +422,51 @@ padding:3px;
 
 /* Minicart */
 
-
+.menu-style {
+    .container-sticky {position: relative;}
     #hikashop_cart_module {
     position: absolute;
-    right: 0;
+    right: -40px;
     top: 11px;}
     .hikashop_small_cart_checkout_link {
-        background-image: url(/templates/stiptemplate/images/extensions/hikashop/cart.png);
+        background-image: url(/templates/stiptemplate/images/extensions/hikashop/cart-black.png);
         background-repeat: no-repeat;
      width:30px ;
         height:40px;
         display: block;
-  /*
-    
-    &:before {
-    position: absolute;
-    top: -8px;
-        left:-10px;
-    color:#fff;
-font-size: 45px !important;
-content: "\f07a";
-display: inline-block;
-font: normal normal normal 14px/1 FontAwesome;
-font-size: inherit;
-text-rendering: auto;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-        */
    }   
     
 .hikashop_small_cart_total_title {
 font-size: 15px;
- color:#fff;
+ color:#4f4f4f;
+padding:10px 0 0 0;
+    display: block;
+    text-align: center;
+}
+}
+
+ .hikashop_cart_dropdown_content {
+     background:#fff;
+        position: fixed;
+        top:0;
+        right:0;
+        clear:both;
+        z-index: 10000;
+        overflow: visible;
+        border: 1px solid #ddd;
+        padding:10px;
+        
+        .hikashop_product_quantity_field {
+         width:55px;   
+        }
+        .hikashop_cart_module_product_name_value, .hikashop_cart_module_product_total_title {
+         text-align: left;   
+        }
+    }
+    
+.hikashop_small_cart_total_title {
+font-size: 15px;
+ color:#4f4f4f;
 padding:10px 0 0 0;
     display: block;
     text-align: center;
@@ -445,6 +523,7 @@ padding:10px 0 0 0;
     max-width: 50px;
     float:left;
     margin-right: 5px;
+   
 }
 
 .hikashop_product_quantity_field {
@@ -582,6 +661,48 @@ float:right;
  padding-right: 30px;   
 }
 
+
+/*______________ Hika login form _____________*/
+
+/* Login form icon on the right spot */
+#hikashop_checkout_login_form {
+    #form-login-password, #form-login-username {
+        margin-bottom: 12px;
+ label {display: none;}   
+    }
+    .userdata  {
+    .add-on {
+        position: absolute;
+       margin-left: 9px;
+    margin-top: 6px;
+    }
+    }
+    .btn.hasTooltip {padding: 4px 16px;}
+    
+}
+
+/* Float uit van registratie formulier */
+#hikashop_checkout_registration {
+.hkc-sm-1, .hkc-sm-2, .hkc-sm-3, .hkc-sm-4, .hkc-sm-5, .hkc-sm-6, .hkc-sm-7, .hkc-sm-8, .hkc-sm-9, .hkc-sm-10, .hkc-sm-11, .hkc-sm-12 {
+ float:none;   
+}
+}
+
+/* button login */
+
+.hikabtn_checkout_login_form, .hikabtn_checkout_login_register  {
+    .btn;
+    .btn-success;
+    float:left;
+    background-image:none;
+}
+
+
+/* Registration form */
+/*
+.hikashop_checkout_page_step1 .hikabtn_checkout_next {display: none;}
+*/
+
 /*______________ 8.0 Popup stuff _____________*/
 .notifyjs-wrapper.notifyjs-hidable {
 background: none;
@@ -592,7 +713,10 @@ background: none;
 .notifyjs-arrow {
  
 }
-.notifyjs-metro-base.notifyjs-metro-info {
+
+}
+
+.notifyjs-metro-base{
    
     padding:10px;
     
@@ -607,7 +731,7 @@ background: none;
     
     }
 }
-}
+
 
 /*______________ 9.0 Top ______________________*/
 
@@ -618,7 +742,6 @@ background: none;
 /*______________ 12.0 Bootstrap overrides ____ */
 
 /*______________ 13.0 Sections override ______ */
-
 
 
 
