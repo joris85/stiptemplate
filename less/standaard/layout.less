@@ -63,7 +63,7 @@ a {
 
 /*______________ 3.0 Basic Div ________________*/
 #top {
-	padding: 15px 0 15px 0;
+	padding: 0 0 15px 0;
 
     background-color: @menu-1-background-container;
     margin: 0 auto;
@@ -71,7 +71,7 @@ a {
     z-index:999;
 
 	#menu {
-     margin-top:40px;   
+     margin-top:75px;   
     }
     
     .container {
@@ -196,7 +196,13 @@ a {
     .rsform-block-submit {
      float:right;
     }
+    
+    .rsform .formRequired  {display: none;}
+    .rsform .rsform-block {overflow: hidden; margin-bottom: 20px;}
 
+    .rsform-submit-button {margin-top:20px;}
+    
+    .rsform-error {border:1px solid #CF4D4D ;}
 }
 
 #blocks .module, .bottom .module {
@@ -237,6 +243,17 @@ border-radius: 0;
     display: none;
 }
 }
+
+.customimg {overflow: hidden;margin-bottom: 20px;}
+
+.content-block h2 {
+margin-top:0;
+}
+
+.element-invisible {
+display: none;
+}
+
 
 
 /*______________ 5.0 Buttons  _________________*/
@@ -363,6 +380,7 @@ border-radius: 0;
     height: 48px;
 }
 
+.btn.btn-back {margin-top:30px;}
 /*______________ 6.0 Menu's  __________________*/
 
 .deeper.parent .caret {
@@ -569,7 +587,20 @@ border-radius: 0;
 
 /* background menu's */
 
-.vertical-menu ul {
+.vertical-menu > ul {
+    
+    > li {
+    border-top: 1px solid @menu-vertical-borders;
+        &:last-of-type {
+        border-bottom: 1px solid @menu-vertical-borders;
+        }
+    }
+    
+     > li.active > a,  > li.active > a:hover {
+    color:  lighten(@menu-vertical-link-active, 10%); ;
+        background-color: lighten(@menu-vertical-background-active, 10%);
+    }
+    
  
 a {
 		color: @menu-vertical-link;
@@ -592,9 +623,32 @@ a {
          text-decoration: none;
     } 
    
-    li.current>a{
+    li.current>a, li.current>a:hover{
         color: @menu-vertical-link-active;
         background-color: @menu-vertical-background-active;
+    }
+    
+  
+    
+    ul {
+        padding:0;
+        margin-bottom: 15px;
+        list-style: none;
+        
+        li 
+        {
+            a {
+                padding:4px 10px;
+                &:before {content: "-"; margin-right:20px;}
+                
+                &:hover {
+                background-color: @menu-vertical-background-hover;
+            color: @menu-vertical-link-hover;
+         text-decoration: none;
+                }
+                
+    }
+    }
     }
 }
 
@@ -610,6 +664,7 @@ position: absolute;
         
         li {
               float:left;
+            a {font-size:14px;}
             
         }
          li:last-of-type a:before {
@@ -617,10 +672,10 @@ position: absolute;
             
          }
         
-       
-        
     }
 }
+
+.custom.teltop a{font-size:14px;}
 
 /* Sticky - Menu */
 
@@ -898,4 +953,8 @@ color: #c09853;
 	}
 }
 
+
+
 /*______________ 11.0 Media queries ____________*/
+
+
