@@ -76,6 +76,7 @@
 
 	.btn, button {
 		.btn-edit;
+        .btn-opslaan;
         &:after {
          content: none !important;   
         }
@@ -117,11 +118,26 @@
         display: block;
             width:95px;
             float:left;
+            padding:0;
+            border:1px solid #DDD;
+            z-index: 0;
+            &:hover {
+            background:#EEE;
+            }
         }
 
 		input[type="text"].input-lg {
 			font-size: 18px;
 		}
+        
+        .input-append .media-preview {
+        padding:5px;
+        }
+        
+        .tip-wrap {
+        z-index: 3000;
+            overflow: visible;
+        }
         
         
         .tab-content {
@@ -345,12 +361,17 @@ max-width:200px;
 
 }
 
+li.btn-edit {
+border:none;
+}
+
 /* Einde variabelen */
 
 
 /* button toolbar fixed */
 .edit, #module-form{
-    
+       background:#fff;
+    padding:20px;
     .btn-toolbar:first-of-type {
 position: fixed;
     top:0;

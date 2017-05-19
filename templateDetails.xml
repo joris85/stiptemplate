@@ -1059,6 +1059,13 @@
 						label="menu-secondary-parent-caret"
 						description="menu-secondary-parent-caret" />
 				/**/<field type="spacer" name="spacer-vertical" label="&lt;b&gt;Vertical menu stijlen&lt;/b&gt;" />
+                <field
+						name="less_menu-vertical-borders"
+						type="color"
+						default=""
+						label="menu-menu-vertical-borders"
+						description="Border boven en onder level li" />
+                
 				<field
 						name="less_menu-vertical-link-hover"
 						type="color"
@@ -1117,6 +1124,12 @@
 						default="#f1f1f1"
 						label="Font background hover"
 						description="Font background hover" />
+                
+                /**/<field type="spacer" name="spacer-level2-vertical" label="&lt;b&gt;Vertical menu level 2&lt;/b&gt;" />
+                
+                
+                
+                
 				/**/<field type="spacer" name="spacer-fixed" label="&lt;b&gt;Fixed menu stijlen&lt;/b&gt;" />
 				<field
 						name="less_fixedimgheigh"
