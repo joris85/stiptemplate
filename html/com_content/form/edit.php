@@ -51,17 +51,17 @@ JFactory::getDocument()->addScriptDeclaration("
 	<form action="<?php echo JRoute::_('index.php?option=com_content&a_id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="adminForm" class="form-validate">
 		<div class="btn-toolbar">
 			<div class="btn-group">
-				<button type="button" class="btn btn-success" onclick="Joomla.submitbutton('article.save')">
+				<button type="button" class="btn btn-success btn-save" onclick="Joomla.submitbutton('article.save')">
 					<span class="fa fa-check"></span><?php echo JText::_('JSAVE') ?>
 				</button>
 			</div>
 			<div class="btn-group">
-				<button type="button" class="btn btn-default" onclick="Joomla.submitbutton('article.cancel')">
+				<button type="button" class="btn btn-default btn-cancel" onclick="Joomla.submitbutton('article.cancel')">
 					<span class="fa fa-times-circle" style="color:#bd362f;"></span><?php echo JText::_('JCANCEL') ?>
 				</button>
 			</div>
 			<?php if ($params->get('save_history', 0)) : ?>
-			<div class="btn-group">
+			<div class="btn-group btn-history">
 				<?php echo $this->form->getInput('contenthistory'); ?>
 			</div>
 			<?php endif; ?>
@@ -75,7 +75,7 @@ JFactory::getDocument()->addScriptDeclaration("
 			<?php if ($params->get('show_urls_images_frontend') ) : ?>
 				<li><a href="#images" data-toggle="tab"><?php echo JText::_('COM_CONTENT_IMAGES_AND_URLS') ?></a></li>
 			<?php endif; ?>
-			
+			<li><a href="#metadata" data-toggle="tab"><?php echo JText::_('COM_CONTENT_METADATA') ?></a></li>
 		</ul>
 
 		<div class="tab-content">
@@ -92,38 +92,22 @@ JFactory::getDocument()->addScriptDeclaration("
 
 					<?php echo $this->form->getInput('articletext'); ?>
 				</div>
-				<div class="col-lg-4 publication-selector">
+				<div class="col-lg-4">
 					<div class="well">
 						<h3 class="page-header">Publicatie gegevens</h3>
-                        	<div class="status-ps">
 						<?php echo $this->form->renderField('state'); ?>
-                            </div>
-                        <div class="status-catid">
 						<?php echo $this->form->renderField('catid'); ?>
-                              </div>
-                        <div class="status-tags">
 						<?php echo $this->form->renderField('tags'); ?>
-                              </div>
-                        <div class="status-language">
 						<?php echo $this->form->renderField('language'); ?>
-                              </div>
-                            <div class="status-pu">
 						<?php echo $this->form->renderField('publish_up'); ?>
-                                  </div>
-                                <div class="status-pd">
 						<?php echo $this->form->renderField('publish_down'); ?>
-                                </div>
 					</div>
 				</div>
-				<div class="col-lg-4 image-selector">
+				<div class="col-lg-4">
 					<div class="well">
 						<h3 class="page-header">Afbeelding</h3>
-                         <div class="image-intro">
 						<?php echo $this->form->renderField('image_intro', 'images'); ?>
-                               </div>
-                         <div class="image-fulltext">
 						<?php echo $this->form->renderField('image_fulltext', 'images'); ?>
-                            </div>
 					</div>
 				</div>
 			</div>

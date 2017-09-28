@@ -1,4 +1,4 @@
-
+// javascript version 3.0  last update 28-09-2017 -->
 
 jQuery(function($) {
 	// Turn radios into btn-group
@@ -30,7 +30,7 @@ jQuery(function($) {
 		}
 	});
 
-	var toppostion = $('#component').position().top;
+	var toppostion = $('#top').position().top;
 	
 	$(window).scroll(function() {
 		if ($(document).scrollTop() > toppostion) {
@@ -94,6 +94,14 @@ jQuery("li.parent  > a").removeAttr("data-target").removeAttr("data-toggle").rem
 
 
 // Focus on input after click search //
+
+jQuery(document).ready(function(){
+jQuery('#sticksearch').click(function(){
+    jQuery('.search-query.input-medium').focus();
+});
+});
+
+
 jQuery(document).ready(function(){
 jQuery('.search-content').click(function(){
     jQuery('.search-query.input-medium').focus();

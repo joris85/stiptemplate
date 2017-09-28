@@ -1,3 +1,4 @@
+/* Hikashop version file 3.0  last update 28-09-2017 */
 
 /*________ This file is to style the Hikashop webshop */
 
@@ -196,9 +197,13 @@ input.invalid {border:1px solid #D35046 !important;}
 }
 /*______________ 3.0 Product listing Div ________________*/
 
+.hk-row-fluid {
+margin: 0 -@col-padding;
+}
 
-
-
+#body .content div.hikashop_container {
+margin:0;
+}
 /*______________ 4.0 Product listing Table  _________________*/
 
 .winkelwagen {
@@ -208,7 +213,7 @@ input.invalid {border:1px solid #D35046 !important;}
 
 .com_hikashop #component .container {
 
- width: 1200px;   
+width: @max-containerwidth;  
 }
 
 th {
@@ -740,6 +745,12 @@ background: none;
 /*______________ 11.0 Media queries ___________*/
 
 /*______________ 12.0 Bootstrap overrides ____ */
+
+.hkc-xs-1, .hkc-sm-1, .hkc-md-1, .hkc-lg-1, .hkc-xs-2, .hkc-sm-2, .hkc-md-2, .hkc-lg-2, .hkc-xs-3, .hkc-sm-3, .hkc-md-3, .hkc-lg-3, .hkc-xs-4, .hkc-sm-4, .hkc-md-4, .hkc-lg-4, .hkc-xs-5, .hkc-sm-5, .hkc-md-5, .hkc-lg-5, .hkc-xs-6, .hkc-sm-6, .hkc-md-6, .hkc-lg-6, .hkc-xs-7, .hkc-sm-7, .hkc-md-7, .hkc-lg-7, .hkc-xs-8, .hkc-sm-8, .hkc-md-8, .hkc-lg-8, .hkc-xs-9, .hkc-sm-9, .hkc-md-9, .hkc-lg-9, .hkc-xs-10, .hkc-sm-10, .hkc-md-10, .hkc-lg-10, .hkc-xs-11, .hkc-sm-11, .hkc-md-11, .hkc-lg-11, .hkc-xs-12, .hkc-sm-12, .hkc-md-12, .hkc-lg-12 {
+padding-right: @col-padding;
+padding-left: @col-padding;
+
+}
 
 /*______________ 13.0 Sections override ______ */
 

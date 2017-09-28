@@ -30,34 +30,9 @@
     .section-menu-2,
     .menu-2-section,
     .top, 
-    .responsive-menu,
-    #blocks,
-    #easyfrontendseo_lightbox_button_3{
+    .responsive-menu{
 		display: none;
 	}
-    
-    input[type="text"],
-		input[type="email"],
-		input[type="password"],
-		input[type="url"],
-		input[type="number"],
-		textarea
-		{
-            border: 1px solid #DDD;
-			min-height: 27px;
-			max-width: 320px;
-			font-size: 14px;
-            height:47px;
-            line-height:47px;
-		}
-        
-        textarea {
-        min-height: 80px;
-            
-        }
-    
-    
-    
     
 .white-top {
  display: none;   
@@ -74,8 +49,6 @@
     .well {
      border-radius: 0; 
         background:#fff;
-        padding-bottom: 40px;
-        overflow: hidden;
     }
     
  #top {
@@ -103,9 +76,7 @@
 
 	.btn, button {
 		.btn-edit;
-        height:47px;
-        line-height: 47px;
-         display: block;
+        .btn-opslaan;
         &:after {
          content: none !important;   
         }
@@ -119,25 +90,25 @@
         }
        
 	}
-    
-    
-    
 	form#adminForm {
 		.page-header {
 			display: block;
 			margin-top: 0;
 		}
-		
-        
-        .chzn-choices input[type="text"] {
-        border:none !important;
-        }
-        
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="url"],
+		input[type="number"],
+		textarea
+		{
+			min-height: 27px;
+			max-width: 320px;
+			font-size: 14px;
+		}
         .input-small {
          height:47px;   
         }
-        
-        .control-label {clear:both; padding-top:16px; #jform_images_image_fulltext-lbl {}}
         
         #jform_images_image_intro, #jform_images_image_fulltext {
             max-width:110px;   
@@ -147,12 +118,9 @@
         display: block;
             width:95px;
             float:left;
-            padding: 0;
-            line-height: 47px;
+            padding:0;
             border:1px solid #DDD;
             z-index: 0;
-            height:47px;
-           
             &:hover {
             background:#EEE;
             }
@@ -164,7 +132,6 @@
         
         .input-append .media-preview {
         padding:5px;
-            height:47px;
         }
         
         .tip-wrap {
@@ -197,11 +164,7 @@
         
         .btn.hasTooltip {
           .btn-annuleren;
-         padding: 0 10px;
-            line-height: 47px;
-                float: left;
-            height: 47px;
-            
+         padding: 13px 10px;
             &:hover {
             .icon-remove:before {
             color:#fff;
@@ -234,7 +197,6 @@
     background-image: none;
             
                 a {
-                    display: block !important;
                     border-radius: 0;
                     padding: 20px 25px;
     margin-right: 3px;
@@ -332,7 +294,7 @@ max-width:200px;
 /* Variabelen */
 .btn-edit {
     border-style: solid;
-    padding:0 12px;
+    padding: 6px 12px;
     font-size: 14px;
     outline: none;
     border-radius: 0;
@@ -470,7 +432,7 @@ position:static !important;
 }
 
 /*______________ Basics for Module _____________*/
-     #body.com_advancedmodules.view-edit {
+     .com_advancedmodules.view-edit {
         .page_title {display: none;} 
         
          .content {
@@ -481,25 +443,6 @@ position:static !important;
          .hr-condensed {display: none;}
          
          hr {display: none;}
-         
-         
-         .input-append input {
-         width:auto;
-         }
-         
-         .modal.btn {
-         float:left;
-          
-         }
-          .btn.hasTooltip {
-         float:left;
-             display: block !important;
-         }
-         .btn-group.radio label {
-         border-color: #DDD;
-         }
-         
-         
      }
     
     
@@ -544,8 +487,7 @@ display: none !important;
  display:block !important;
 }   
 
-     .blog .item:hover .icons .dropdown-menu,
-    .blog .items-leading:hover .icons .dropdown-menu{
+     .blog .item:hover .icons .dropdown-menu {
  display:block !important;
 }   
 
@@ -688,38 +630,4 @@ a.btn.jfedit-menu:before{
     
 }
  
-
-/* Rsform Frontend MetaCss */
-.rsseo-frontend-edit {
-top:0 !important;
-    z-index: 5000;
-    background:none !important;
-    border:none !important;
-    padding:10px !important;
-}
-
-#rsseo-frontend-window {
-    z-index: 3000;
-    top:0;
-    background: #f8f8f8;
-    border-color: #e7e7e7;
-    border-radius: 0;
-    border-top:0;
-      overflow-y: scroll;
-    max-height: 100vh;
-    .btn.btn-primary {
-.btn-opslaan;
-    background: none;
-border-color: #46a746;
-color: #4f4f4f;
-    float:right;
-}
-
-.control-group {margin-top:20px;}
-.btn {
-    float:left;
- .btn-annuleren;   
-}
-}
-
 

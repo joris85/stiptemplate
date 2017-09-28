@@ -1,4 +1,4 @@
-/* Layout version file 1.1  last update 09-08-2016 om 14:53 */
+/* Layout version file 3.0  last update 26-09-2017 */
 
 /* INDEX LAYOUT */
 
@@ -21,6 +21,7 @@ This can you do in the override.less or duplicatie style and add it in templateD
 9.0 Top
 10.0 Additional
 11.0 Media queries
+12.0 Bootstrap overrides
 */
 
 /*______________ 1.0 Basics theme _____________*/
@@ -71,7 +72,8 @@ a {
     z-index:999;
 
 	#menu {
-     margin-top:75px;   
+       padding-top: 6px;
+        width:100%;
     }
     
     .container {
@@ -91,7 +93,7 @@ a {
 .module {
 
 	.modulecontent {
-		padding: 20px 15px;
+		padding: 20px 0;
 
 		.moduletitle {
 			margin-top:0px;
@@ -112,6 +114,10 @@ a {
     float:none;
  margin: 0 auto;
 }
+.w-content {
+width:@module-content-width;
+    margin:0 auto;
+}
 
     .title-center h3 {
        text-align: center;
@@ -126,11 +132,11 @@ a {
 
 
 
-
 .moduleprimary {
 	.modulecontent {
 		color: @module-primary-text;
 		background-color: @module-primary;
+        padding: @module-primary-padding;
 
 		.moduletitle {
 			color: @module-primary-title;
@@ -144,6 +150,7 @@ a {
 	.modulecontent {
 		color: @module-secondary-text;
 		background-color: @module-secondary;
+        padding: @module-secondary-padding;
 
 		.moduletitle {
 			color: @module-secondary-title;
@@ -156,6 +163,7 @@ a {
 	.modulecontent {
 		color: @module-tertiary-text;
 		background-color: @module-tertiary;
+        padding: @module-tertiary-padding;
 
 		.moduletitle {
 			color: @module-tertiary-title;
@@ -169,6 +177,7 @@ a {
 	.modulecontent {
 		color: @module-quaternary-text;
 		background-color: @module-quaternary;
+        padding: @module-quaternary-padding;
 
 		.moduletitle {
 			color: @module-quaternary-title;
@@ -181,15 +190,8 @@ a {
 
 .bottom-contact {
     background-color: @section-contact-background;
-	.module {
-		padding:0;
-	}
-	.module:first-child {
-		padding-left: 7.5px;
-	}
-	.module:last-child {
-		padding-right: 7.5px;
-	}
+
+	
     h3.moduletitle {
      padding-bottom:20px;
     }
@@ -216,8 +218,8 @@ a {
 /* newsflash in section */
 
 .newsflash {
-    margin-right:-15px;
-    margin-left:-15px;
+    margin-right:-@col-padding;
+    margin-left:-@col-padding;
 }
 
 .newsflash-item {
@@ -254,13 +256,24 @@ margin-top:0;
 display: none;
 }
 
+/*social list in footer */
 
+.sociallist {
+    padding-left: 0;
+    li{
+display: inline-block;
+    list-style-type: none;
+    margin:0;
+        a{
+        padding:3px 3px;
+        }
+}
+}
 
 /*______________ 5.0 Buttons  _________________*/
 
 .btn,
 #Submit {
-    border:none;
     border-style: @border-style;
     padding: @btn-padding;
 	font-size: @btn-size;
@@ -380,7 +393,10 @@ display: none;
     height: 48px;
 }
 
-.btn.btn-back {margin-top:30px;}
+.btn.btn-back {
+    margin-top:30px; 
+    margin-left:-15px;
+}
 /*______________ 6.0 Menu's  __________________*/
 
 .deeper.parent .caret {
@@ -655,16 +671,13 @@ a {
 
 /* Topmenu */
 .top-menu {
-position: absolute;
-    top:20px;
-    right:0;
-    
+    margin-top:6px;    
     .nav.menu {
 
         
         li {
               float:left;
-            a {font-size:14px;}
+            a {font-size:14px;color:@menu-primary-link;}
             
         }
          li:last-of-type a:before {
@@ -675,7 +688,7 @@ position: absolute;
     }
 }
 
-.custom.teltop a{font-size:14px;}
+.custom.teltop a{font-size:14px;color:@menu-primary-link;}
 
 /* Sticky - Menu */
 
@@ -694,7 +707,19 @@ transition: height 0.8s;
        
          width:auto;
     }
+    
+    .nav.navbar-right {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    }
+    .stickyhoofdmenu {
+    padding-right: 40px;
+    }
+    
 }
+
+
 
 .user-login { .stickymenu { margin-top:51px;}}
 .navbar-fixed-bottom, .navbar-fixed-top {z-index: 2050;}
@@ -708,7 +733,9 @@ transition: height 0.8s;
     width: 100%;
     z-index: 2000;
     
-   
+   @media @md {
+   display: none;
+   }
 }
 
 
@@ -716,39 +743,12 @@ transition: height 0.8s;
  visibility: hidden;
 }
 
-
-/* Fixed top oldcss */
-/*
-#body.smallheader {
-margin-top:70px;
-#top {
-position: fixed;   
-    top:0;
-    height:70px;
-    padding: 10px 0 15px 0;
-    
-    .menu-style {
-     margin-top:20px;   
-    }
-    
-    .logo {
-     margin-top:0;   
-    }
-    
-    
-    .top-menu {
-     display: none;   
-    }
-    
-   img{
-    height:@fixedimgheigh;
-        -webkit-transition: height 0.8s;
--moz-transition: height 0.8s;
-transition: height 0.8s;
+.module.logo.col-md-2 {
+padding-left:0;
+    .modulecontent {
+    padding:0;
     }
 }
-}
-*/
 
 
 
@@ -802,6 +802,7 @@ bottom:100px}
         margin-right: -15px;
         margin-bottom: 15px;
         padding: 0 7.5px 10px 7.5px;
+        overflow: hidden;
         border-bottom: 1px solid #ddd;
     }
 	.item {
@@ -866,6 +867,8 @@ color: #c09853;
 /*______________ 8.4 Social styling */
 #social {
 	text-align: right;
+    float:@float-social;
+    width:260px;
 
 	a {
 		background-color: @socialicon-background;
@@ -887,7 +890,16 @@ color: #c09853;
 	a.instagram {
 		padding: 1px 7.73px;
 	}
+    .searchbox.search-social {
+float:right;
+    a {
+        background:none;color:@socialicon-background;padding-left:10px;
+    i {
+    font-size:30px;}
+    }
 }
+    
+} 
 
 
 /*______________ 9.0 Top ______________________*/
@@ -953,8 +965,37 @@ color: #c09853;
 	}
 }
 
+/* Login module pagina /login */
 
+#body {
+    .top-block1 .module.loginform  {
+width:500px;
+    margin:0 auto;
+    border: 1px solid #ddd;
+    padding:30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    
+    #form-login-submit {
+    button {
+    width:100%;
+            background: #ACC435;
+    border-radius: 0 !important;
+    border: none;
+        color:#fff;
+        height:47px;
+    }
+    }
+.userdata ul.unstyled {
+    margin-top:40px;
+    li a {
+        line-height: 24px;
+        color:#4f4f4f;
+        font-size: 14px;
+    }
+}
+}
+}
 
 /*______________ 11.0 Media queries ____________*/
 
-
+/*______________ 11.0 Boostrap overrides ____________*/
