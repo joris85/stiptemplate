@@ -1,3 +1,5 @@
+<!-- index version file 3.0  last update 28-09-2017 -->
+
 <?php
 defined('_JEXEC') or die;
 
@@ -34,9 +36,19 @@ echo $article->get('pageclass_sfx'); ?>">
 
 <?php if ($this->countModules('sticky-top')): ?>
     <!-- Start Stickymenu -->
-    <div class="stickymenu menu-style">
+    <div class="stickymenu menu-style <?php if($this->params->get('menulines') == '1') : ?>menulines<?php endif; ?>">
         <div class="container container-sticky">
+            <div class="row">
             <jdoc:include type="modules" name="sticky-top" style="basis" />
+                 <?php if($this->params->get('searchinstickymenu') == '1') : ?>
+                                    <ul class="nav navbar-right">
+                                        <li id="sticksearch"> <a href="#" onclick="return false" data-container="body" data-toggle="popover" data-placement="bottom"
+                                                            data-title="Zoeken" data-content='<jdoc:include type="modules" name="searchbox" style="none" />' data-html="true"
+                                                            data-trigger="click"> <i class="sicon sicon-search"></i> </a> </li>
+                                    </ul>
+
+                                <?php endif; ?>
+            </div>
         </div>
     </div>
     <!-- End Stickymenu -->
@@ -90,6 +102,7 @@ echo $article->get('pageclass_sfx'); ?>">
         <div id="top">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-12">
                     <?php if ($this->countModules('top-menu')): ?>
                         <div class="top-menu">
                             <?php if($this->params->get('searchintop') == '1') : ?>
@@ -110,7 +123,7 @@ echo $article->get('pageclass_sfx'); ?>">
                         <jdoc:include type="modules" name="top-slogan" style="basis" />
                     <?php endif; ?>
                     <?php if ($this->countModules('menu')): ?>
-                        <div id="menu" class="menu-style <?php if($this->params->get('searchinmenu') == '1') : ?>menu-search<?php endif; ?>">
+                        <div id="menu" class="menu-style <?php if($this->params->get('searchinmenu') == '1') : ?>menu-search<?php endif; ?> <?php if($this->params->get('menulines') == '1') : ?>menulines<?php endif; ?>">
                             <nav>
                                 <jdoc:include type="modules" name="menu" style="none" />
 
@@ -127,7 +140,7 @@ echo $article->get('pageclass_sfx'); ?>">
                     <?php endif; ?>
 
                 </div>
-             
+             </div>
             </div>
                <?php if ($this->countModules('menu-fullwidth')): ?>
                     <div class="menu-fullwidth">
@@ -210,7 +223,7 @@ echo $article->get('pageclass_sfx'); ?>">
         <!-- Start menu 2 -->
 
         <div class="menu-2-section">
-            <div class="container menu-2">
+            <div class="container menu-2 <?php if($this->params->get('menulines') == '1') : ?>menulines<?php endif; ?>">
                 <div class="row">
                     <div id="menu" class="menu-style col-md-12 <?php if($this->params->get('searchinmenu') == '1') : ?>menu-search<?php endif; ?>">
                         <nav>
@@ -271,6 +284,8 @@ echo $article->get('pageclass_sfx'); ?>">
         <!-- START Search and back buttons-->
         <div class="search-back-section">
             <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
                 <?php if($this->params->get('searchintopcontent' ) == '1') : ?>
                     <!-- START Search block -->
                     <div class="searchbox search-content" >
@@ -289,6 +304,8 @@ echo $article->get('pageclass_sfx'); ?>">
                     </div>
                     <!-- END Arrow Back -->
                 <?php endif; ?>
+                    </div>
+                    </div>
             </div>
         </div>
         <!-- END Search and back buttons-->
@@ -468,7 +485,7 @@ echo $article->get('pageclass_sfx'); ?>">
 
     <?php if ($this->countModules('footer1 or footer2 or footer3 or footer4')): ?>
         <!-- START Footer -->
-        <div id="footer">
+        <footer id="footer">
             <a id="<?php echo $this->params->get('less-footer-anchor'); ?>" name="<?php echo $this->params->get('less-footer-anchor'); ?>"></a>
             <div class="<?php echo $this->params->get('section-footer-paralax'); ?>">
                 <div class="row">
@@ -494,7 +511,7 @@ echo $article->get('pageclass_sfx'); ?>">
                     <?php endif; ?>
                 </div>
             </div>
-        </div>
+        </footer>
         <!-- END Footer -->
     <?php endif; ?>
 
@@ -504,7 +521,9 @@ echo $article->get('pageclass_sfx'); ?>">
         <div class="copyright">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-12">
                     <jdoc:include type="modules" name="copyright" style="xhtml" />
+                    </div>
                 </div>
             </div>
         </div>

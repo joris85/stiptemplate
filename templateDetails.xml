@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
-<extension version="2.1" type="template" client="site" method="upgrade">
+<extension version="3.0" type="template" client="site" method="upgrade">
 	<name>Stip Template</name>
 	<version>3.0</version>
 	<creationDate>2014</creationDate>
@@ -77,7 +77,8 @@
 					<option value="standaard">Standaard</option>
 					<option value="custom">Custom</option>
 				</field>
-				<field
+                
+                <field
 						name="xml-variables"
 						type="radio"
 						class="btn-group btn-group-yesno"
@@ -87,6 +88,7 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
+				
 
 				<field
 						name="less_header-image"
@@ -395,13 +397,21 @@
 						description="header6-tag-margin" />
 			</fieldset>
 			<fieldset name="module">
-				<field type="spacer" name="spacer_button_intro" label="Deze stijlen kun je gebruiken door module-primary of module-secondary of module-tertiary aan het module class achtervoegsel toe te voegen" />
+				<field type="spacer" name="spacer_button_intro" label="Deze stijlen kun je gebruiken door moduleprimary of modulesecondary of module-tertiary aan het module class achtervoegsel toe te voegen" />
 				<field
 						name="less_module-default-size"
 						type="text"
 						default="28px"
 						label="Default moduletitle size"
 						description="Default size" />
+                <field
+						name="less_module-content-width"
+						type="text"
+						default="600px"
+						label="Module content width"
+						description="Modules toevoegen met bepaalde content en uitlijning gebruik w-content in de module class en de module houd zich aan deze waarde" />
+                
+                
 				<field type="spacer" name="spacer-1st" label="&lt;b&gt;Primary module&lt;/b&gt;" />
 
 
@@ -409,7 +419,7 @@
 				<field
 						name="less_module-primary-size"
 						type="text"
-						default="inherit"
+						default="28px"
 						label="Primary size"
 						description="Primary size" />
 
@@ -431,11 +441,18 @@
 						default="#333333"
 						label="Primary Text"
 						description="module-primary-text" />
+                	<field
+						name="less_module-primary-padding"
+						type="text"
+						default="0"
+						label="Primary padding"
+						description="Primary padding" />
+                
 				<field type="spacer" name="spacer-2nd" label="&lt;b&gt;2nd module styles&lt;/b&gt;" />
 				<field
 						name="less_module-secondary-size"
 						type="text"
-						default="inherit"
+						default="28px"
 						label="Secondary size"
 						description="Secondary size" />
 
@@ -457,11 +474,19 @@
 						default="#f1f1f1"
 						label="Secondary Text"
 						description="module-secondary-text" />
+                
+                <field
+						name="less_module-secondary-padding"
+						type="text"
+						default="0"
+						label="secondary padding"
+						description="secondary padding" />
+                
 				<field type="spacer" name="spacer-3rd" label="&lt;b&gt;3rd module styles&lt;/b&gt;" />
 				<field
 						name="less_module-tertiary-size"
 						type="text"
-						default="inherit"
+						default="28px"
 						label="Tertiary size"
 						description="Tertiary sizey" />
 
@@ -483,11 +508,18 @@
 						default="#f1f1f1"
 						label="Tertiary Text"
 						description="module-tertiary-text" />
+                <field
+						name="less_module-tertiary-padding"
+						type="text"
+						default="0"
+						label="tertiary padding"
+						description="tertiary padding" />
+                
 				<field type="spacer" name="spacer-4th" label="&lt;b&gt;4th module styles&lt;/b&gt;" />
 				<field
 						name="less_module-quaternary-size"
 						type="text"
-						default="inherit"
+						default="28px"
 						label="Quaternary size"
 						description="Quaternary size" />
 
@@ -508,7 +540,14 @@
 						type="color"
 						default="#f1f1f1"
 						label="quaternary Text"
-						description="module-third-text" />
+						description="module-quaternary-text" />
+                <field
+						name="less_module-quaternary-padding"
+						type="text"
+						default="0"
+						label="quaternary padding"
+						description="quaternary padding" />
+                
 			</fieldset>
 			<fieldset name="Button">
 				<field type="spacer" name="spacer-1" label="&lt;b&gt;button stijlen&lt;/b&gt;" />
@@ -894,6 +933,21 @@
 
 
 			<fieldset name="menu">
+                <field type="spacer" name="uitlijning" label="&lt;b&gt;uitlijning menu&lt;/b&gt;" />
+                
+                <field
+						name="less_menu-menu-float"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="right"
+						label="Floating menu"
+						description="Floating Left Right or None">
+					<option value="left">Left</option> 
+                    <option value="none">None</option>
+                    <option value="right">Right</option>
+                    </field>
+									
+                
 				/**/<field type="spacer" name="spacer-menu" label="&lt;b&gt;Sections menu&lt;/b&gt;" />
 				<field
 						name="less_menu-1-background-container"
@@ -910,7 +964,18 @@
 
 				/**/<field type="spacer" name="spacer-8" label="&lt;b&gt;Primary Menu&lt;/b&gt;" />
 
-				<field
+				 <field
+						name="menulines"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="yes"
+						label="Menu line seperator"
+						description="Lijnen in het menu of niet">
+					<option value="1">Yes</option> 
+                    <option value="0">No</option>
+                    </field>
+                
+                <field
 						name="less_menu-primary-font-size"
 						type="text"
 						default="15px"
@@ -1164,6 +1229,18 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
+                
+                	<field
+						name="searchinstickymenu"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Toon zoeken in Sticky menu"
+						description="Toon zoeken in Sticky menu">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+                
 
 				<field
 						name="searchinsocial"
@@ -1175,6 +1252,7 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
+              
 				<field
 						name="searchintopcontent"
 						type="radio"
@@ -1221,6 +1299,16 @@
 						description="Toon de social icons">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
+				</field>
+                  <field
+						name="less_float-social"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="right"
+						label="Floating rechts of links"
+						description="uitlijning van de social iconen onder de header">
+                    <option value="left">Left</option>
+					<option value="right">Right</option>
 				</field>
 
 				<field
@@ -1378,6 +1466,32 @@
 						description="Dit is de algemene margin van sections"
 						filter="raw"
 				/>
+                   <field
+						name="less_section-1-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-1-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-1-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
+						filter="raw"
+				/>
+                
 
 				<field
 						name="section-1-paralax"
@@ -1434,6 +1548,32 @@
 						description="Dit is de algemene margin van sections"
 						filter="raw"
 				/>
+                   <field
+						name="less_section-2-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-2-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-2-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
+						filter="raw"
+				/>
+                
 				<field
 						name="section-2-paralax"
 						type="radio"
@@ -1489,6 +1629,31 @@
 						description="Dit is de algemene margin van sections"
 						filter="raw"
 				/>
+                   <field
+						name="less_section-3-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-3-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-3-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
+						filter="raw"
+				/>
 				<field
 						name="section-3-paralax"
 						type="radio"
@@ -1511,7 +1676,7 @@
 
 				/**/<field type="spacer" name="spacer-section-4" label="&lt;b&gt;Section 4 &lt;/b&gt;" />
 				<field
-						name="less_less_section-4-background"
+						name="less_section-4-background"
 						type="text"
 						default="#E6EDF2"
 						label="section 4 background"
@@ -1552,6 +1717,31 @@
 						default="@section-margin"
 						label="section margin"
 						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+                   <field
+						name="less_section-4-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-4-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-4-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
 						filter="raw"
 				/>
 
@@ -1611,6 +1801,31 @@
 						description="Dit is de algemene margin van sections"
 						filter="raw"
 				/>
+                   <field
+						name="less_section-5-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-5-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-5-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
+						filter="raw"
+				/>
 				<field
 						name="section-5-paralax"
 						type="radio"
@@ -1665,6 +1880,31 @@
 						default="@section-margin"
 						label="section margin"
 						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+                   <field
+						name="less_section-6-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-6-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-6-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
 						filter="raw"
 				/>
 				<field
@@ -1723,6 +1963,31 @@
 						description="Dit is de algemene margin van sections"
 						filter="raw"
 				/>
+                   <field
+						name="less_section-7-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-7-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-7-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
+						filter="raw"
+				/>
 				<field
 						name="section-7-paralax"
 						type="radio"
@@ -1775,6 +2040,31 @@
 						default="@section-margin"
 						label="section margin"
 						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+                   <field
+						name="less_section-contact-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-contact-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-contact-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
 						filter="raw"
 				/>
 				<field
@@ -1838,7 +2128,31 @@
 						filter="raw"
 				/>
 
-
+   <field
+						name="less_section-footer-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-footer-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-footer-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
+						filter="raw"
+				/>
 
 				<field
 						name="section-footer-paralax"
@@ -1956,6 +2270,14 @@
 						label="Maximale container breedte"
 						description="Geef de maximale breedte voor element met de class &lt;i&gt;container&lt;/i&gt; op"
 				/>
+                <field
+						name="less_col-padding"
+						type="text"
+						default="15px"
+						label="Bootstrap padding"
+						description="Bootstrap padding van de kolommen"
+				/>
+                
 
 				<field
 						name="content-left-position"

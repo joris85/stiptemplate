@@ -1,4 +1,4 @@
-/* Structure version file 1.0  last update 03-02-2016 om 16:44 */
+/* Structure version file 3.0  last update 03-02-2016 om 16:44 */
 
 /* INDEX VARIABLES */
 /* This file is not ment for changes */
@@ -21,7 +21,35 @@
  - 8.5 Clear 
 10.0 Additional
 11.0 Media screen
+12.0 Bootstrap overrides
+
 */
+
+
+/* Media Variabelen */
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+
+@xs:          	~"only screen and (max-width: @{xs-min})";
+@minxs:         ~"only screen and (min-width: @{xs-min})";
+@xs-strict:   	~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@sm:         	~"only screen and (max-width: @{sm-min})";
+@minsm:         ~"only screen and (min-width: @{sm-min})";
+@sm-strict:  	~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@md:        	~"only screen and (max-width: @{md-min})";
+@minmd:        	~"only screen and (min-width: @{md-min})";
+@md-strict:	~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@lg:          	~"only screen and (max-width: @{lg-min})";
+@minlg:         ~"only screen and (min-width: @{lg-min})";
+@portrait: ~"(orientation : portrait)";
+@landscape: ~"(orientation : landscape)";
 
 
 /*______________ 1.0 Basic website Styles ______________*/
@@ -159,8 +187,6 @@ h6 {
      margin:0;
         a {
          padding-right:5px;
-           
-        
         }
     }
     
@@ -180,6 +206,15 @@ h6 {
      margin: 0 5px 0 3px;;   
     }
     
+}
+
+.bigtel {
+padding: 32px 0 0 0;
+    h3 {
+    font-size:20px;
+        line-height: 50px;
+        margin-bottom: 0;
+    }
 }
 
 /*______________ 5.0 BUTTON STYLES ______________*/
@@ -225,6 +260,15 @@ h6 {
 }
 
 /*______________ 6.0 MENU STYLING ______________*/
+
+
+nav {
+float: @menu-menu-float;
+    margin-right:-20px;
+}
+.stickymenu .nav.menu  {
+float: @menu-menu-float;
+}
 
 #body .navbar.navbar-default.navbar-fixed-top .caret{
         position: absolute;
@@ -281,8 +325,26 @@ h6 {
     }
 }
 
+#body .menulines nav,
+#body .menulines .nav {
+     li {
+ position: relative;
+ }   
+    li:not(:last-child) a:before {
+    content: " | ";
+    position: absolute;
+    right:-4px;
+}
+    
+    ul ul a:before {
+    content: none !important;
+    }
+    
+}
+
 
 /*Footermenu */
+ 
 
 .copyright ul {
     float:right;
@@ -419,6 +481,7 @@ ul.menuverticaal {
 }
 
 
+
 /*______________ 7.0 Header styles ______________*/
 
 
@@ -487,7 +550,6 @@ img {
 }
 .bottom-contact {
  overflow:hidden;  
-    padding: 0 7.5px;
 }
 
 .container .top {
@@ -497,10 +559,17 @@ img {
 /*______________ 8.4 Smart search ____*/
 
 /* Search icons */
+
 .top-menu .searchbox {
  float:right;
     margin-left:16px;
+    a {
+        padding-left:10px;
+    color:@menu-primary-link;
+    }
 }
+
+
 
 #menu {
     
@@ -604,7 +673,7 @@ span.highlight {
 
 
 .container {
- max-width: @max-containerwidth;  
+width: @max-containerwidth;  
 }
 
 
@@ -616,4 +685,44 @@ span.highlight {
 ul.thumbnails li {
  list-style: none;
     list-style-type: none;
+}
+
+/*______________ 12.0 Bootstrap overrides ______________*/
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+padding-right: @col-padding;
+padding-left: @col-padding;
+}
+.container {
+padding-right: @col-padding;
+padding-left: @col-padding;
+}
+
+.row {
+margin-right: -@col-padding;
+    margin-left: -@col-padding;
+}
+
+.container-fluid  {
+padding-right: @col-padding;
+padding-left: @col-padding;
+} 
+
+.btgrid.container-fluid {
+padding:0; 
+}
+
+ .span3, .span4, .span6 {
+ float: left;
+        position: relative;
+    min-height: 1px;
+    padding-right: @col-padding;
+padding-left: @col-padding;
+ }
+
+.items-row .span4 {
+    width: 33.33333333%;  
+}
+
+.items-row .span6 {
+     width: 50%;
 }
