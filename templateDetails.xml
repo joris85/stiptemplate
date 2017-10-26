@@ -6,7 +6,7 @@
 	<creationDate>2014</creationDate>
 	<author>Stip webdesign</author>
 	<authorEmail>info@stip.nl</authorEmail>
-	<copyright>Copyright (C) 2016 Stip webdesign.</copyright>
+	<copyright>Copyright (C) 2017 Stip webdesign.</copyright>
 	<license>GNU General Public License version 2 or later</license>
 	<description>Basis template Stip Webdesign, designed bij Stip webdesign</description>
 	<files>
@@ -57,6 +57,12 @@
 		<position>bottom2</position>
 		<position>bottom3</position>
 		<position>bottom4</position>
+        <position>bottom5</position>
+        <position>bottom6</position>
+        <position>bottom7</position>
+        <position>bottom8</position>
+        <position>bottom9</position>
+        <position>bottom10</position>      
 		<position>copyright</position>
 	</positions>
 	<languages folder="language">
@@ -77,19 +83,6 @@
 					<option value="standaard">Standaard</option>
 					<option value="custom">Custom</option>
 				</field>
-                
-                <field
-						name="xml-variables"
-						type="radio"
-						class="btn-group btn-group-yesno"
-						default="1"
-						label="Gebruik XML parameters"
-						description="Gebruik de parameters uit het XML bestand ipv de paramters van LESS">
-					<option value="1">JYES</option>
-					<option value="0">JNO</option>
-				</field>
-				
-
 				<field
 						name="less_header-image"
 						type="media"
@@ -404,6 +397,13 @@
 						default="28px"
 						label="Default moduletitle size"
 						description="Default size" />
+                	<field
+						name="less_module-default-height"
+						type="text"
+						default="40px"
+						label="Default moduletitle height"
+						description="Default height" />
+                
                 <field
 						name="less_module-content-width"
 						type="text"
@@ -413,15 +413,19 @@
                 
                 
 				<field type="spacer" name="spacer-1st" label="&lt;b&gt;Primary module&lt;/b&gt;" />
-
-
-
-				<field
+                
+                <field
 						name="less_module-primary-size"
 						type="text"
 						default="28px"
 						label="Primary size"
 						description="Primary size" />
+                <field
+						name="less_module-primary-height"
+						type="text"
+						default="40px"
+						label="Primary height"
+						description="Primary height" />
 
 				<field
 						name="less_module-primary"
@@ -455,7 +459,12 @@
 						default="28px"
 						label="Secondary size"
 						description="Secondary size" />
-
+<field
+						name="less_module-secondary-height"
+						type="text"
+						default="40px"
+						label="Secondary height"
+						description="Secondary height" />
 				<field
 						name="less_module-secondary"
 						type="color"
@@ -489,7 +498,12 @@
 						default="28px"
 						label="Tertiary size"
 						description="Tertiary sizey" />
-
+<field
+						name="less_module-tertiary-height"
+						type="text"
+						default="28px"
+						label="Tertiary height"
+						description="Tertiary height" />
 				<field
 						name="less_module-tertiary"
 						type="color"
@@ -522,7 +536,12 @@
 						default="28px"
 						label="Quaternary size"
 						description="Quaternary size" />
-
+<field
+						name="less_module-quaternary-height"
+						type="text"
+						default="28px"
+						label="Quaternary height"
+						description="Quaternary height" />
 				<field
 						name="less_module-quaternary"
 						type="color"
@@ -882,9 +901,61 @@
 			</fieldset>
 
 			<fieldset name="Blog">
+                
+                /**/<field type="spacer" name="spacer-artikelen" label="&lt;b&gt; Artikelen &lt;/b&gt;" />
+                
+            
+                  <field
+						name="less_article-content-width"
+						type="text"
+						default="490px"
+						label="Maximale breedte content pagina itempage"
+						description="Maximale breedte content pagina itempage"
+				/>
+                
+                 <field
+						name="less_article-content-margin"
+						type="text"
+						default="0"
+						label="Margin"
+						description="Margin content pagina itempage"
+				/>
+                
+                 <field
+						name="less_article-content-padding"
+						type="text"
+						default="0"
+						label="Padding"
+						description="Padding content pagina itempage"
+				/>
+                
 
 				/**/<field type="spacer" name="spacer-blog" label="&lt;b&gt; Blog &lt;/b&gt;" />
-				<field
+				 
+            <field
+						name="less_article-blog-width"
+						type="text"
+						default="490px"
+						label="Maximale breedte content pagina blog"
+						description="Maximale breedte content pagina blog"
+				/>
+                <field
+						name="less_article-blog-margin"
+						type="text"
+						default="0"
+						label="Margin"
+						description="Margin blog pagina itempage"
+				/>
+                
+                 <field
+						name="less_article-blog-padding"
+						type="text"
+						default="0"
+						label="Padding"
+						description="Padding blog pagina itempage"
+				/>
+                
+                <field
 						name="less_blog-item-title-color"
 						type="color"
 						default="#008fbe"
@@ -1272,23 +1343,7 @@
 
 
 			<fieldset name="social">
-				<field
-						name="facebook-meta"
-						type="radio"
-						class="btn-group btn-group-yesno"
-						default="1"
-						label="Facebook Meta tags"
-						description="Gebruik Facebook Meta Tags, deze wordeng gebruikt bij het delen van een pagina. &lt;b&gt;Voor deze optie dient gZip compressie uitgeschakeld te zijn&lt;/b&gt;">
-					<option value="1">JYES</option>
-					<option value="0">JNO</option>
-				</field>
-				<field
-						name="facebook-image"
-						type="media"
-						default=""
-						label="Facebook afbeelding"
-						description="Selecteer de afbeelding die gebruik wordt bij het delen van een pagina op facebook"
-				/>
+			
 
 				<field
 						name="showsocial"
@@ -1402,6 +1457,67 @@
 						description=""
 						filter="raw"
 				/>
+            <field type="spacer" name="Speed-link-tag" label="&lt;b&gt; Laden template scripts  &lt;/b&gt;" />
+
+                
+                  <field
+						name="templatejs"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="1"
+						label="Template javascript"
+						description="Laad standaard template javascript">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+                
+                	<field
+						name="fontawesome4"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="1"
+						label="Fontawesome 4 laden"
+						description="Fontawesome 4 laden CDN">
+					<option value="0">JNO</option>
+                  <option value="1">JYES</option>
+				</field>
+                
+                <field
+						name="loadbootstrap3"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="1"
+						label="Bootstrap3 laden"
+						description="Bootstrap 3 laden via CDN">
+                    	<option value="0">JNO</option>
+                    <option value="1">Head</option>
+                    <option value="2">Einde body</option>
+				
+				</field>
+                
+                       <field
+						name="loadoldhtmljs"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Oude html 5 js"
+						description="Bij compatibiliteits issues met IE8 of 9">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+                
+                  <field
+						name="inputvalidatie"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Inputvalidatie laden"
+						description="Als er input validatie nodig is op Hikashop">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+                
+                
 			</fieldset>
 
 			<fieldset name="Sections">
@@ -1431,7 +1547,7 @@
 						filter="raw"
 				/>
 
-				/**/<field type="spacer" name="spacer-section-1" label="&lt;b&gt;Section 1 &lt;/b&gt;" />
+				/**/<field type="spacer" name="spacer-section-1" label="&lt;b&gt;Section 1 (top1) &lt;/b&gt;" />
 				<field
 						name="less_section-1-background"
 						type="text"
@@ -1496,12 +1612,22 @@
 				<field
 						name="section-1-paralax"
 						type="radio"
-						class="btn-group "
+						class="btn-group btn-group-yesno"
 						default="container"
 						label="Volledige breedte"
 						description="Image options, fullscreen overwrites Height">
 					<option value="paralax">Ja</option>
 					<option value="container">Nee</option>
+				</field>
+                 <field
+						name="section-1-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
 				</field>
 
 				<field
@@ -1513,7 +1639,7 @@
 						filter="raw"
 				/>
 
-				/**/<field type="spacer" name="spacer-section-2" label="&lt;b&gt;Section 2 &lt;/b&gt;" />
+				/**/<field type="spacer" name="spacer-section-2" label="&lt;b&gt;Section 2 (top2) &lt;/b&gt;" />
 
 				<field
 						name="less_section-2-background"
@@ -1577,12 +1703,23 @@
 				<field
 						name="section-2-paralax"
 						type="radio"
-						class="btn-group "
+						class="btn-group btn-group-yesno"
 						default="container"
 						label="Volledige breedte"
 						description="Image options, fullscreen overwrites Height">
 					<option value="paralax">Ja</option>
 					<option value="container">Nee</option>
+				</field>
+                
+                <field
+						name="section-2-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
 				</field>
 
 
@@ -1594,7 +1731,7 @@
 						description="Naam waar het menu-item naar verwijst."
 						filter="raw"
 				/>
-				/**/<field type="spacer" name="spacer-section-3" label="&lt;b&gt;Section 3 &lt;/b&gt;" />
+				/**/<field type="spacer" name="spacer-section-3" label="&lt;b&gt;Section 3 (top3) &lt;/b&gt;" />
 
 				<field
 						name="less_section-3-background"
@@ -1657,12 +1794,23 @@
 				<field
 						name="section-3-paralax"
 						type="radio"
-						class="btn-group "
+						class="btn-group btn-group-yesno"
 						default="container"
 						label="Volledige breedte"
 						description="Image options, fullscreen overwrites Height">
 					<option value="paralax">Ja</option>
 					<option value="container">Nee</option>
+				</field>
+                
+                 <field
+						name="section-3-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
 				</field>
 
 				<field
@@ -1674,7 +1822,7 @@
 						filter="raw"
 				/>
 
-				/**/<field type="spacer" name="spacer-section-4" label="&lt;b&gt;Section 4 &lt;/b&gt;" />
+				/**/<field type="spacer" name="spacer-section-4" label="&lt;b&gt;Section 4 (bottom1) &lt;/b&gt;" />
 				<field
 						name="less_section-4-background"
 						type="text"
@@ -1748,12 +1896,22 @@
 				<field
 						name="section-4-paralax"
 						type="radio"
-						class="btn-group "
+						class="btn-group btn-group-yesno"
 						default="container"
 						label="Volledige breedte"
 						description="Image options, fullscreen overwrites Height">
 					<option value="paralax">Ja</option>
 					<option value="container">Nee</option>
+				</field>
+                 <field
+						name="section-4-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
 				</field>
 
 				<field
@@ -1765,7 +1923,7 @@
 						filter="raw"
 				/>
 
-				/**/<field type="spacer" name="spacer-section-5" label="&lt;b&gt;Section 5 &lt;/b&gt;" />
+				/**/<field type="spacer" name="spacer-section-5" label="&lt;b&gt;Section 5 (bottom2) &lt;/b&gt;" />
 
 				<field
 						name="less_section-5-background"
@@ -1829,12 +1987,22 @@
 				<field
 						name="section-5-paralax"
 						type="radio"
-						class="btn-group "
+						class="btn-group btn-group-yesno"
 						default="container"
 						label="Volledige breedte"
 						description="Image options, fullscreen overwrites Height">
 					<option value="paralax">Ja</option>
 					<option value="container">Nee</option>
+				</field>
+                 <field
+						name="section-5-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
 				</field>
 
 				<field
@@ -1846,7 +2014,7 @@
 						filter="raw"
 				/>
 
-				/**/<field type="spacer" name="spacer-section-6" label="&lt;b&gt;Section 6 &lt;/b&gt;" />
+				/**/<field type="spacer" name="spacer-section-6" label="&lt;b&gt;Section 6 (bottom3) &lt;/b&gt;" />
 				<field
 						name="less_section-6-background"
 						type="text"
@@ -1910,12 +2078,23 @@
 				<field
 						name="section-6-paralax"
 						type="radio"
-						class="btn-group "
+						class="btn-group btn-group-yesno"
 						default="container"
 						label="Volledige breedte"
 						description="Image options, fullscreen overwrites Height">
 					<option value="paralax">Ja</option>
 					<option value="container">Nee</option>
+				</field>
+                
+                 <field
+						name="section-6-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
 				</field>
 
 				<field
@@ -1926,7 +2105,7 @@
 						description="Naam waar het menu-item naar verwijst."
 						filter="raw"
 				/>
-				/**/<field type="spacer" name="spacer-section-7" label="&lt;b&gt;Section 7 &lt;/b&gt;" />
+				/**/<field type="spacer" name="spacer-section-7" label="&lt;b&gt;Section 7 (bottom4) &lt;/b&gt;" />
 
 				<field
 						name="less_section-7-background"
@@ -1991,12 +2170,23 @@
 				<field
 						name="section-7-paralax"
 						type="radio"
-						class="btn-group "
+						class="btn-group btn-group-yesno"
 						default="container"
 						label="Volledige breedte"
 						description="Image options, fullscreen overwrites Height">
 					<option value="paralax">Ja</option>
 					<option value="container">Nee</option>
+				</field>
+                
+                   <field
+						name="section-7-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
 				</field>
 
 				<field
@@ -2007,13 +2197,564 @@
 						description="Naam waar het menu-item naar verwijst."
 						filter="raw"
 				/>
+                
+                /**/<field type="spacer" name="spacer-section-8" label="&lt;b&gt;Section 8 (bottom5) &lt;/b&gt;" />
+
+				<field
+						name="less_section-8-background"
+						type="text"
+						default="#DAA4A2"
+						label="section 8 background"
+						description="Dit is de achtergrond van section 8"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-8-p"
+						type="color"
+						default="inherit"
+						label="section 5 paragraph kleur"
+						description="Dit is de paragraph kleur van 8"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-8-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-8-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+                   <field
+						name="less_section-8-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-8-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-8-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
+						filter="raw"
+				/>
+				<field
+						name="section-8-paralax"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+                 <field
+						name="section-8-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
+				</field>
+
+				<field
+						name="less-8-anchor"
+						type="text"
+						default="anker5"
+						label="Ankernaam section 5"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+                
+                
+                /**/<field type="spacer" name="spacer-section-9" label="&lt;b&gt;Section 9 (bottom6) &lt;/b&gt;" />
+
+				<field
+						name="less_section-9-background"
+						type="text"
+						default="#DAA4A2"
+						label="section 9 background"
+						description="Dit is de achtergrond van section 6"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-9-p"
+						type="color"
+						default="inherit"
+						label="section 9 paragraph kleur"
+						description="Dit is de paragraph kleur van 9"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-9-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-9-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+                   <field
+						name="less_section-9-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-9-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-9-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
+						filter="raw"
+				/>
+				<field
+						name="section-9-paralax"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+                 <field
+						name="section-9-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
+				</field>
+
+				<field
+						name="less-9-anchor"
+						type="text"
+						default="anker9"
+						label="Ankernaam section 9"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+                
+                /**/<field type="spacer" name="spacer-section-10" label="&lt;b&gt;Section 10 (bottom7) &lt;/b&gt;" />
+
+				<field
+						name="less_section-10-background"
+						type="text"
+						default="#DAA4A2"
+						label="section 10 background"
+						description="Dit is de achtergrond van section 6"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-10-p"
+						type="color"
+						default="inherit"
+						label="section 10 paragraph kleur"
+						description="Dit is de paragraph kleur van 10"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-10-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-10-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+                   <field
+						name="less_section-10-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-10-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-10-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
+						filter="raw"
+				/>
+				<field
+						name="section-10-paralax"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+                 <field
+						name="section-10-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
+				</field>
+
+				<field
+						name="less-10-anchor"
+						type="text"
+						default="anker10"
+						label="Ankernaam section 10"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+                
+                
+                /**/<field type="spacer" name="spacer-section-11" label="&lt;b&gt;Section 11 (bottom8) &lt;/b&gt;" />
+
+				<field
+						name="less_section-11-background"
+						type="text"
+						default="#DAA4A2"
+						label="section 11 background"
+						description="Dit is de achtergrond van section 6"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-11-p"
+						type="color"
+						default="inherit"
+						label="section 11 paragraph kleur"
+						description="Dit is de paragraph kleur van 11"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-11-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-11-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+                   <field
+						name="less_section-11-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-11-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-11-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
+						filter="raw"
+				/>
+				<field
+						name="section-11-paralax"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+                 <field
+						name="section-11-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
+				</field>
+
+				<field
+						name="less-11-anchor"
+						type="text"
+						default="anker11"
+						label="Ankernaam section 11"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+                
+                /**/<field type="spacer" name="spacer-section-12" label="&lt;b&gt;Section 12 (bottom9) &lt;/b&gt;" />
+
+				<field
+						name="less_section-12-background"
+						type="text"
+						default="#DAA4A2"
+						label="section 12 background"
+						description="Dit is de achtergrond van section 6"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-12-p"
+						type="color"
+						default="inherit"
+						label="section 12 paragraph kleur"
+						description="Dit is de paragraph kleur van 12"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-12-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-12-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+                   <field
+						name="less_section-12-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-12-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-12-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
+						filter="raw"
+				/>
+				<field
+						name="section-12-paralax"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+                 <field
+						name="section-12-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
+				</field>
+
+				<field
+						name="less-12-anchor"
+						type="text"
+						default="anker12"
+						label="Ankernaam section 12"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+                
+                /**/<field type="spacer" name="spacer-section-13" label="&lt;b&gt;Section 13 (bottom10) &lt;/b&gt;" />
+
+				<field
+						name="less_section-13-background"
+						type="text"
+						default="#DAA4A2"
+						label="section 13 background"
+						description="Dit is de achtergrond van section 6"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-13-p"
+						type="color"
+						default="inherit"
+						label="section 13 paragraph kleur"
+						description="Dit is de paragraph kleur van 13"
+						filter="raw"
+				/>
+
+				<field
+						name="less_section-13-padding"
+						type="text"
+						default="@section-padding"
+						label="section padding"
+						description="Dit is de algemene padding van sections"
+						filter="raw"
+				/>
+				<field
+						name="less_section-13-margin"
+						type="text"
+						default="@section-margin"
+						label="section margin"
+						description="Dit is de algemene margin van sections"
+						filter="raw"
+				/>
+                   <field
+						name="less_section-13-border-style"
+						type="text"
+						default="solid"
+						label="border style"
+						description="border"
+						filter="raw"
+				/>
+                
+                <field
+						name="less_section-13-border-color"
+						type="color"
+						default=""
+						label="border color"
+						description="border"
+						filter="raw"
+				/>
+                  <field
+						name="less_section-13-border-width"
+						type="text"
+						default="0"
+						label="border width"
+						description="border"
+						filter="raw"
+				/>
+				<field
+						name="section-13-paralax"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="container"
+						label="Volledige breedte"
+						description="Image options, fullscreen overwrites Height">
+					<option value="paralax">Ja</option>
+					<option value="container">Nee</option>
+				</field>
+                 <field
+						name="section-13-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
+				</field>
+
+				<field
+						name="less-13-anchor"
+						type="text"
+						default="anker13"
+						label="Ankernaam section 13"
+						description="Naam waar het menu-item naar verwijst."
+						filter="raw"
+				/>
+                
+                
+                
 				/**/<field type="spacer" name="spacer-contact" label="&lt;b&gt;Contact &lt;/b&gt;" />
 
 				<field
 						name="less_section-contact-background"
 						type="text"
 						default="inherit"
-						label="section 7 background"
+						label="sectionc contact background"
 						description="Background van contact blok"
 						filter="raw"
 				/>
@@ -2021,7 +2762,7 @@
 						name="less_section-contact-p"
 						type="color"
 						default="inherit"
-						label="section 7 background"
+						label="section contact background"
 						description="Dit is de paragraph kleur van 7"
 						filter="raw"
 				/>
@@ -2077,6 +2818,17 @@
 					<option value="paralax">Ja</option>
 					<option value="container">Nee</option>
 				</field>
+                   <field
+						name="section-contact-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
+				</field>
+                
 				<field
 						name="less-contact-anchor"
 						type="text"
@@ -2157,12 +2909,22 @@
 				<field
 						name="section-footer-paralax"
 						type="radio"
-						class="btn-group "
+						class="btn-group btn-group-yesno"
 						default="container"
 						label="Volledige breedte"
 						description="Image options, fullscreen overwrites Height">
 					<option value="paralax">Ja</option>
 					<option value="container">Nee</option>
+				</field>
+                   <field
+						name="section-footer-equal"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="0"
+						label="Gelijke hoogte modules"
+						description="Gelijke hoogte modules in deze rij">
+					<option value="1">Ja</option>
+					<option value="0">Nee</option>
 				</field>
 				<field
 						name="less-footer-anchor"
