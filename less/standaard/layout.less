@@ -74,6 +74,7 @@ a {
 	#menu {
        padding-top: 6px;
         width:100%;
+        clear:both;
     }
     
     .container {
@@ -91,13 +92,21 @@ a {
 
 /*______________ 4.0 Modules  _________________*/
 .module {
-
+ @media @xs {
+   padding-left:0;
+     padding-right:0;
+    }
 	.modulecontent {
 		padding: 20px 0;
+         @media @xs {
+    padding-right: @col-padding !important;
+padding-left: @col-padding !important;
+    }
 
 		.moduletitle {
 			margin-top:0px;
 			font-size: @module-default-size;
+            line-height: @module-default-height;
 		}
 	}
     h3 {
@@ -114,9 +123,17 @@ a {
     float:none;
  margin: 0 auto;
 }
-.w-content {
+
+.module.w-content {
 width:@module-content-width;
     margin:0 auto;
+    padding:0;
+    max-width: 100%;
+   
+}
+
+.max-w {
+max-width:@module-content-width;
 }
 
     .title-center h3 {
@@ -141,6 +158,7 @@ width:@module-content-width;
 		.moduletitle {
 			color: @module-primary-title;
             font-size:@module-primary-size;
+            line-height: @module-primary-height;
 		}
 	}
 }
@@ -155,6 +173,7 @@ width:@module-content-width;
 		.moduletitle {
 			color: @module-secondary-title;
             font-size:@module-secondary-size;
+            line-height: @module-secondary-height;
 		}
 	}
 }
@@ -168,6 +187,7 @@ width:@module-content-width;
 		.moduletitle {
 			color: @module-tertiary-title;
             font-size:@module-tertiary-size;
+            line-height: @module-tertiary-height;
 		}
 	}
 }
@@ -182,6 +202,7 @@ width:@module-content-width;
 		.moduletitle {
 			color: @module-quaternary-title;
             font-size:@module-quaternary-size;
+            line-height: @module-quaternary-height;
 		}
 	}
 }
@@ -256,19 +277,6 @@ margin-top:0;
 display: none;
 }
 
-/*social list in footer */
-
-.sociallist {
-    padding-left: 0;
-    li{
-display: inline-block;
-    list-style-type: none;
-    margin:0;
-        a{
-        padding:3px 3px;
-        }
-}
-}
 
 /*______________ 5.0 Buttons  _________________*/
 
@@ -342,7 +350,7 @@ display: inline-block;
     }
 }
 
-.btn-warnings
+.btn-warning,
 .btn-warning:focus,
 .btn-warning:active {
 	background-color: @btn-warning;
@@ -711,10 +719,10 @@ transition: height 0.8s;
     .nav.navbar-right {
     position: absolute;
     top: 20px;
-    right: 25px;
+    right: 9px;
     }
     .stickyhoofdmenu {
-    padding-right: 40px;
+    padding-right: 28px;
     }
     
 }
@@ -796,7 +804,22 @@ bottom:100px}
 }
 
 /*______________ 8.2 Pages, blogs ____*/
+
+.content .item-page{
+max-width: @article-content-width;
+    padding:@article-content-padding;
+    margin:@article-content-margin;
+}
+
+.page-header {
+margin:0;
+padding:0;
+}
+
 .blog {
+    max-width: @article-blog-width;
+    padding:@article-blog-padding;
+    margin:@article-blog-margin;
     .leading-0 {
         margin-left: -15px;
         margin-right: -15px;
@@ -900,6 +923,39 @@ float:right;
 }
     
 } 
+/*social list in footer */
+footer {
+    
+    .sociallist {
+        padding-left: 0;
+        li {
+            list-style-type: none;
+    margin:0;
+        display: inline-block; }
+        a {
+   background-color: @socialicon-background;
+    text-align: center;
+    color: @socialicon-text;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding-bottom: 0;
+    }
+    }
+    .li-facebook a {
+
+    }
+    
+.fab.fa-facebook-f:before {
+    content: "\f39e" !important;
+}
+}
+
+
+
+
+
 
 
 /*______________ 9.0 Top ______________________*/
@@ -920,9 +976,9 @@ float:right;
 .backtotop {
 	position: fixed;
 	right: 0;
-	bottom: 0;
+    bottom: 50px;
 	font-size: 28px;
-	border: 3px solid;
+	border: 1px solid;
 	border-radius: 50%;
 	padding: 8px 9px;
 	cursor: pointer;

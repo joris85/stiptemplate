@@ -217,6 +217,13 @@ padding: 32px 0 0 0;
     }
 }
 
+.menu-style.menu-search.menulines{
+    #search, #sticksearch {
+   a {
+   padding-right:20px;
+   } 
+}
+}
 /*______________ 5.0 BUTTON STYLES ______________*/
 .btn,
 #Submit{
@@ -334,12 +341,20 @@ float: @menu-menu-float;
     content: " | ";
     position: absolute;
     right:-4px;
+         color:@menu-primary-link !important;
 }
     
-    ul ul a:before {
+    .nav-child  a:before {
     content: none !important;
     }
     
+}
+
+#body .menu-search.menulines .nav.menu li:last-child a:after {
+content: " | ";
+    position: absolute;
+    right: -4px;
+    color: #505050 !important;
 }
 
 
@@ -495,7 +510,7 @@ img {
 }
 
 
-.item-page, .blog {
+.item-page, .blog, .section  {
 	.pull-left img {
 		margin: @images-margin-float-left;
 	}
@@ -505,13 +520,16 @@ img {
     img {
        margin: @images-margin-content; 
     }
-
+    .pull-left img,
+    img.pull-left,
 	img[align="left"],
 	img[style*="float: left"],
 	img[style*="float:left"] {
 		margin: @images-margin-float-left;
 		border-radius: @images-content-border-radius;
 	}
+    .pull-right img,
+    img.pull-right,
 	img[align="right"],
 	img[style*="float: right"],
 	img[style*="float:right"] {
@@ -519,6 +537,8 @@ img {
 		border-radius: @images-content-border-radius;
 	}
 }
+
+
 
 .pull-center {
  text-align: center;   
